@@ -151,7 +151,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   print('</div>'); 
 }
 ?>
-<script type="text/javascript" src="javascript/script.js"></script>
+<script type="text/javascript" src="tinytable/javascript/script.js"></script>
 	<script type="text/javascript">
   var sorter = new TINY.table.sorter("sorter");
 	sorter.head = "head";

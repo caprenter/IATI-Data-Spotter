@@ -22,7 +22,7 @@ foreach ($files as $file) {
   <head>
     <title><?php echo $title ?> <?php echo $breadcrumb ?></title>
     <link rel="stylesheet" href="theme/css/main.css" />
-    <link rel="stylesheet" href="javascript/style.css" />
+    <link rel="stylesheet" href="javascript/tinytable/style.css" />
   </head>
 
 <body>

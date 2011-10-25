@@ -79,7 +79,7 @@ function theme_country_table ($recipient,$id,$string) {
 
 ?>
 
-<script type="text/javascript" src="javascript/script.js"></script>
+<script type="text/javascript" src="tinytable/javascript/script.js"></script>
 	<script type="text/javascript">
   var sorter = new TINY.table.sorter("sorter");
 	sorter.head = "head";
@@ -95,7 +95,7 @@ function theme_country_table ($recipient,$id,$string) {
 	sorter.init("table1",0);
   </script>
   
-  <script type="text/javascript" src="javascript/script.js"></script>
+  <script type="text/javascript" src="tinytable/javascript/script.js"></script>
 
 	<script type="text/javascript">
   var sorter2 = new TINY.table.sorter("sorter2");
