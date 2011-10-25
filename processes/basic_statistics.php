@@ -127,7 +127,7 @@ function format_bytes($size) {
 ?>
 
 
-<script type="text/javascript" src="tinytable/javascript/script.js"></script>
+<script type="text/javascript" src="javascript/tinytable/script.js"></script>
 	<script type="text/javascript">
   var sorter = new TINY.table.sorter("sorter");
 	sorter.head = "head";

@@ -175,7 +175,7 @@ $how_many_of_each = array_count_values ($array);
 
 ?>
 
-<script type="text/javascript" src="tinytable/javascript/script.js"></script>
+<script type="text/javascript" src="javascript/tinytable/script.js"></script>
 	<script type="text/javascript">
   var sorter = new TINY.table.sorter("sorter");
 	sorter.head = "head";
@@ -190,7 +190,7 @@ $how_many_of_each = array_count_values ($array);
 	sorter.limitid = "pagelimit";
 	sorter.init("table",1);
   </script>
-<script type="text/javascript" src="tinytable/javascript/script.js"></script>
+<script type="text/javascript" src="javascript/tinytable/script.js"></script>
 	<script type="text/javascript">
   var sorter = new TINY.table.sorter("sorter");
 	sorter.head = "head";
