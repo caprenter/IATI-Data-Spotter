@@ -8,6 +8,8 @@ $pages = array( "basic_statistics" => "statistics.php",
                 "missing_elements" => "missing.php",
                 "codes" => "codes.php",
                 "identifier_format" => "identifiers.php",
-                "country_list" => "country.php"
+                "country_list" => "country.php",
+                "recipient_region_codes" => "region_codes.php",
+                "transactions" => "transactions.php"
               );
 ?>
