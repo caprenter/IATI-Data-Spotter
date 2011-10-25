@@ -1,0 +1,57 @@
+<?php
+if (in_array($myinputs['group'],array_keys($available_groups))) {
+  //Include variables for each group. Use group name for the argument
+  //e.g. php detect_html.php dfid
+  require_once 'variables/' .  $_GET['group'] . '.php';
+  require_once 'functions/xml_child_exists.php';
+  $flag = FALSE;
+  $inconsistencies = array();
+  print('<div id="main-content">');
+  
+  include_once('helpers/parse_csv.php');
+  if ($handle = opendir($dir)) {
+
+      /* This is the correct way to loop over the directory. */
+      while (false !== ($file = readdir($handle))) {
+          if ($file != "." && $file != "..") { //ignore these system files
+              //echo $file . PHP_EOL;
+              //load the xml
+              if ($xml = simplexml_load_file($dir . $file)) {;
+              //print_r($xml); //debug
+                  foreach ($xml as $activity) {
+                      //CHECK: Reporting Org is included in iati-identifier string
+                      $reporting_org_ref = (string)$activity->{'reporting-org'}->attributes()->ref;
+                      //echo $reporting_org_ref;
+                      $iati_identifier = (string)$activity->{'iati-identifier'};
+                      //echo $iati_identifier;
+                      
+                      $parts = explode("-", $iati_identifier);
+                      if (!$parts[0] == $reporting_org_ref ) {
+                       //Report if inconsistent
+                        array_push($inconsistencies,array($iati_identifier => $file)); 
+                        $flag = TRUE;
+                      } 
+                  }
+                  
+                  
+              } else { //simpleXML failed to load a file
+                  echo $file . ' empty';
+              }
+              
+          }// end if file is not a system file
+      } //end while
+      closedir($handle);
+  }
+  print('<div id="main-content">');
+    if (!$flag) {
+      print('<h3>Identifiers are all of the form:</h3>
+            <p>&lt;reporting-org@ref&gt; "-" &lt;string&gt;</p>');
+    } else {
+      print('<h3>Identifiers should be of the form:</h3>
+            <p>&lt;reporting-org@ref&gt; "-" &lt;string&gt;</p>
+            <p>The following do not conform:</p>');
+      print_r($inconsistencies);
+    }
+  print('</div>');
+}
+?>

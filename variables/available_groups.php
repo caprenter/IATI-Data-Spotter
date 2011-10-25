@@ -1,0 +1,8 @@
+<?php
+$available_groups = array("worldbank"=>"World Bank",
+                          "eu" => "European Union",
+                          "dfid" => "Department For International Development (DFID)",
+                          "cafod" => "Catholic Overseas Development Agency (CAFOD)",
+                          "undp" => "United Nations Development Programme (UNDP)"
+                          );
+?>                          

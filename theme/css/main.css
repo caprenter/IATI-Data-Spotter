@@ -1,0 +1,103 @@
+* {margin:0; padding:0; outline:none}
+body {
+font-family:Verdana,Arial; 
+color:#091f30; 
+}
+
+#header {
+background:#000;
+color:#fff;
+margin-bottom:5px;
+}
+
+#nav {
+margin:0 auto;
+width:980px;
+}
+#nav a  {
+color:#fff;
+font-weight:bold;
+text-decoration:none;
+}
+#sidebar-left a:link,
+#sidebar-left a:visited {
+text-decoration:none;
+}
+
+#sidebar-left a:focus, 
+#sidebar-left a:hover {
+text-decoration:underline;
+}
+#sidebar-left a:active, 
+#sidebar-left li.active a {
+color: #000;
+text-decoration:none;
+}
+
+.notes ul li {
+display:inline;
+margin-right:5px;
+}
+.notes ul li:after
+{
+content:",";
+} 
+
+
+#page-wrapper {
+margin:0 auto;
+width:980px;
+}
+
+#main-content {
+margin-top:10px;
+margin-bottom:20px;
+width:780px;
+float:right;
+}
+
+#sidebar-left {
+float:left;
+width:200px;
+overflow:none;
+margin-bottom:20px;
+}
+
+#sidebar-left h3 {
+margin-top:10px;
+}
+
+#sidebar-left li {
+list-style:none outside none;
+}
+
+ul.elements,
+span.elements {
+font-size:0.9em;
+margin-left:10px;
+}
+
+h4 {
+margin:0 auto;
+width:980px;
+}
+
+p.fail {
+margin:10px 0;
+}
+p.table-title {
+margin-top:10px;
+}
+
+p.tick {
+background: url('../images/tick.png') no-repeat;
+padding:0 0 20px 20px;
+}
+
+#footer {
+clear:both;
+border-top: 2px solid #eee;
+}
+#footer .inner {
+margin:20px auto;
+width:980px;

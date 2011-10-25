@@ -1,0 +1,50 @@
+List of checks
+Does at least one occurance of an element exists in a FILE (e.g. activity-date)
+Notes: We can supply a list of elements to look for.
+Output: element not found, and file not found in
+File: missing_elements_check.php
+
+
+Does at least one occurance of an element exist in an ACTIVITY (e.g. transaction)
+Notes: We can supply a list of elements to look for.
+Output: iati-identity of activity, element not found, and file not found in
+File: missing_elements_check_all_activities.php
+
+
+Reporting Org is included in iati-identifier string before the '-'
+Notes:
+Outputs: iati_identifier if reporting org string does not start the iati-identifier;
+File: string_check.php                    
+
+                    
+(Specific) Typo check. Check to see that the typo is consistent across all files.
+Notes: Will need customising for each typo
+Outputs: "this one is different"
+File: string_check.php
+ 
+
+Participating Org code is on one of the 3 Country code lists
+Outputs: A list of 'bad' codes - ie. codes not found in the lists, and a count of the number files that are effected
+File: string_check.php
+
+                    
+Participating org Code matches output text. Checking given text against the text in the code lists
+Outputs: A comma seperated string of code,expected string,found string,filename
+File: string_check.php
+                      
+
+Detect if a file has "<xml" at the start of the file (as XML files should have)
+Notes: Also we can set this to be "<iati" if we think they go straight into activities.
+File: detect_xml.php
+
+
+Detect if a file has "<DOCUMENT" or "<html" at the start of the file (as HTML files might!)
+Notes: If a URL given in the IATI registry is wrong/not working, wget is likely to return a HTML page from a 'Page not found' page of the website.
+Output: file name and 'dirty html'
+File: detect_html.php
+ 
+
+Find any Organisation Files once you've got a load of activity files
+Output: Gives the names of any organisation files found
+Notes: These files should then be removed before you try to batch process activity files.
+File: find_organisation_files.php
