@@ -94,6 +94,10 @@ background: url('../images/tick.png') no-repeat;
 padding:0 0 20px 20px;
 }
 
+.transactions-wrap {
+padding-bottom: 15px;
+}
+
 #footer {
 clear:both;
 border-top: 2px solid #eee;
