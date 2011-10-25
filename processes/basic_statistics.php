@@ -4,6 +4,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   //Include variables for each group. Use group name for the argument
   //e.g. php detect_html.php dfid
   require_once 'variables/' .  $_GET['group'] . '.php';
+  require_once 'variables/server_vars.php';
 
 
   //Count activities in files
@@ -95,12 +96,13 @@ function get_count ($dir) {
 }
 
 function get_filesize ($dir) {
+  global $server_path_to_files; //set in variables/server_vars.php
   if ($handle = opendir($dir)) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($file = readdir($handle))) {
         if ($file != "." && $file != "..") { //ignore these system files
-           $path_to_file  = '/home/david/iati/batch/' .  substr($dir,3) . $file;
-           $path_to_file  = '/home/david/iati/batch/' .  $dir . $file;
+           //$path_to_file  = $server_path_to_files .  substr($dir,3) . $file;
+           $path_to_file  = $server_path_to_files .  $dir . $file;
            $filesize = filesize($path_to_file);
            //$filesize = filesize($file);
            $filesize = format_bytes($filesize);
