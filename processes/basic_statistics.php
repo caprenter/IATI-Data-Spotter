@@ -5,6 +5,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   //e.g. php detect_html.php dfid
   require_once 'variables/' .  $_GET['group'] . '.php';
   require_once 'variables/server_vars.php';
+  require_once 'functions/xml_child_exists.php';
 
 
   //Count activities in files
@@ -25,6 +26,7 @@ function theme_size_count ($count,$size,$url) {
   
   //Find any failing files and take them out of the array
   //Print a table of failing files
+  $rows = "";
   foreach ($count as $file => $number) {
     if ($number == "FAIL") {
       $rows .= '<tr><td><a href="' .$url . $file . '">' . $file . '</a></td></tr>';
@@ -82,15 +84,18 @@ function get_count ($dir) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($file = readdir($handle))) {
         if ($file != "." && $file != "..") { //ignore these system files
-          if(!xml_child_exists($xml, "//iati-organisation")) //ignore organisation files
+          
             if ($xml = simplexml_load_file($dir . $file)) {
-              //$count = $xml->count(); //php >5.3
-              $count = count($xml->children()); //php < 5.3
-              $results[$file] = $count;
+              
+              if(!xml_child_exists($xml, "//iati-organisation")) {//ignore organisation files
+                //$count = $xml->count(); //php >5.3
+                $count = count($xml->children()); //php < 5.3
+                $results[$file] = $count;
+              }
             } else {
               $results[$file] = 'FAIL';
             }
-          }
+          
         }
     }
   }

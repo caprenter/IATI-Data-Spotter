@@ -22,3 +22,7 @@ http://iatiregistry.org/
 
 7) Edit variables/example.site_vars.php to enable filesize functions. Rename the file site_vars.php
 
+===Tweaks===
+in /themes/header.php we have the following:
+error_reporting(0); //Kills error reporting. Comment this line out to help you debug.
+ini_set("memory_limit","128M"); //Some of the processes are quite memory intensive, you may need to set this for your servers abilities.
