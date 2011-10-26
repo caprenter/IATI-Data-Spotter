@@ -82,12 +82,14 @@ function get_count ($dir) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($file = readdir($handle))) {
         if ($file != "." && $file != "..") { //ignore these system files
-          if ($xml = simplexml_load_file($dir . $file)) {;
-            //$count = $xml->count(); //php >5.3
-            $count = count($xml->children()); //php < 5.3
-            $results[$file] = $count;
-          } else {
-            $results[$file] = 'FAIL';
+          if(!xml_child_exists($xml, "//iati-organisation")) //ignore organisation files
+            if ($xml = simplexml_load_file($dir . $file)) {
+              //$count = $xml->count(); //php >5.3
+              $count = count($xml->children()); //php < 5.3
+              $results[$file] = $count;
+            } else {
+              $results[$file] = 'FAIL';
+            }
           }
         }
     }
