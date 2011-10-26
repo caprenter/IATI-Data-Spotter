@@ -21,7 +21,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
               echo "Sum of positive transactions: " . number_format($transactions[2]) .'<br/>';
               echo "Difference: " . number_format($transactions[2] + $transactions[1]) .'<br/>';
               
-          if ($transactions[1] !=NULL && $transactions[2] !=NULL) {
+          if (!($transactions[1] == NULL && $transactions[2] == NULL)) {
                 print("<p>
                     <a href=\"#\" onclick=\"toggle_visibility('foo_" . strtoupper($type) . "');\">Show table:</a>
                   </p>");
