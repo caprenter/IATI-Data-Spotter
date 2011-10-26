@@ -20,5 +20,5 @@ http://iatiregistry.org/
 5) Create a 'variable' file in the variables directory for this data provider.
 6) For security (and to see your data), variables/available-groups.php will need to be edited.
 
-
+7) Edit variables/example.site_vars.php to enable filesize functions. Rename the file site_vars.php
 
