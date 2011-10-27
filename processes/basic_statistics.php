@@ -38,7 +38,7 @@ function theme_size_count ($count,$size,$url) {
           <table id='fail-table' class='sortable'>
             <thead>
               <tr>
-                <th><h3>These files need attention:</h3></th>
+                <th><h3>These files could not be parsed:</h3></th>
               </tr>
             </thead>
             <tbody>

@@ -4,7 +4,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     //e.g. php detect_html.php dfid
     require_once 'variables/' .  $_GET['group'] . '.php';
     require_once 'functions/xml_child_exists.php';
-    print('<div id="main-content">');
+    
     
     $missing= array();
     $files = array();
@@ -55,12 +55,14 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
         closedir($handle);
     }
 
+
+  print('<div id="main-content">');
   if ($missing != NULL) {
     echo "<h3>Missing Elements Summary</h3>";
     theme_how_many_of_each ($missing);
   } else {
       echo "<h3>Missing Elements Summary</h3>";
-      echo '<p class="tick">No missing elements found</h3>';
+      echo '<p class="tick">All files have AT LEAST one of the elements we are checking for.</p>';
   }
     
   //if ($files != NULL) {
@@ -68,7 +70,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
  // }
   
   if (!empty($rows)) {
-    echo "<p class='table-title'>Table of files with missing elements</p>",
+    echo "<p class='table-title check'>Table of files with missing elements</p>",
         print('<table id="table" class="sortable">
             <thead>
               <tr>
@@ -130,12 +132,12 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   }
   
   
-  if ($missing != NULL) {
+  //if ($missing != NULL) {
   //theme_how_many_of_each ($missing);
-}
-if ($files != NULL) {
+//}
+//if ($files != NULL) {
   //theme_how_many_of_each ($files);
-}
+//}
 
 $files_with_some_activities_missing_some_elements = $files;
 
@@ -145,7 +147,7 @@ $additional_files = array_diff($files_with_some_activities_missing_some_elements
 //}
 
 if (!empty($rows)) {
-    echo "<p class='table-title'>Table of additional files with some activities missing elements</p>",
+    echo "<p class='table-title check'>Table of additional files with SOME activities missing elements</p>",
         print('<table id="table2" class="sortable">
             <thead>
               <tr>
@@ -166,7 +168,7 @@ $how_many_of_each = array_count_values ($array);
     arsort($how_many_of_each);
     foreach ($how_many_of_each as $key => $value) {
       if ($value >1 ) { 
-        echo '&lt;' . $key . '&gt; not found at all in (' . $value . ') files' . '<br/>';
+        echo '<p class="cross">&lt;' . $key . '&gt; not found at all in (' . $value . ') files' . '</p>';
       }
     }
 }
@@ -190,7 +192,7 @@ $how_many_of_each = array_count_values ($array);
 	sorter.limitid = "pagelimit";
 	sorter.init("table",1);
   </script>
-<script type="text/javascript" src="javascript/tinytable/script.js"></script>
+
 	<script type="text/javascript">
   var sorter = new TINY.table.sorter("sorter");
 	sorter.head = "head";

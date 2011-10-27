@@ -6,6 +6,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 
 $recipient_countries = array();
 $recipient_regions = array();
+$bad_files = array();
 $i=0;
 //$url = 'http://ec.europa.eu/europeaid/files/iati/';  //EU url endpoint
 if ($handle = opendir($dir)) {
@@ -24,7 +25,7 @@ if ($handle = opendir($dir)) {
                 array_push($recipient_regions, (string)$activity->{'recipient-region'});    
               }          
             } else {
-              echo "investigate: " .$file;
+              array_push($bad_files,$file);
             }
         }
     }        
@@ -36,6 +37,27 @@ print('<div id="main-content">');
   theme_country_table ($recipient_countries,2,'Country');
   //print_r(array_count_values ($recipient_countries));
   //echo count($recipient_countries);
+
+
+  //Print a table of failing files
+  if ($bad_files != NULL) {
+    foreach ($bad_files as $file) {
+      $rows .= '<tr><td><a href="' .$url . urlencode($file) . '">' . $file . '</a></td></tr>';
+    }
+
+    print("
+        <table id='fail-table' class='sortable'>
+          <thead>
+            <tr>
+              <th><h3>These files could not be parsed:</h3></th>
+            </tr>
+          </thead>
+          <tbody>
+            $rows
+          </tbody>
+        </table>"
+       );
+  }
 print('</div>');
 }
 
