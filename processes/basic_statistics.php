@@ -29,7 +29,7 @@ function theme_size_count ($count,$size,$url) {
   $rows = "";
   foreach ($count as $file => $number) {
     if ($number == "FAIL") {
-      $rows .= '<tr><td><a href="' .$url . $file . '">' . $file . '</a></td></tr>';
+      $rows .= '<tr><td><a href="' .$url . urlencode($file) . '">' . $file . '</a></td></tr>';
       unset($count[$file]);
     }
   }
@@ -69,8 +69,8 @@ function theme_size_count ($count,$size,$url) {
       <tr>
         <td>' . $number . '</td>
         <td>' . $size[$file] . '</td>
-        <td><a href="' .$url . $file . '">' . $file . '</a></td>
-        <td><a href="http://webapps.kitwallace.me/exist/rest/db/apps/iati/xquery/validate.xq?type=activitySet&source=' . urlencode($url . $file) . '&mode=download">View Validator results</a></td>
+        <td><a href="' .$url . rawurlencode($file) . '">' . $file . '</a></td>
+        <td><a href="http://webapps.kitwallace.me/exist/rest/db/apps/iati/xquery/validate.xq?type=activitySet&source=' . urlencode($url) . urlencode(preg_replace("/ /", "%20", $file)) . '&mode=download">View Validator results</a></td>
     </tr>
     ');
   }
