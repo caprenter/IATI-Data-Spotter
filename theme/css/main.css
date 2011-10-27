@@ -59,7 +59,6 @@ float:right;
 #sidebar-left {
 float:left;
 width:200px;
-overflow:none;
 margin-bottom:20px;
 }
 
@@ -116,3 +115,4 @@ border-top: 2px solid #eee;
 #footer .inner {
 margin:20px auto;
 width:980px;
+}
