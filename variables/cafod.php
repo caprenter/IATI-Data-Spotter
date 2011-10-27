@@ -1,4 +1,4 @@
 <?php
 $dir = 'data/CAFOD/'; //needs trailing slash
-$url = '#';
+$url = 'http://bntest.vm.bytemark.co.uk/david/iati/batch/data/UNDP/';
 ?>
