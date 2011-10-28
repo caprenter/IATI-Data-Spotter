@@ -6,6 +6,7 @@ See http://iatistandard.org/ for more info.
 ==Licence==
 GNU Affero General Public License (except where stated)
 All javascript used has been re-used from websites. Credit is given in those files.
+Images in themes/images are all GPL from the Gnome desktop: http://art.gnome.org/themes/icon
 
 ==Install==
 
