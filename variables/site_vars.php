@@ -10,6 +10,7 @@ $pages = array( "basic_statistics" => "statistics.php",
                 "identifier_format" => "identifiers.php",
                 "country_list" => "country.php",
                 "recipient_region_codes" => "region_codes.php",
-                "transactions" => "transactions.php"
+                "transactions" => "transactions.php",
+                "transactions_last" => "transactions_last.php"
               );
 ?>
