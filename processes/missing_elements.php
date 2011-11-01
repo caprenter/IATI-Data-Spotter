@@ -4,11 +4,9 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     //e.g. php detect_html.php dfid
     require_once 'variables/' .  $_GET['group'] . '.php';
     require_once 'functions/xml_child_exists.php';
+    require_once 'variables/elements_list.php';
     
-    $elements = array('activity-date',
-                      'participating-org',
-                      'transaction'
-                      );
+
     
     $results = files_with_no_elements ($elements);
 
@@ -81,7 +79,8 @@ function files_with_no_elements ($elements) {
             if ($file != "." && $file != "..") { //ignore these system files
                 //echo $file . PHP_EOL;
                 //load the xml
-                if ($xml = simplexml_load_file($dir . $file)) {;
+                if ($xml = simplexml_load_file($dir . $file)) {
+                  echo $xml->count();
                 //print_r($xml); //debug
                   if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation files
                     //We're just checking each file for at least one occurance!!
