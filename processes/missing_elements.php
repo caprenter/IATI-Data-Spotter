@@ -80,7 +80,6 @@ function files_with_no_elements ($elements) {
                 //echo $file . PHP_EOL;
                 //load the xml
                 if ($xml = simplexml_load_file($dir . $file)) {
-                  echo $xml->count();
                 //print_r($xml); //debug
                   if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation files
                     //We're just checking each file for at least one occurance!!
