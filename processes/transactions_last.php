@@ -16,40 +16,44 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
         //Transactions
         $transactions = get_last_transactions ($dir);
         
-        //Multisort the array
-        // Obtain a list of columns
-        foreach ($transactions as $key => $row) {
-            $ids[$key]  = $row['id'];
-            $dates[$key] = $row['date'];
-        }
-
-        // Sort the data with volume descending, edition ascending
-        // Add $data as the last parameter, to sort by the common key
-        array_multisort($dates, SORT_DESC, $ids, SORT_ASC, $transactions);
-
-         print("<table id='table1' class='sortable'>
-              <thead>
-                <tr>
-                  <th><h3>Id</h3></th>
-                  <th><h3>Date</h3></th>
-                  <th><h3>File</h3></th>
-                  <th><h3>Validator</h3></th>
-                </tr>
-              </thead>
-              <tbody>");
-          foreach ($transactions as $transaction) {
-            $i++;
-            if ($i<20) {
-              echo '<tr><td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
-              echo "<td>" . date("Y-m-d",$transaction["date"]) . "</td>";
-              echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
-              echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
-            } else {
-              continue;
+        if ($transactions !=NULL) {
+            //Multisort the array
+            // Obtain a list of columns
+            foreach ($transactions as $key => $row) {
+                $ids[$key]  = $row['id'];
+                $dates[$key] = $row['date'];
             }
-          //return array($transactions);
+
+            // Sort the data with volume descending, edition ascending
+            // Add $data as the last parameter, to sort by the common key
+            array_multisort($dates, SORT_DESC, $ids, SORT_ASC, $transactions);
+
+             print("<table id='table1' class='sortable'>
+                  <thead>
+                    <tr>
+                      <th><h3>Id</h3></th>
+                      <th><h3>Date</h3></th>
+                      <th><h3>File</h3></th>
+                      <th><h3>Validator</h3></th>
+                    </tr>
+                  </thead>
+                  <tbody>");
+              foreach ($transactions as $transaction) {
+                $i++;
+                if ($i<20) {
+                  echo '<tr><td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
+                  echo "<td>" . date("Y-m-d",$transaction["date"]) . "</td>";
+                  echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
+                  echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
+                } else {
+                  continue;
+                }
+              //return array($transactions);
+              }
+              print("</tbody></table>");
+          } else {
+            echo '<p class="cross">No &lt;transaction-date&gt; elements found</p>';
           }
-          print("</tbody></table>");
 
 
     print("</div>");//main content
