@@ -1,6 +1,6 @@
 <?php
 $transaction_types = array( "e"=>"Expenditure",
-                            "if"=>"IF",
+                            "if"=>"Incoming Funds",
                             "c"=>"Commitment",
                             "d"=>"Disbursement",
                             "ir"=>"Interest Repayment",
