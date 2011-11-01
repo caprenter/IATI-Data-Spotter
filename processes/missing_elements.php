@@ -31,6 +31,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   <tr>
                     <th><h3>Element</h3></th>
                     <th><h3>File</h3></th>
+                    <th class="nosort"><h3>Validator</h3></th>
                   </tr>
                 </thead>
                 <tbody>' . $results["rows"] . '</tbody>
@@ -40,20 +41,21 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 
 
         //Print out Files and activities with missing elements
-        $files_with_no_elements = $results["files"];
+        //$files_with_no_elements = $results["files"];
         $activities = activites_with_elements($elements);
-        $files_with_some_activities_missing_some_elements = $activities["files"];
-        $additional_files = array_diff($files_with_some_activities_missing_some_elements, $files_with_no_elements);
+        //$files_with_some_activities_missing_some_elements = $activities["files"];
+        //$additional_files = array_diff($files_with_some_activities_missing_some_elements, $files_with_no_elements);
 
 
         if (!empty($activities["rows"])) {
-            echo "<p class='table-title check'>Table of additional files with SOME activities missing elements</p>";
+            echo "<p class='table-title check'>Table of " . count(array_unique($activities["files"])) . " additional files with SOME activities missing elements</p>";
                 print('<table id="table2" class="sortable">
                     <thead>
                       <tr>
                         <th><h3>Element</h3></th>
                         <th><h3>Identifier</h3></th>
                         <th><h3>File</h3></th>
+                        <th class="nosort"><h3>Validator</h3></th>
                       </tr>
                     </thead>
                     <tbody>' . $activities["rows"] . '</tbody>
@@ -93,7 +95,9 @@ function files_with_no_elements ($elements) {
                                 //die;
                             } else {
                                 //Not found
-                                $rows .='<tr><td>' .  $element . '</td><td>' . $url . $file .'</td></tr>';
+                                $rows .='<tr><td>' .  $element . '</td>';
+                                $rows .='<td><a href="' . $url . $file .'">' . $url . $file .'</a></td>';
+                                $rows .='<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
                                 //echo '"' .  $element . '","' . $activity->{'iati-identifier'} . '","' . $url . '","' . $file .PHP_EOL;
                                 array_push($missing, $element);
                                 array_push($files,$file);
@@ -133,31 +137,44 @@ function activites_with_elements ($elements) {
           if ($file != "." && $file != "..") { //ignore these system files
               //echo $file . PHP_EOL;
               //load the xml
-              if ($xml = simplexml_load_file($dir . $file)) {;
+              if ($xml = simplexml_load_file($dir . $file)) {
               //print_r($xml); //debug
-                if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation files
-                  //We're just checking each file for at least one occurance!!
-                    foreach ($xml as $activity) {
+                  if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation files
+
                       foreach ($elements as $element) {
-                          //we can test conditions for elements of the activity data here
-                          // the // allows us to search relative to root
-                          if(xml_child_exists($activity, ".//" . $element))  {           
-                              //echo $i . 'Yes'.PHP_EOL;
-                              //print_r($activity->transaction);
-                              //die;
-                          } else {
-                              //Not found
-                              $rows .='<tr><td>' .  $element . '</td><td>' . (string)$activity->{'iati-identifier'} . '</td><td>' . $url . $file .'</td></tr>';
-                              //echo '"' .  $element . '","' . $activity->{'iati-identifier'} . '","' . $url . '","' . $file .PHP_EOL;
-                              array_push($missing, $element);
-                              array_push($files,$file);
-                              //continue 3;
-                          }
-                      }
-                    }
-                  
-                  
-                 } 
+                      //If the element exists in the file go on to check if it is in every activity..
+                        if(xml_child_exists($xml, "//" . $element))  { 
+                        
+                          foreach ($xml as $activity) {
+
+                              //we can test conditions for elements of the activity data here
+                              // the .// allows us to search relative to element
+                              
+                              if(xml_child_exists($activity, ".//" . $element))  {           
+                                  //echo $i . 'Yes'.PHP_EOL;
+                                  //print_r($activity->transaction);
+                                  //die;
+                              } else {
+                                  //Not found
+                                  $rows .='<tr><td>' .  $element . '</td>';
+                                  $rows .='<td>';
+                                  $rows .='<a href="' . validator_link($url,$file,(string)$activity->{'iati-identifier'}) .'">';
+                                  $rows .= (string)$activity->{'iati-identifier'} . '</a></td>';
+                                  $rows .='<td><a href="' . $url . $file .'">' . $url . $file .'</a></td>';
+                                  $rows .='<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
+                                  
+                                  
+        
+                                  //echo '"' .  $element . '","' . $activity->{'iati-identifier'} . '","' . $url . '","' . $file .PHP_EOL;
+                                  array_push($missing, $element);
+                                  array_push($files,$file);
+                                  //continue 3;
+                              }
+
+                           }
+                       }
+                     } 
+                  }
               } else { //simpleXML failed to load a file
                   //echo $file . ' empty';
               }
@@ -182,6 +199,20 @@ $how_many_of_each = array_count_values ($array);
       }
     }
 }
+
+function validator_link($url,$file,$id = NULL) {
+  if ($id !=NULL) {
+    $link ='http://webapps.kitwallace.me/exist/rest/db/apps/iati/xquery/validate.xq?mode=view&type=activity&id=';
+    $link .=$id;
+    $link .= '&source=' . urlencode($url) . urlencode(preg_replace("/ /", "%20", $file));
+  } else {
+    $link ='http://webapps.kitwallace.me/exist/rest/db/apps/iati/xquery/validate.xq?type=activitySet&source=';
+    $link .= urlencode($url) . urlencode(preg_replace("/ /", "%20", $file));
+    $link .= '&mode=download';
+  }
+  return $link;
+}
+
 ?>
 
 <script type="text/javascript" src="javascript/tinytable/script.js"></script>
