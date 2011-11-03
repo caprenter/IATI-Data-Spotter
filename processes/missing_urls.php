@@ -15,7 +15,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
       while (false !== ($file = readdir($handle))) {
           if ($file != "." && $file != "..") { //ignore these system files
               //echo $file . PHP_EOL;
-              $content = file($dir . $file);
+              //$content = file($dir . $file); //Puts whole file into an array -not good for big files
+              $content[0] = file_get_contents($dir . $file, NULL, NULL, 0, 50); //just reads first 50 chars - faster!
               //First line: $content[0];
               if (strstr($content[0], '<!DOCTYPE') || strstr($content[0], '<html')) {
                    array_push($files,$file);
@@ -24,14 +25,16 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
           }
       } 
        print('<div id="main-content">
-                <h4>Missing URLs</h4>');
+                <h4>Missing URLs</h4>
+                <p>This is a basic test to see that if when we drag our files down to the server we get any HTML pages by accident</p>'
+                );
           if ($flag) {
-            print('<p>These files contain HTML markup on line one which may indicate the URL takes you to a page not found</p>');
+            print('<p class="cross">These files contain HTML markup on line one which may indicate the URL takes you to a page not found</p>');
             foreach($files as $file) {
                 echo '<a href="' .$url . $file . '">' . $file . '</a><br/>';
               }
           } else {
-                    print('<p>Passed</p><p>No HTML markup found at the begining of any files</p>');
+                    print('<p class="tick">Passed</p><p>No HTML markup found at the begining of any files</p>');
           }
           print('</div>');       
   }
