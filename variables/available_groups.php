@@ -6,6 +6,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "undp" => "United Nations Development Programme (UNDP)",
                           "aa" => "Aids Alliance",
                           "hf" => "The William and Flora Hewlett Foundation",
-                          "adb" => "Asian Development Bank"
+                          "adb" => "Asian Development Bank",
+                          "nl" => "Ministry of Foreign Affairs, The Netherlands"
                           );
 ?>                          
