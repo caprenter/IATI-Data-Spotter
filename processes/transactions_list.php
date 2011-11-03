@@ -31,6 +31,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
              print("<table id='table1' class='sortable'>
                   <thead>
                     <tr>
+                      <th><h3>Count</h3></th>
                       <th><h3>Id</h3></th>
                       <th><h3>Transaction Date</h3></th>
                       <th><h3>File</h3></th>
@@ -41,7 +42,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
               foreach ($transactions as $transaction) {
                 $i++;
                 //if ($i<20) {
-                  echo '<tr><td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
+                  echo '<tr><td>' . $i . '</td>';
+                  echo '<td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
                   echo "<td>" . date("Y-m-d",$transaction["date"]) . "</td>";
                   echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
