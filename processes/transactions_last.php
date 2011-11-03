@@ -40,14 +40,14 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   <tbody>");
               foreach ($transactions as $transaction) {
                 $i++;
-                if ($i<20) {
+                //if ($i<20) {
                   echo '<tr><td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
                   echo "<td>" . date("Y-m-d",$transaction["date"]) . "</td>";
                   echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
-                } else {
-                  continue;
-                }
+                //} else {
+                //  continue;
+               // }
               //return array($transactions);
               }
               print("</tbody></table>");
