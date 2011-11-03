@@ -16,9 +16,9 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
           if ($file != "." && $file != "..") { //ignore these system files
               //echo $file . PHP_EOL;
               //$content = file($dir . $file); //Puts whole file into an array -not good for big files
-              $content[0] = file_get_contents($dir . $file, NULL, NULL, 0, 50); //just reads first 50 chars - faster!
-              //First line: $content[0];
-              if (strstr($content[0], '<!DOCTYPE') || strstr($content[0], '<html')) {
+              $content = file_get_contents($dir . $file, NULL, NULL, 0, 50); //just reads first 50 chars - faster!
+              //First line: $content;
+              if (strstr($content, '<!DOCTYPE') || strstr($content, '<html')) {
                    array_push($files,$file);
                     $flag = TRUE;
               }

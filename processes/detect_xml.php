@@ -17,16 +17,16 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                 //echo $file . PHP_EOL;
                 $i++;
                 //$content = file($dir . $file); //Puts whole file into an array -not good for big files
-                $content[0] = file_get_contents($dir . $file, NULL, NULL, 0, 50); //just reads first 50 chars - faster!
+                $content = file_get_contents($dir . $file, NULL, NULL, 0, 50); //just reads first 50 chars - faster!
                 
                 //First line: $content[0];
                 //echo htmlspecialchars($content[0]) . '<br/>';
                 //Look for xml tag
-                if (strstr($content[0], '<?xml version="1.0" encoding="UTF-16"?>')) {
+                if (strstr($content, '<?xml version="1.0" encoding="UTF-16"?>')) {
                     continue;
                     //echo $i . " " . $file  . ' dirty html' .PHP_EOL;
                     
-                } elseif (strstr($content[0], '<?xml version="1.0" encoding="UTF-8"?>')) {
+                } elseif (strstr($content, '<?xml version="1.0" encoding="UTF-8"?>')) {
                     continue;
                 } else {
                     array_push($files,$file);
