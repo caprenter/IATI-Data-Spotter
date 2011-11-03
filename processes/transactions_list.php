@@ -12,7 +12,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
  //     $type = strtoupper($myinputs['transaction']);
     
       print('<div id="main-content">');
-      print('<h3>Last 20 transactions</h3>');
+      print('<h3>All transactions</h3>');
         //Transactions
         $transactions = get_last_transactions ($dir);
         
@@ -117,18 +117,3 @@ function validator_link($url,$file,$id = NULL) {
 ?>
 
 
-<script type="text/javascript" src="javascript/tinytable/script.js"></script>
-	<script type="text/javascript">
-  var sorter = new TINY.table.sorter("sorter");
-	sorter.head = "head";
-	sorter.asc = "asc";
-	sorter.desc = "desc";
-	sorter.even = "evenrow";
-	sorter.odd = "oddrow";
-	sorter.evensel = "evenselected";
-	sorter.oddsel = "oddselected";
-	sorter.paginate = true;
-	sorter.currentid = "currentpage";
-	sorter.limitid = "pagelimit";
-	sorter.init("table1");
-  </script>
