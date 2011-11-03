@@ -4,6 +4,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   //e.g. php detect_html.php dfid
   require_once 'variables/' .  $_GET['group'] . '.php';
   require_once 'functions/xml_child_exists.php';
+  require_once 'functions/validator_link.php';
+  
   $participating_org_ref_count = 0;
   $exclude = array("GB","EU");
   $bad_codes = array();
@@ -57,7 +59,11 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                                 $expected = $codes[$participating_org_ref];
                                 $found = $participating_org[0];
                                 if ($participating_org_ref == NULL) { $participating_org_ref = "empty string"; } //no-ref given
-                                $rows .= '<tr><td>'. $participating_org_ref . '</td><td>' . $expected . '</td><td>' . $found . '</td><td>' . $file . '</td></tr>';
+                                $rows .= '<tr><td>'. $participating_org_ref . '</td>';
+                                $rows .='<td>' . $expected . '</td>';
+                                $rows .='<td>' . $found . '</td>';
+                                $rows .='<td><a href="' . $url . $file . '">' . $url . $file . '</a></td>';
+                                $rows .='<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
                                 //echo '"'. $participating_org_ref . '","' ;
                                 //echo $codes[$participating_org_ref][2] . '","';
                                 //echo $participating_org[0] . '","' . $file . '"' . PHP_EOL;
@@ -106,6 +112,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
             <th><h3>Expected</h3></th>
             <th><h3>Found</h3></th>
             <th><h3>File</h3></th>
+            <th><h3>Validator</h3></th>
           </tr>
         </thead>
         <tbody>
