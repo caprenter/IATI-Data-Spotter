@@ -32,7 +32,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   <thead>
                     <tr>
                       <th><h3>Id</h3></th>
-                      <th><h3>Date</h3></th>
+                      <th><h3>Transaction Date</h3></th>
                       <th><h3>File</h3></th>
                       <th><h3>Validator</h3></th>
                     </tr>
