@@ -22,7 +22,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
       echo '<br/>';
       echo count($results['value-date']). " transaction" . (count($results['value-date']) == 1 ? '' : 's')  . " missing @value-date";
       echo '<br/>';
-      echo count($results['fails']) . " element" . (count($results['fails']) == 1 ? '' : 's') . " experiencing one or more problems";
+      echo count($results['fails']) . " activit" . (count($results['fails']) == 1 ? 'y' : 'ies') . " experiencing one or more problems";
       
       print('<p class="table-title check">Table of elements with problems</p>');
       print('<table id="table1" class="sortable">
