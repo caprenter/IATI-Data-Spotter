@@ -7,10 +7,12 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   require_once 'functions/validator_link.php';
 
   $all_ids = array();
+  $i=0;
   print('<div id="main-content">');
          print("<table id='table1' class='sortable'>
                   <thead>
                     <tr>
+                      <th><h3>Count</h3></th>
                       <th><h3>Id</h3></th>
                       <th><h3>Date</h3></th>
                       <th><h3>File</h3></th>
@@ -34,12 +36,15 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   $this_file_ids=array(); //empty array for checking that ids are unique in this file.
                   if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation files
                     foreach ($xml as $activity) {
+                      $i++;
                       //$lang = $activity->xpath('//@xml:lang');
                 //print_r($lang);
                 //print_r($activity);
                 //die;
                         //Push this value into 2 different arrays
-                        echo '<tr><td><a href="' . validator_link($url,$file,(string)$activity->{'iati-identifier'}) .'">' . (string)$activity->{'iati-identifier'} . '</a></td>';
+                        echo '<tr>';
+                        echo '<td>'. $i . '</td>';
+                        echo '<td><a href="' . validator_link($url,$file,(string)$activity->{'iati-identifier'}) .'">' . (string)$activity->{'iati-identifier'} . '</a></td>';
                         echo '<td>' . (string)$activity->{'title'} . $activity->attributes()->lang . '</td>';
                         echo '<td><a href="' . $url . $file .'">' . $url . $file .'</a></td>';
                         echo '<td><a href="' . validator_link($url,$file) . '">Validator</td></tr>';
