@@ -14,6 +14,7 @@ $pages = array( "basic_statistics" => "statistics.php",
                 "transactions_list" => "transactions_list.php",
                 "activity_list" => "activity_list.php",
                 "transactions_by_year" => "transactions_by_year.php",
-                "transactions_missing_elements" => "transactions_missing_elements.php"
+                "transactions_missing_elements" => "transactions_missing_elements.php",
+                "default_elements" => "defaults.php"
               );
 ?>
