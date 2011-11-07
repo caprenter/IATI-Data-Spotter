@@ -1,5 +1,4 @@
 <?php
-
 if (in_array($myinputs['group'],array_keys($available_groups))) {
   //Include variables for each group. Use group name for the argument
   //e.g. php detect_html.php dfid
@@ -84,10 +83,20 @@ function get_transactions ($dir,$type) {
                   foreach ($activity->{'transaction'} as $transaction) {
                       if ($code = $transaction->{'transaction-type'}->attributes()->code == $type) {
                         if(xml_child_exists($transaction, ".//transaction-date")) {
-                          $date = $transaction->{'transaction-date'}->attributes()->{'iso-date'};
-                          $year = date("Y",strtotime($date));
+                          //Transaction dates can be given as an iso-date attribute
+                          //Or if not accurate a simple date like text string
+                          if ($transaction->xpath(".//transaction-date[@iso-date]")) {
+                            //echo 'yes';
+                            $date = $transaction->{'transaction-date'}->attributes()->{'iso-date'};
+                            $year = date("Y",strtotime($date));
                           //$type = $transaction->{'transaction-date'}->attributes()->type;
-                          
+                          } else {
+                            //we only have the string that they tell us about the date
+                            $date = (string)$transaction->{'transaction-date'};
+                            $year = $date;
+                            //$year = date("Y",strtotime($date)); note strtotime on a y digit year will think it';s a time..
+                            //echo $year;
+                          }
                           //array_push($transactions, array("date"=>$year,"id"=>$id, "file"=>$file));
                         } else {
                           $year = 'Missing';

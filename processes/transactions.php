@@ -97,7 +97,12 @@ function get_transactions ($dir,$type) {
                           $negative +=$value; 
                         }
                          //$date = $transaction->value->attributes()->{'value-date'} . '<br/>';
+                         //An iso date can be specified in an attribute
+                         //but if not present a string may be cited instead
                          $date = $transaction->{'transaction-date'}->attributes()->{'iso-date'};
+                          if (empty($date)) {
+                            $date = $transaction->{'transaction-date'};
+                          }
                         array_push($result, array($id,array($value,$date)));
                       }
                        
