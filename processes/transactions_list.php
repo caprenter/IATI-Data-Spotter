@@ -24,7 +24,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                 $dates[$key] = $row['date'];
             }
 
-            // Sort the data with volume descending, edition ascending
+            // Sort the data with date descending, ids ascending
             // Add $data as the last parameter, to sort by the common key
             array_multisort($dates, SORT_DESC, $ids, SORT_ASC, $transactions);
 

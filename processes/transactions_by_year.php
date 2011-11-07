@@ -18,58 +18,52 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
           $transactions = get_transactions ($dir, strtoupper($type)); //returns an array with all transactions and a sum of all +ve and -ve transactions
           echo "<div class=\"transactions-wrap\">";
               echo "<h4>" . $transaction_types[$type] . "</h4>";
-              echo "Sum of negative transactions: " . number_format($transactions[1]) .'<br/>';
-              echo "Sum of positive transactions: " . number_format($transactions[2]) .'<br/>';
-              echo "Difference: " . number_format($transactions[2] + $transactions[1]) .'<br/>';
-              
-          if (!($transactions[1] == NULL && $transactions[2] == NULL)) {
-                print("<p>
-                    <a href=\"#\" onclick=\"toggle_visibility('foo_" . strtoupper($type) . "');\">Show table:</a>
-                  </p>");
-          print("</div>"); //end transactions-wrap
-             print("<div id=\"foo_" . strtoupper($type) . "\" style=\"display:none;\">");
-            theme_transaction_table($transactions[0], $type); //prints a table
-            //echo $expenditure_transactions[1] .'<br/>';
-            //echo $expenditure_transactions[2] .'<br/>';
-            //echo  $expenditure_transactions[2] + $expenditure_transactions[1] .'<br/>';
-            print("</div>");
-          } else {
-            print("</div>"); //end transactions-wrap
-          }
-  
+              if ($transactions !=NULL) {
+              theme_transaction_table_by_year ($transactions,$type);
+              } else {
+                echo "No transactions of this type found.";
+              }
+          echo "</div>";
         }
 
 
     print("</div>");//main content
 }              
 
-function theme_transaction_table ($transactions,$type) {
 
-  global $transaction_types;
+
+function theme_transaction_table_by_year ($transactions,$type) {
+
+  //global $transaction_types;
   //Print out a table of all the files that have a good file count
   print("
     <table id='table" . $type . "' class='sortable'>
       <thead>
         <tr>
-          <th><h3>Id</h3></th>
-          <th><h3>Value</h3></th>
-          <th><h3>Date</h3></th>
+          <th><h3>Year</h3></th>
+          <th><h3>Sum of negative transactions</h3></th>
+          <th><h3>Sum of positive transactions</h3></th>
+          <th><h3>Difference</h3></th>
         </tr>
       </thead>
       <tbody>
       ");
     //arsort($count);
     //$remaining_files = count($count);
-    echo 'Table below shows ' . $transaction_types[$type] . ' transactions.';
-  foreach ($transactions as $transaction) {
-    print('
-      <tr>
-        <td>' . $transaction[0] . '</td>
-        <td>' . $transaction[1][0] . '</td>
-        <td>' . $transaction[1][1] . '</a></td>
-      </tr>
-    ');
-  }
+    //echo 'Table below shows ' . $transaction_types[$type] . ' transactions.';
+    
+    foreach ($transactions as $year => $value) {
+      print('
+        <tr>
+          <td>' . $year  . '</td>
+          <td>' . number_format($transactions[$year]['negative']) . '</td>
+          <td>' . number_format($transactions[$year]['positive']) . '</td>
+          <td>' . number_format($transactions[$year]['negative'] + $transactions[$year]['positive']) . '</td>
+        </tr>
+'           );
+    }
+              
+
   print("</tbody>
       </table>");
 }
@@ -78,7 +72,7 @@ function theme_transaction_table ($transactions,$type) {
 function get_transactions ($dir,$type) {
   //echo $type;
   $result = array();
-  $positive = $negative = 0;
+  $positive = $negative = $money = array();
   if ($handle = opendir($dir)) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($file = readdir($handle))) {
@@ -88,17 +82,31 @@ function get_transactions ($dir,$type) {
               foreach ($xml as $activity) {
                   $id = (string)$activity->{'iati-identifier'};
                   foreach ($activity->{'transaction'} as $transaction) {
-                      if ($code = $transaction->{'transaction-type'}->attributes()->code == $type) {;
-                        //echo 'yes';
-                        $value = $transaction->value . '<br/>';
-                        if ($value > 0) {
-                          $positive +=$value;
+                      if ($code = $transaction->{'transaction-type'}->attributes()->code == $type) {
+                        if(xml_child_exists($transaction, ".//transaction-date")) {
+                          $date = $transaction->{'transaction-date'}->attributes()->{'iso-date'};
+                          $year = date("Y",strtotime($date));
+                          //$type = $transaction->{'transaction-date'}->attributes()->type;
+                          
+                          //array_push($transactions, array("date"=>$year,"id"=>$id, "file"=>$file));
                         } else {
-                          $negative +=$value; 
+                          $year = 'Missing';
+                          
+                          //echo $year . $id . $file;
+                          //die;
                         }
-                         //$date = $transaction->value->attributes()->{'value-date'} . '<br/>';
-                         $date = $transaction->{'transaction-date'}->attributes()->{'iso-date'};
-                        array_push($result, array($id,array($value,$date)));
+                        //echo $year;
+                        //echo 'yes';
+                        $value = $transaction->value;
+                        //echo $value;
+                        if ($value > 0) {
+                          $money[$year]['positive'] +=$value;
+                        } else {
+                          $money[$year]['negative'] +=$value; 
+                        }
+                        
+                        //array_push($result, array($id,array($value,$year)));
+          
                       }
                        
                   }
@@ -112,31 +120,16 @@ function get_transactions ($dir,$type) {
         }
     }
   }
-  return array($result, $negative, $positive);
+  //ksort($positive);
+  ///print_r($positive);
+  //ksort($negative);
+  //print_r($negative);
+  ksort($money);
+  //print_r($money);
+  //die;
+  //return array($result, $negative, $positive);
+  return $money;
 }
-
-function get_filesize ($dir) {
-  global $server_path_to_files; //set in variables/server_vars.php
-  if ($handle = opendir($dir)) {
-    /* This is the correct way to loop over the directory. */
-    while (false !== ($file = readdir($handle))) {
-        if ($file != "." && $file != "..") { //ignore these system files
-           //$path_to_file  = $server_path_to_files .  substr($dir,3) . $file;
-           $path_to_file  = $server_path_to_files .  $dir . $file;
-           $filesize = filesize($path_to_file);
-           //$filesize = filesize($file);
-           $filesize = format_bytes($filesize);
-           $results[$file] = $filesize;
-          
-        }
-    }
-  }
-  return $results;
-}
-  
-
-
-
 
 
 ?>

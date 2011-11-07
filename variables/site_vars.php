@@ -12,6 +12,7 @@ $pages = array( "basic_statistics" => "statistics.php",
                 "recipient_region_codes" => "region_codes.php",
                 "transactions" => "transactions.php",
                 "transactions_list" => "transactions_list.php",
-                "activity_list" => "activity_list.php"
+                "activity_list" => "activity_list.php",
+                "transactions_by_year" => "transactions_by_year.php"
               );
 ?>
