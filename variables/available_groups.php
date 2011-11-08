@@ -10,6 +10,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "nl" => "Ministry of Foreign Affairs, The Netherlands",
                           "ausaid" => "Australian Agency for International Development",
                           "dipr" => "Development Initiatives Poverty Research",
-                          "unops" => "UNOPS (United Nations Office for Project Services)"
+                          "unops" => "UNOPS (United Nations Office for Project Services)",
+                          "ewb" => "EWB Canada"
                           );
 ?>                          
