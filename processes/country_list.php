@@ -21,8 +21,16 @@ if ($handle = opendir($dir)) {
             $i++;
             if ($xml = simplexml_load_file($dir . $file)) {
               foreach ($xml as $activity) {
-                array_push($recipient_countries, (string)$activity->{'recipient-country'});  
-                array_push($recipient_regions, (string)$activity->{'recipient-region'});    
+                $code = (string)$activity->{'recipient-country'}->attributes()->code;
+                $country = (string)$activity->{'recipient-country'};
+                $region = (string)$activity->{'recipient-region'};
+                $region_code = (string)$activity->{'recipient-region'}->attributes()->code;
+                //echo $code;
+                if (!empty($code)) { $code = ";" . $code; }
+                if (!empty($region_code)) { $region_code = ";" . $region_code; }
+                array_push($recipient_countries, $country . $code);  
+                //array_push($recipient_countries, $country);
+                array_push($recipient_regions, $region . $region_code);    
               }          
             } else {
               array_push($bad_files,$file);
@@ -72,6 +80,7 @@ function theme_country_table ($recipient,$id,$string) {
     <table id='table" . $id . "' class='sortable'>
       <thead>
         <tr>
+          <th><h3>Recipient " . $string . " Code</h3></th>
           <th><h3>Recipient " . $string . "</h3></th>
           <th><h3>No. of Activities</h3></th>
         </tr>
@@ -83,11 +92,15 @@ function theme_country_table ($recipient,$id,$string) {
     //echo 'Table below shows ' . $remaining_files . ' out of ' . $total_files . ' files in the dataset';
   foreach ($country_counts as $country => $number) {
     if ($country == NULL) {
-      $country = "NO " . strtoupper($string) . " NAME GIVEN";
-    }
+      $country = "NO " . strtoupper($string) . " NAME GIVEN;";
+    } 
+    
+      $country_data = explode(";",$country);
+    
     print('
       <tr>
-        <td>' . $country . '</td>
+        <td>' . $country_data[0] . '</td>
+        <td>' . $country_data[1] . '</td>
         <td>' . $number . '</td>
       </tr>
     ');
@@ -114,7 +127,7 @@ function theme_country_table ($recipient,$id,$string) {
 	sorter.paginate = true;
 	sorter.currentid = "currentpage";
 	sorter.limitid = "pagelimit";
-	sorter.init("table1",0);
+	sorter.init("table1",1);
   </script>
   
   <script type="text/javascript" src="javascript/tinytable/script.js"></script>
@@ -131,5 +144,5 @@ function theme_country_table ($recipient,$id,$string) {
 	sorter2.paginate = true;
 	sorter2.currentid = "currentpage";
 	sorter2.limitid = "pagelimit";
-	sorter2.init("table2",0);
+	sorter2.init("table2",1);
   </script>
