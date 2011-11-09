@@ -1,6 +1,6 @@
 <?php
 // Turn off all error reporting
-//error_reporting(0);
+error_reporting(0);
 ini_set("memory_limit","128M");
 include('functions/init.php');
 include ('variables/site_vars.php');
