@@ -26,6 +26,7 @@ if ($handle = opendir($dir)) {
                 $region = (string)$activity->{'recipient-region'};
                 $region_code = (string)$activity->{'recipient-region'}->attributes()->code;
                 //echo $code;
+
                 if (!empty($code)) { $code = ";" . $code; }
                 if (!empty($region_code)) { $region_code = ";" . $region_code; }
                 array_push($recipient_countries, $country . $code);  
@@ -80,8 +81,9 @@ function theme_country_table ($recipient,$id,$string) {
     <table id='table" . $id . "' class='sortable'>
       <thead>
         <tr>
-          <th><h3>Recipient " . $string . " Code</h3></th>
+          
           <th><h3>Recipient " . $string . "</h3></th>
+          <th><h3>Recipient " . $string . " Code</h3></th>
           <th><h3>No. of Activities</h3></th>
         </tr>
       </thead>
@@ -96,6 +98,9 @@ function theme_country_table ($recipient,$id,$string) {
     } 
     
       $country_data = explode(";",$country);
+      if ($country_data[0]=="") { 
+          $country_data[0] = "NO " . strtoupper($string) . " NAME FOUND"; 
+      }
     
     print('
       <tr>
