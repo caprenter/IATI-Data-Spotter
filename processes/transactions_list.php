@@ -12,7 +12,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
  //     $type = strtoupper($myinputs['transaction']);
     
       print('<div id="main-content">');
-      print('<h3>All transactions</h3>');
+      print('<h4>All transactions</h4>');
         //Transactions
         $transactions = get_last_transactions ($dir);
         

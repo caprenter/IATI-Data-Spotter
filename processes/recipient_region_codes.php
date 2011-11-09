@@ -149,11 +149,10 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     //echo count(array_unique($bad_files)). PHP_EOL;
     
     print('<div class="notes"><p>Excluded codes:</p>
-    <ul>');
-    foreach ($exclude as $ex) {
-          echo "<li>" . $ex ."</li>";
-        }
-    print('</ul>
+      <p>');
+        $exclude = implode(",",$exclude);
+        echo $exclude;
+    print('</p>
     </div>');
   print('</div>'); 
 }

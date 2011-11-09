@@ -12,7 +12,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 
 
     print('<div id="main-content">
-            <h3>Looking at the &lt;iati-activites&gt; element</h3>');
+            <h4>Looking at the &lt;iati-activites&gt; element</h4>');
 
             
             

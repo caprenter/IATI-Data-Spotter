@@ -41,7 +41,7 @@ if ($handle = opendir($dir)) {
 }
 
 print('<div id="main-content">');
-  print('<h3>No. of files: ' . $i . '</h3>');
+  print('<h4>No. of files: ' . $i . '</h4>');
   theme_country_table ($recipient_regions,1,'Region');
   theme_country_table ($recipient_countries,2,'Country');
   //print_r(array_count_values ($recipient_countries));

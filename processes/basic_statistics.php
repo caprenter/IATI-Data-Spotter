@@ -13,7 +13,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   //Calculate the filesize
   $size = get_filesize ($dir);
   //Print a nice table
-  print('<div id="main-content">');
+  print('<div id="main-content">
+          <h4>Results</h4>');
     theme_size_count($count,$size,$url);
   print('</div>');
       

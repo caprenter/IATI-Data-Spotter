@@ -12,7 +12,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     $tick = '&#10003;';
     
     $results = check_transaction_elements ($dir);
-    print('<div id="main-content">');
+    print('<div id="main-content">
+            <h4>Elements</h4>');
     
       echo count($results['type']) . " transaction" . (count($results['type']) == 1 ? '' : 's')  . " missing &lt;transaction-type&gt;";
       echo '<br/>';
@@ -24,39 +25,40 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
       echo '<br/>';
       echo count($results['fails']) . " activit" . (count($results['fails']) == 1 ? 'y' : 'ies') . " experiencing one or more problems";
       
-      print('<p class="table-title check">Table of elements with problems</p>');
-      print('<table id="table1" class="sortable">
-          <thead>
-            <tr>
-              <th><h3>Element</h3></th>
-              <th><h3>Type</h3></th>
-              <th><h3>Date</h3></th>
-              <th><h3>Value</h3></th>
-              <th><h3>@value-date</h3></th>
-              <th><h3>File</h3></th>
-              <th class="nosort"><h3>Validator</h3></th>
-            </tr>
-          </thead>
-          <tbody>'
-          );
-          
-          foreach ($results['fails'] as $key => $value) {
-            //print_r($value); die;
-            echo '<tr>';
-            echo '<td><a href="' . validator_link($url,$value['file'],$key) . '">' . $key . '</a></td>';
-            echo '<td>' . (in_array("type",$value)? $cross:$tick) . '</td>';
-            echo '<td>' . (in_array("date",$value)? $cross:$tick) . '</td>';
-            echo '<td>' . (in_array("value",$value)? $cross:$tick) . '</td>';
-            echo '<td>' . (in_array("value-date",$value)? $cross:$tick) . '</td>';
+      if (!empty($results['fails'])){
+        print('<p class="table-title check">Table of elements with problems</p>');
+        print('<table id="table1" class="sortable">
+            <thead>
+              <tr>
+                <th><h3>Element</h3></th>
+                <th><h3>Type</h3></th>
+                <th><h3>Date</h3></th>
+                <th><h3>Value</h3></th>
+                <th><h3>@value-date</h3></th>
+                <th><h3>File</h3></th>
+                <th class="nosort"><h3>Validator</h3></th>
+              </tr>
+            </thead>
+            <tbody>'
+            );
             
-            echo '<td><a href="' . $url . $value['file'] . '">' . $url . $value['file'] . '</a></td>';
-            echo '<td><a href="' . validator_link($url,$value['file']) . '">Validator</a></td>';
-            echo '</tr>';
+            foreach ($results['fails'] as $key => $value) {
+              //print_r($value); die;
+              echo '<tr>';
+              echo '<td><a href="' . validator_link($url,$value['file'],$key) . '">' . $key . '</a></td>';
+              echo '<td>' . (in_array("type",$value)? $cross:$tick) . '</td>';
+              echo '<td>' . (in_array("date",$value)? $cross:$tick) . '</td>';
+              echo '<td>' . (in_array("value",$value)? $cross:$tick) . '</td>';
+              echo '<td>' . (in_array("value-date",$value)? $cross:$tick) . '</td>';
+              
+              echo '<td><a href="' . $url . $value['file'] . '">' . $url . $value['file'] . '</a></td>';
+              echo '<td><a href="' . validator_link($url,$value['file']) . '">Validator</a></td>';
+              echo '</tr>';
 
+          }
+            print('</tbody>
+            </table>');
         }
-          print('</tbody>
-          </table>');
-      
     //die;
     
    

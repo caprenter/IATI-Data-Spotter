@@ -45,7 +45,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   }
   print('<div id="main-content">');
     if (!$flag) {
-      print('<h3>Identifiers (&lt;iati-activity&gt;) are all of the correct form:</h3>
+      print('<h4>Identifiers (&lt;iati-activity&gt;) are all of the correct form:</h4>
             <p class="tick">&lt;reporting-org@ref&gt; "-" &lt;string&gt;</p>');
     } else {
       print('<h3>Identifiers should be of the form:</h3>

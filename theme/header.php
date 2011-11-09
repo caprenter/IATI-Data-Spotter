@@ -1,21 +1,21 @@
 <?php
 // Turn off all error reporting
-error_reporting(0);
+//error_reporting(0);
 ini_set("memory_limit","128M");
 include('functions/init.php');
 include ('variables/site_vars.php');
 
 //Breadcrumb
-$directory = 'processes';
-$path = $_SERVER['REQUEST_URI'];
-$files = get_list_of_files ($directory); //included in /functions/init.php
-sort($files);
-foreach ($files as $file) {
-    $filename = preg_replace('/.php/', '', $file);
-    $readable_name = preg_replace('/_/', ' ', $filename);
-    if (strstr($path,$pages[$filename])) { //$pages is set in variables/site_vars.php
-      $breadcrumb = " - " . ucwords($readable_name);
+$path = htmlentities($_SERVER['REQUEST_URI']);
+foreach ($menus as $menu) {
+  $menu_array = ${$menu . '_menu'}; //each menu_array provides ['link'] and ['title'] for our menu items
+  //print_r($menu_array);
+  foreach ($menu_array  as $item) {
+    //Check to see if this is the 'active' link and add css class if it is
+    if (strstr($path,$item["link"])) {
+      $breadcrumb = " - " . ucwords($menu) .  " - " . $item["title"];
     }
+  }
 }
 ?>
 <html>
@@ -31,7 +31,7 @@ foreach ($files as $file) {
   </div>
   <div id="page-wrapper">
   <?php
-    print ('<h4>' . $available_groups[$myinputs['group']] .  $breadcrumb . '</h4>');
+    print ('<h1 class="page-title">' . $available_groups[$myinputs['group']] .  $breadcrumb . '</h1>');
     include('theme/sidebar.php');
   ?>
 </body>

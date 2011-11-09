@@ -11,14 +11,23 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     $results = files_with_no_elements ($elements);
 
 
-    print('<div id="main-content">');
+    print('<div id="main-content">
+                <h4>Checking for:</h4>');
+          echo '<ul class="elements">';
+          
+          foreach ($elements as $element) {
+            echo "<li>&lt;";
+            echo $element;
+            echo "&gt;</li>";
+          }
+          echo "</ul>";
     
       //Print out Files with no elements
       if ($results["missing"] != NULL) {
-        echo "<h3>Missing Elements Summary</h3>";
+        echo "<h4>Missing Elements Summary</h4>";
         theme_how_many_of_each ($results["missing"]);
       } else {
-          echo "<h3>Missing Elements Summary</h3>";
+          echo "<h4>Missing Elements Summary</h4>";
           echo '<p class="tick">All files have AT LEAST one of the elements we are checking for.</p>';
       }
       

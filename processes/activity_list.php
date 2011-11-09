@@ -8,7 +8,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 
   $all_ids = array();
   $i=0;
-  print('<div id="main-content">');
+  print('<div id="main-content">
+            <h4>All Activities</h4>');
          print("<table id='table1' class='sortable'>
                   <thead>
                     <tr>
