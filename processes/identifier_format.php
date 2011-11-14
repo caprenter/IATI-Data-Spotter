@@ -4,6 +4,9 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   //e.g. php detect_html.php dfid
   require_once 'variables/' .  $_GET['group'] . '.php';
   require_once 'functions/xml_child_exists.php';
+  require_once 'functions/bad_files_table.php';
+  
+  
   $flag = FALSE;
   $inconsistencies = array();
   $bad_files = array();
@@ -55,24 +58,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     }
     
     //Print a table of failing files
-  if ($bad_files != NULL) {
-    foreach ($bad_files as $file) {
-      $rows .= '<tr><td><a href="' .$url . urlencode($file) . '">' . $file . '</a></td></tr>';
-    }
-
-    print("
-        <table id='fail-table' class='sortable'>
-          <thead>
-            <tr>
-              <th><h3>These files could not be parsed:</h3></th>
-            </tr>
-          </thead>
-          <tbody>
-            $rows
-          </tbody>
-        </table>"
-       );
-  }
+    theme_bad_files($bad_files,$url);
     
   print('</div>');
 }
