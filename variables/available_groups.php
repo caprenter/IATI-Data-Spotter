@@ -13,6 +13,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "unops" => "UNOPS (United Nations Office for Project Services)",
                           "ewb" => "EWB Canada",
                           "sweden" => "Sweden",
-                          "global_fund" => "Global Fund"
+                          "global_fund" => "Global Fund",
+                          "hivos" => "HIVOS"
                           );
 ?>                          
