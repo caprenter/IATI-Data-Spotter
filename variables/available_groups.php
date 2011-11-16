@@ -14,6 +14,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "ewb" => "EWB Canada",
                           "sweden" => "Sweden",
                           "global_fund" => "Global Fund",
-                          "hivos" => "HIVOS"
+                          "hivos" => "HIVOS",
+                          "aid_register" => "Aid Register Template"
                           );
 ?>                          
