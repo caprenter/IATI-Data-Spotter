@@ -44,6 +44,28 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                 <tbody>' . $results["rows"] . '</tbody>
                 </table>');
         }
+        
+        //Print out Files with no activities
+      if ($results["empty-files"] != NULL) {
+        echo "<h4>Files with no activities</h4>";
+        print('<p class="table-title check">Table of ' . count($results["empty-files"]) . 
+              ' file' . (count($results["empty-files"]) == 1 ? '' : 's') . ' with no activities</p>');
+            print('<table id="table3" class="sortable">
+                <thead>
+                  <tr>
+                    <th><h3>File</h3></th>
+                    <th class="nosort"><h3>Validator</h3></th>
+                  </tr>
+                </thead>
+                <tbody>');
+                foreach ($results["empty-files"] as $file) {
+                  echo '<tr>';
+                  echo '<td><a href="' . $url . $file .'">' . $url . $file .'</a></td>';
+                  echo '<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
+                }
+                 print( '</tbody>
+                </table>');
+        }
 
 
 
@@ -78,6 +100,7 @@ function files_with_no_elements ($elements) {
     global $url;
     $missing= array();
     $files = array();
+    $empty_files = array();
     $rows = '';
     if ($handle = opendir($dir)) {
         //echo "Directory handle: $handle\n";
@@ -110,6 +133,8 @@ function files_with_no_elements ($elements) {
                                   array_push($missing, $element);
                                   array_push($files,$file);
                                   //continue 3;
+                                } else {
+                                  array_push($empty_files,$file);
                                 }
                             }
                         }
@@ -127,7 +152,8 @@ function files_with_no_elements ($elements) {
     }
     return array("rows" => $rows,
                   "missing" => $missing,
-                  "files" => $files
+                  "files" => $files,
+                  "empty-files" => array_unique($empty_files)
                   );
 }
 
@@ -149,13 +175,13 @@ function activites_with_elements ($elements) {
               if ($xml = simplexml_load_file($dir . $file)) {
               //print_r($xml); //debug
                   if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation files
-
+                    if (count($xml->children()) > 0 ) { //php < 5.3
                       foreach ($elements as $element) {
                       //If the element exists in the file go on to check if it is in every activity..
                         if(xml_child_exists($xml, "//" . $element))  { 
                         
                           foreach ($xml as $activity) {
-
+                          
                               //we can test conditions for elements of the activity data here
                               // the .// allows us to search relative to element
                               
@@ -182,8 +208,9 @@ function activites_with_elements ($elements) {
 
                            }
                        }
-                     } 
-                  }
+                     } //foreach $elements as $element
+                   } //if count
+                  }//if !organsition
               } else { //simpleXML failed to load a file
                   //echo $file . ' empty';
               }
@@ -194,7 +221,7 @@ function activites_with_elements ($elements) {
   }
   return array("rows" => $rows,
                "missing" => $missing,
-               "files" => $files
+               "files" => $files               
                );
 }
 
