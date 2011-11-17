@@ -102,13 +102,15 @@ function files_with_no_elements ($elements) {
                                 //die;
                             } else {
                                 //Not found
-                                $rows .='<tr><td>' .  $element . '</td>';
-                                $rows .='<td><a href="' . $url . $file .'">' . $url . $file .'</a></td>';
-                                $rows .='<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
-                                //echo '"' .  $element . '","' . $activity->{'iati-identifier'} . '","' . $url . '","' . $file .PHP_EOL;
-                                array_push($missing, $element);
-                                array_push($files,$file);
-                                //continue 3;
+                                if (count($xml->children()) > 0 ) { //php < 5.3
+                                  $rows .='<tr><td>' .  $element . '</td>';
+                                  $rows .='<td><a href="' . $url . $file .'">' . $url . $file .'</a></td>';
+                                  $rows .='<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
+                                  //echo '"' .  $element . '","' . $activity->{'iati-identifier'} . '","' . $url . '","' . $file .PHP_EOL;
+                                  array_push($missing, $element);
+                                  array_push($files,$file);
+                                  //continue 3;
+                                }
                             }
                         }
                     

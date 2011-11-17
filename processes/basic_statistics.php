@@ -10,7 +10,6 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 
   //Count activities in files
   $count = get_count ($dir);
-  print_r($count);
   //Calculate the filesize
   $size = get_filesize ($dir);
   //Print a nice table
@@ -59,7 +58,7 @@ function theme_size_count ($count,$size,$url) {
   }
   if ($rows) {
       print("
-          <table id='fail-table' class='sortable'>
+          <table id='fail-table2' class='sortable'>
             <thead>
               <tr>
                 <th><h3>These files have 0 activites:</h3></th>
