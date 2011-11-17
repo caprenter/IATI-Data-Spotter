@@ -28,9 +28,11 @@ function theme_size_count ($count,$size,$url) {
   //Find any failing files and take them out of the array
   //Print a table of failing files
   $rows = "";
+  $i=0;
   foreach ($count as $file => $number) {
     if ($number === "FAIL") {
       $rows .= '<tr><td><a href="' .$url . urlencode($file) . '">' . $file . '</a></td></tr>';
+      $i++;
       unset($count[$file]);
     }
   }
@@ -39,7 +41,7 @@ function theme_size_count ($count,$size,$url) {
           <table id='fail-table' class='sortable'>
             <thead>
               <tr>
-                <th><h3>These files could not be parsed:</h3></th>
+                <th><h3>" . $i ." file" . ($i == 1 ? '' : 's') ."  could not be parsed:</h3></th>
               </tr>
             </thead>
             <tbody>
@@ -50,9 +52,11 @@ function theme_size_count ($count,$size,$url) {
   }
   
   $rows ='';
+  $i=0;
   foreach ($count as $file => $number) {
     if ($number === 0) {
       $rows .= '<tr><td><a href="' .$url . urlencode($file) . '">' . $file . '</a></td></tr>';
+      $i++;
       unset($count[$file]);
     }
   }
@@ -61,7 +65,7 @@ function theme_size_count ($count,$size,$url) {
           <table id='fail-table2' class='sortable'>
             <thead>
               <tr>
-                <th><h3>These files have 0 activites:</h3></th>
+                <th><h3>" . $i ." file" . ($i == 1 ? '' : 's') ." have 0 activites:</h3></th>
               </tr>
             </thead>
             <tbody>
