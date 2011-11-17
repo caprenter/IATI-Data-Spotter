@@ -10,6 +10,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 
   //Count activities in files
   $count = get_count ($dir);
+  print_r($count);
   //Calculate the filesize
   $size = get_filesize ($dir);
   //Print a nice table
@@ -29,7 +30,7 @@ function theme_size_count ($count,$size,$url) {
   //Print a table of failing files
   $rows = "";
   foreach ($count as $file => $number) {
-    if ($number == "FAIL") {
+    if ($number === "FAIL") {
       $rows .= '<tr><td><a href="' .$url . urlencode($file) . '">' . $file . '</a></td></tr>';
       unset($count[$file]);
     }
@@ -40,6 +41,28 @@ function theme_size_count ($count,$size,$url) {
             <thead>
               <tr>
                 <th><h3>These files could not be parsed:</h3></th>
+              </tr>
+            </thead>
+            <tbody>
+              $rows
+            </tbody>
+          </table>"
+         );
+  }
+  
+  $rows ='';
+  foreach ($count as $file => $number) {
+    if ($number === 0) {
+      $rows .= '<tr><td><a href="' .$url . urlencode($file) . '">' . $file . '</a></td></tr>';
+      unset($count[$file]);
+    }
+  }
+  if ($rows) {
+      print("
+          <table id='fail-table' class='sortable'>
+            <thead>
+              <tr>
+                <th><h3>These files have 0 activites:</h3></th>
               </tr>
             </thead>
             <tbody>
