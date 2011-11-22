@@ -5,6 +5,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   //e.g. php detect_html.php dfid
   require_once 'variables/' .  $_GET['group'] . '.php';
   require_once 'variables/server_vars.php';
+  require_once 'functions/validator_link.php';
   require_once 'functions/xml_child_exists.php';
 
 
@@ -97,7 +98,7 @@ function theme_size_count ($count,$size,$url) {
         <td>' . $number . '</td>
         <td>' . $size[$file] . '</td>
         <td><a href="' .$url . rawurlencode($file) . '">' . $file . '</a></td>
-        <td><a href="http://webapps.kitwallace.me/exist/rest/db/apps/iati/xquery/validate.xq?type=activitySet&source=' . urlencode($url) . urlencode(preg_replace("/ /", "%20", $file)) . '&mode=download">View Validator results</a></td>
+        <td><a href="' . validator_link($url,$file) . '">Validator</a></td>
     </tr>
     ');
   }

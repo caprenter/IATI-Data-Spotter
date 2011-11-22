@@ -49,7 +49,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                         echo '<td>' . (string)$activity->attributes()->hierarchy . ' </td>';
                         echo '<td>' . (string)$activity->attributes()->{'last-updated-datetime'} . '</td>';
                         echo '<td><a href="' . $url . $file .'">' . $file .'</a></td>';
-                        echo '<td><a href="' . validator_link($url,$file) . '">Validator</td></tr>';
+                        echo '<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
                     } 
                   }
     
