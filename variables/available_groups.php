@@ -17,6 +17,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "hivos" => "HIVOS",
                           "aid_register" => "Aid Register Template",
                           "spain" => "Spain Ministry of Foreign Affairs and Cooperation",
-                          "finland" => "Finland"
+                          "finland" => "Finland",
+                          "oxfam" => "Oxfam"
                           );
 ?>                          
