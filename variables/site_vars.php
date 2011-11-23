@@ -24,7 +24,7 @@ $overview_menu =     array("basic_statistics" => array("link"=>"statistics.php",
 
 $validation_menu =   array("detect_xml" => array("link"=>"headers.php","title"=>"Detect XML"),
                            "identifier_format" => array("link"=>"identifiers.php","title"=>"Identifier Format"),
-                           "missing_urls" => array("link"=>"urls.php","title"=>"Misisng URLs"),
+                           "missing_urls" => array("link"=>"urls.php","title"=>"Missing URLs"),
                            "organisation_files" => array("link"=>"organisation.php","title"=>"Organisation File"),
                           );
 
