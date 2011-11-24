@@ -36,7 +36,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   echo '<tr><td>' . $i . '</td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
                   ///echo "<td>" . $date . "</td>";
-                  echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
+                  echo '<td><a href="' . $url . urlencode($transaction["file"]) .'">' . $url . $transaction["file"] .'</a></td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
                 //} else {
                 //  continue;
