@@ -58,7 +58,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
             // Sort the data with date descending, ids ascending
             // Add $data as the last parameter, to sort by the common key
             array_multisort($dates, SORT_DESC, $ids, SORT_ASC, $transactions["transaction"]);
-            echo "<p>These are probably ok</p>";
+            echo "<p>These have &lt;transaction-date&gt; elements with good @iso-date</p>";
              print("<table id='table1' class='sortable'>
                   <thead>
                     <tr>
@@ -85,7 +85,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   echo '<tr><td>' . $i . '</td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
                   echo "<td>" . $date . "</td>";
-                  echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
+                  echo '<td><a href="' . $url . urlencode($transaction["file"]) .'">' . $url . $transaction["file"] .'</a></td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
                 //} else {
                 //  continue;
