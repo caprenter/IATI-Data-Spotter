@@ -19,6 +19,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "spain" => "Spain Ministry of Foreign Affairs and Cooperation",
                           "finland" => "Finland",
                           "oxfam" => "Oxfam",
-                          "indigo" => "Indigo Trust"
+                          "indigo" => "Indigo Trust",
+                          "nz" => "NewZealand"
                           );
 ?>                          
