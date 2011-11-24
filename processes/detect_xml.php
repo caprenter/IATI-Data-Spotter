@@ -46,16 +46,21 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 
 function theme_xml_header_check ($files,$i,$url) {
     print("<h4>Files should begin with a correct XML declaration</h4>
-          <p>Either: &lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt; or &lt;?xml version=\"1.0\" encoding=\"UTF-16\"?&gt;</p>
-          <p class='fail'>" . count($files) . " out of " . $i . " files failed this test.</p>
-          <p>
-            <a href=\"#\" onclick=\"toggle_visibility('foo');\">Show files:</a>
-          </p>
-          <div id=\"foo\" style=\"display:none;\">");
-            foreach($files as $file) {
-              echo '<a href="' .$url . $file . '">' . $file . '</a><br/>';
-            }
-  print('</div>');
+          <p>Either: &lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt; or &lt;?xml version=\"1.0\" encoding=\"UTF-16\"?&gt;</p>");
+          if (count($files) > 0 ) {
+              print("<br/><p class=\"cross\">" . count($files) . " out of " . $i . " file" . (count($i) == 1 ? 's' : '')  . " failed this test.</p>");
+              print("<p>
+                      <a href=\"#\" onclick=\"toggle_visibility('foo');\">Show files:</a>
+                    </p>
+                    <div id=\"foo\" style=\"display:none;\">");
+                      foreach($files as $file) {
+                        echo '<a href="' .$url . $file . '">' . $file . '</a><br/>';
+                      }
+                    print("</div>");
+          } else {
+           echo  "<br/><p class=\"tick\">" . $i . " file" .(count($i) == 1 ? 's' : '')  . " passed this test</p>";
+          }
+  
 }
 ?>
 <?php include ("javascript/toggle.js");
