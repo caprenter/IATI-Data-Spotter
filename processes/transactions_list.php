@@ -16,17 +16,17 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
         //Transactions
         $transactions = get_last_transactions ($dir);
         
-        if ($transactions !=NULL) {
+        if ($transactions["transactions"] !=NULL) {
             //Multisort the array
             // Obtain a list of columns
-            foreach ($transactions as $key => $row) {
+            foreach ($transactions["transactions"] as $key => $row) {
                 $ids[$key]  = $row['id'];
                 $dates[$key] = $row['date'];
             }
 
             // Sort the data with date descending, ids ascending
             // Add $data as the last parameter, to sort by the common key
-            array_multisort($dates, SORT_DESC, $ids, SORT_ASC, $transactions);
+            array_multisort($dates, SORT_DESC, $ids, SORT_ASC, $transactions["transactions"]);
 
              print("<table id='table1' class='sortable'>
                   <thead>
@@ -39,12 +39,21 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                     </tr>
                   </thead>
                   <tbody>");
-              foreach ($transactions as $transaction) {
+              foreach ($transactions["transactions"] as $transaction) {
+                //print_r($transaction);
                 $i++;
+                $date = $transaction["date"];
+                //echo $transaction["date"];
+                if ($date == FALSE) { //strtotime fail returns FALSE. This is generated in the get_last_transactions function
+                  $date = "Check @iso-date";
+                } else {
+                  $date = date("Y-m-d",$transaction["date"]);
+                }
+                  
                 //if ($i<20) {
                   echo '<tr><td>' . $i . '</td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
-                  echo "<td>" . date("Y-m-d",$transaction["date"]) . "</td>";
+                  echo "<td>" . $date . "</td>";
                   echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
                 //} else {
@@ -53,11 +62,37 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
               //return array($transactions);
               }
               print("</tbody></table>");
-          } else {
+          } elseif ($transactions["errors"] !=NULL) {
+            echo"<h4>Problem with @iso-date in the following activities.</h4>";
+            print("<table id='table1' class='sortable'>
+                  <thead>
+                    <tr>
+                      <th><h3>Count</h3></th>
+                      <th><h3>Id</h3></th>
+                      <th><h3>File</h3></th>
+                      <th><h3>Validator</h3></th>
+                    </tr>
+                  </thead>
+                  <tbody>");
+              foreach ($transactions["errors"] as $transaction) {
+                //print_r($transaction);
+                $i++;
+                  
+                //if ($i<20) {
+                  echo '<tr><td>' . $i . '</td>';
+                  echo '<td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
+                  ///echo "<td>" . $date . "</td>";
+                  echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
+                  echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
+                //} else {
+                //  continue;
+               // }
+              //return array($transactions);
+              }
+              print("</tbody></table>");
+            } else {
             echo '<p class="cross">No &lt;transaction-date&gt; elements found</p>';
-          }
-
-
+            }
     print("</div>");//main content
 }              
 
@@ -67,6 +102,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 function get_last_transactions ($dir) {
   //echo $type;
   $transactions = array();
+  $errors = array();
   //$positive = $negative = 0;
   if ($handle = opendir($dir)) {
     /* This is the correct way to loop over the directory. */
@@ -81,9 +117,12 @@ function get_last_transactions ($dir) {
                       if(xml_child_exists($transaction, ".//transaction-date")) {
                         $date = $transaction->{'transaction-date'}->attributes()->{'iso-date'};
                         $date = strtotime($date);
+                        if ($date == FALSE) {
+                          array_push($errors, array("date"=>$date,"id"=>$id, "file"=>$file));
+                        } else {
                         //$type = $transaction->{'transaction-date'}->attributes()->type;
-                        
-                        array_push($transactions, array("date"=>$date,"id"=>$id, "file"=>$file));
+                           array_push($transactions, array("date"=>$date,"id"=>$id, "file"=>$file));
+                        }
                       }
                         }
                          
@@ -99,7 +138,9 @@ function get_last_transactions ($dir) {
     }
   }
   //print_r($transactions);
-  return $transactions;
+  return array("transaction" => $transactions,
+                "errors" => $errors
+              );
     
 
 }
