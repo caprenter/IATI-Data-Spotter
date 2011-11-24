@@ -16,54 +16,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
         //Transactions
         $transactions = get_last_transactions ($dir);
         
-        if ($transactions["transactions"] !=NULL) {
-            //Multisort the array
-            // Obtain a list of columns
-            foreach ($transactions["transactions"] as $key => $row) {
-                $ids[$key]  = $row['id'];
-                $dates[$key] = $row['date'];
-            }
-
-            // Sort the data with date descending, ids ascending
-            // Add $data as the last parameter, to sort by the common key
-            array_multisort($dates, SORT_DESC, $ids, SORT_ASC, $transactions["transactions"]);
-
-             print("<table id='table1' class='sortable'>
-                  <thead>
-                    <tr>
-                      <th><h3>Count</h3></th>
-                      <th><h3>Id</h3></th>
-                      <th><h3>Transaction Date</h3></th>
-                      <th><h3>File</h3></th>
-                      <th><h3>Validator</h3></th>
-                    </tr>
-                  </thead>
-                  <tbody>");
-              foreach ($transactions["transactions"] as $transaction) {
-                //print_r($transaction);
-                $i++;
-                $date = $transaction["date"];
-                //echo $transaction["date"];
-                if ($date == FALSE) { //strtotime fail returns FALSE. This is generated in the get_last_transactions function
-                  $date = "Check @iso-date";
-                } else {
-                  $date = date("Y-m-d",$transaction["date"]);
-                }
-                  
-                //if ($i<20) {
-                  echo '<tr><td>' . $i . '</td>';
-                  echo '<td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
-                  echo "<td>" . $date . "</td>";
-                  echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
-                  echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
-                //} else {
-                //  continue;
-               // }
-              //return array($transactions);
-              }
-              print("</tbody></table>");
-          } elseif ($transactions["errors"] !=NULL) {
-            echo"<h4>Problem with @iso-date in the following activities.</h4>";
+        if ($transactions["errors"] !=NULL) {
+            echo'<p class="cross">Problem with @iso-date in the following activities.</p>';
             print("<table id='table1' class='sortable'>
                   <thead>
                     <tr>
@@ -82,6 +36,55 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   echo '<tr><td>' . $i . '</td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
                   ///echo "<td>" . $date . "</td>";
+                  echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
+                  echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
+                //} else {
+                //  continue;
+               // }
+              //return array($transactions);
+              }
+              print("</tbody></table>");
+        
+          } 
+          
+          if ($transactions["transaction"] !=NULL) {
+            //Multisort the array
+            // Obtain a list of columns
+            foreach ($transactions["transaction"] as $key => $row) {
+                $ids[$key]  = $row['id'];
+                $dates[$key] = $row['date'];
+            }
+
+            // Sort the data with date descending, ids ascending
+            // Add $data as the last parameter, to sort by the common key
+            array_multisort($dates, SORT_DESC, $ids, SORT_ASC, $transactions["transaction"]);
+            echo "<p>These are probably ok</p>";
+             print("<table id='table1' class='sortable'>
+                  <thead>
+                    <tr>
+                      <th><h3>Count</h3></th>
+                      <th><h3>Id</h3></th>
+                      <th><h3>Transaction Date</h3></th>
+                      <th><h3>File</h3></th>
+                      <th><h3>Validator</h3></th>
+                    </tr>
+                  </thead>
+                  <tbody>");
+              foreach ($transactions["transaction"] as $transaction) {
+                //print_r($transaction);
+                $i++;
+                $date = $transaction["date"];
+                //echo $transaction["date"];
+                if ($date == FALSE) { //strtotime fail returns FALSE. This is generated in the get_last_transactions function
+                  $date = "Check @iso-date";
+                } else {
+                  $date = date("Y-m-d",$transaction["date"]);
+                }
+                  
+                //if ($i<20) {
+                  echo '<tr><td>' . $i . '</td>';
+                  echo '<td><a href="' . validator_link($url,$transaction["file"],$transaction["id"]) .'">' . $transaction["id"] . '</a></td>';
+                  echo "<td>" . $date . "</td>";
                   echo '<td><a href="' . $url . $transaction["file"] .'">' . $url . $transaction["file"] .'</a></td>';
                   echo '<td><a href="' . validator_link($url,$transaction["file"]) . '">Validator</td></tr>';
                 //} else {
