@@ -3,13 +3,13 @@
 if (in_array($myinputs['group'],array_keys($available_groups))) {
   //Include variables for each group. Use group name for the argument
   //e.g. php detect_html.php dfid
-  require_once 'variables/' .  $_GET['group'] . '.php';
+  require_once 'variables/' .  $myinputs['group'] . '.php'; //sanitized $_GET['group']
   require_once 'functions/validator_link.php';
   
     // Enable user error handling
     libxml_use_internal_errors(true);
 
-    $xsd = "http://iatistandard.org/downloads/iati-activities-schema.xsd";
+    //$xsd = "http://iatistandard.org/downloads/iati-activities-schema.xsd";
     $invalid = FALSE;
 
     if ($handle = opendir($dir)) {
@@ -21,6 +21,9 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   
                   if ($xml->getElementsByTagName("iati-organisation")->length == 0) {
                     $xsd = "http://iatistandard.org/downloads/iati-activities-schema.xsd";
+                    if ($myinputs['org'] == "1") { //sanitized $_GET['orgs']
+                      continue;
+                    }
                   } else {
                     $xsd = "http://iatistandard.org/downloads/iati-organisations-schema.xsd";
                   }
@@ -46,7 +49,16 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   print('<div id="main-content">
             <h4>Validation</h4>');
     if ($invalid) {
-        print("<br/>Files with validation problems:<br/>");
+        print("<br/>Files with validation problems: ");
+        print("<span class=\"smaller\">[View:  <a id=\"p1\" href=\"?group=" . $myinputs['group'] . "&amp;org=1\">Organisation files only</a>]</span><br/>");
+        if (isset($myinputs['org']) && $myinputs['org'] == "1") {
+          print("<script type=\"text/javascript\">
+                    document.getElementById(\"p1\").innerHTML=\"All files\";
+                    document.getElementById(\"p1\").href=\"?group=" . $myinputs['group'] . "\";
+
+                  </script>"
+                );
+        }
         print("<table id='table1' class='sortable'>
                   <thead>
                     <tr>

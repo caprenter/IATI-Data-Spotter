@@ -147,3 +147,7 @@ border-top: 2px solid #eee;
 margin:20px auto;
 width:980px;
 }
+
+.smaller {
+font-size:0.9em;
+}
