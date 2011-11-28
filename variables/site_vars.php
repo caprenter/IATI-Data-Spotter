@@ -22,7 +22,8 @@ $pages = array( "basic_statistics" => "statistics.php",
 $overview_menu =     array("basic_statistics" => array("link"=>"statistics.php","title"=>"Basic Statistics"),
                         );            
 
-$validation_menu =   array("detect_xml" => array("link"=>"headers.php","title"=>"Detect XML"),
+$validation_menu =   array("validate" => array("link"=>"validate.php","title"=>"Validate Files"),
+                           "detect_xml" => array("link"=>"headers.php","title"=>"Detect XML"),
                            "identifier_format" => array("link"=>"identifiers.php","title"=>"Identifier Format"),
                            "missing_urls" => array("link"=>"urls.php","title"=>"Missing URLs"),
                            "organisation_files" => array("link"=>"organisation.php","title"=>"Organisation File"),
