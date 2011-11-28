@@ -4,6 +4,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   //Include variables for each group. Use group name for the argument
   //e.g. php detect_html.php dfid
   require_once 'variables/' .  $_GET['group'] . '.php';
+  require_once 'functions/validator_link.php';
   
     // Enable user error handling
     libxml_use_internal_errors(true);
@@ -17,6 +18,13 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
               if ($file != "." && $file != "..") { //ignore these system files
                   $xml = new DOMDocument();
                   $xml->load($dir . $file);
+                  
+                  if ($xml->getElementsByTagName("iati-organisation")->length == 0) {
+                    $xsd = "http://iatistandard.org/downloads/iati-activities-schema.xsd";
+                  } else {
+                    $xsd = "http://iatistandard.org/downloads/iati-organisations-schema.xsd";
+                  }
+
                   
                   if (!$xml->schemaValidate($xsd)) {
                       $files[] = $file; 
@@ -35,17 +43,33 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
           closedir($handle);
     }
 
-
+  print('<div id="main-content">
+            <h4>Validation</h4>');
     if ($invalid) {
         print("<br/>Files with validation problems:<br/>");
+        print("<table id='table1' class='sortable'>
+                  <thead>
+                    <tr>
+                      <th><h3>#</h3></th>
+                      <th><h3>File</h3></th>
+                      <th><h3>Validate</h3></th>
+                    </tr>
+                  </thead>
+                  <tbody>");
+        $i=0;
         foreach($files as $file) {
-          echo $file . "<br/>";
+            $i++;
+            echo '<tr>';
+            echo '<td>'. $i . '</td>';
+            echo '<td><a href="' . $url . $file .'">' . $file .'</a></td>';
+            echo '<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
         }
+          print("</tbody></table>");
 
     } else {
         print("<br/>All files validate against $xsd");
     } 
-
+  print('</div>');
 }
 
 
