@@ -1,4 +1,4 @@
 <?php
-$dir = 'data/INDIGO/'; //needs trailing slash
+$dir = 'data/indtrust/'; //needs trailing slash
 $url = 'http://www.openaidregister.org/download/';
 ?>

@@ -1,4 +1,4 @@
 <?php
-$dir = 'data/SWEDEN/'; //needs trailing slash
+$dir = 'data/sida/'; //needs trailing slash
 $url = 'http://api.openaid.se/documents/xml/';
 ?>

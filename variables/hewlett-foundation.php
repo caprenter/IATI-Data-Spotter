@@ -1,4 +1,4 @@
 <?php
-$dir = 'data/HF/'; //needs trailing slash
+$dir = 'data/hewlett-foundation/'; //needs trailing slash
 $url = 'http://www.hewlett.org/uploads/documents/';
 ?>

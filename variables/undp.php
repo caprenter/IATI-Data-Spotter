@@ -1,4 +1,4 @@
 <?php
-$dir = 'data/UNDP/'; //needs trailing slash
-$url = 'http://bntest.vm.bytemark.co.uk/david/iati/batch/data/UNDP/';
+$dir = 'data/undp/'; //needs trailing slash
+$url = 'http://data.undp.org/api/assets/';
 ?>
