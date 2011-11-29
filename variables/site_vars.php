@@ -47,6 +47,7 @@ $codelists_menu =     array("codes" => array("link"=>"codes.php","title"=>"Codes
 $transactions_menu =  array("transactions" => array("link"=>"transactions.php","title"=>"Overview"),
                             "transactions_by_year" => array("link"=>"transactions_by_year.php","title"=>"By Year"),
                             "transactions_list" => array("link"=>"transactions_list.php","title"=>"List"),
+                            "transactions_count" => array("link"=> "transactions_count.php", "title"=>"Count"),
                             "transactions_missing_elements" => array("link"=>"transactions_missing_elements.php","title"=>"Missing Elements"),
                             );
 

@@ -7,7 +7,7 @@
 *   @param string $url A fixed variable of the URL root that the file can be found on 
 */
 function theme_bad_files($bad_files,$url) {
-
+  $rows = "";
   //Print a table of failing files
   if ($bad_files != NULL) {
     foreach ($bad_files as $file) {
