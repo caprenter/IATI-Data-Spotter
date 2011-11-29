@@ -57,9 +57,37 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
               print("</tbody>
             </table>");
           }
-    } else {
-      echo "<h4>Counts</h4><p class=\"cross\">Unable to get data.</p><p>Maybe there are no budgets in this data.</p>";
     }
+    
+    if ($results['no-budgets']) {
+          echo "<h4>Files with no budgets</h4>";
+          print("
+          <table id='table' class='sortable'>
+            <thead>
+              <tr>
+                <th><h3>#</h3></th>
+                <th><h3>File</h3></th>
+                <th><h3>Validator</h3></th>
+              </tr>
+            </thead>
+            <tbody>
+            ");
+          $files = array_unique($results['no-budgets']);
+          $i=0;
+          foreach ($files as $file) {
+            $i++;
+            print('
+            <tr>
+                <td>' . $i . '</td>
+                <td><a href="' .$url . rawurlencode($file) . '">' . $file . '</a></td>
+                <td><a href="' . validator_link($url,$file) . '">Validator</a></td>
+            </tr>'
+            );
+          }
+            print("</tbody>
+          </table>");
+        }
+ 
     
     //Print a table of failing files
     theme_bad_files($results["bad-files"],$url);
@@ -95,8 +123,8 @@ function get_count ($dir) {
                       $codes[] = (string)$value->attributes()->type;
                     }
                       $results[$file] = count($result);
-                  } else {
-                    return NULL;
+                  } else { //no budgets found
+                    $files_with_no_budgets[] = $file;
                   }
                 }
             } else { //simpleXML failed to load a file
@@ -106,10 +134,15 @@ function get_count ($dir) {
         }
     }
   }
+  if (!isset($files_with_no_budgets)) {
+      $files_with_no_budgets = NULL;
+    }
   $return = array("results" => $results,
                   "zeros" =>$zero_transactions,
                   "codes" => $codes,
-                  "bad-files" => $bad_files);
+                  "bad-files" => $bad_files,
+                  "no-budgets" => $files_with_no_budgets
+                  );
   
   return $return;
 }
