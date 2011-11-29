@@ -17,7 +17,11 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
           print('<h4>Elements</h4>');
           echo count($results['start']) . " budget" . (count($results['start']) == 1 ? '' : 's')  . " missing &lt;period-start&gt;";
           echo '<br/>';
+          echo count($results['iso-start']) . " budget" . (count($results['iso-start']) == 1 ? '' : 's')  . " missing &lt;period-start/@iso-date&gt;";
+          echo '<br/>';
           echo count($results['end']). " budget" . (count($results['end']) == 1 ? '' : 's')  . " missing &lt;period-end&gt;";
+          echo '<br/>';
+          echo count($results['iso-end']) . " budget" . (count($results['iso-end']) == 1 ? '' : 's')  . " missing &lt;period-end/@iso-date&gt;";
           echo '<br/>';
           echo count($results['value']). " budget" . (count($results['value']) == 1 ? '' : 's') . " missing &lt;value&gt;";
           echo '<br/>';
@@ -99,7 +103,7 @@ function check_budget_elements ($dir) {
     $files = array();
     //$rows = '';
     $fails = array();
-    $fails_value = $fails_value_date = $fails_date = $fails_type = array();
+    $fails_value = $fails_value_date = $fails_date = $fails_type = $fails_iso_start = $fails_iso_end = array();
     if ($handle = opendir($dir)) {
     /* This is the correct way to loop over the directory. */
       while (false !== ($file = readdir($handle))) {
@@ -114,13 +118,23 @@ function check_budget_elements ($dir) {
                                 array_push ($fails_type, array($id,$file));
                                 $fails[$id][] = "start";
                                 $fails[$id]['file'] = $file;
+                            } elseif (!$budget->xpath(".//period-start[@iso-date]")) {
+                              array_push ($fails_iso_start, array($id,$file));
+                               $fails[$id][] = "iso-start";
+                                $fails[$id]['file'] = $file;
                             }
                             if(!xml_child_exists($budget, ".//period-end")) {
                                array_push ($fails_date, array($id,$file));
                                $fails[$id][] = "end";
                                 $fails[$id]['file'] = $file;
                                //$fails[$id] = "budget-date";
+                            } elseif (!$budget->xpath(".//period-end[@iso-date]")) {
+                              array_push ($fails_iso_end, array($id,$file));
+                              echo "fail";
+                               $fails[$id][] = "iso-end";
+                                $fails[$id]['file'] = $file;
                             }
+                              
                             if(!xml_child_exists($budget, ".//value")) {
                                array_push ($fails_value, array($id,$file));
                                $fails[$id][] = "value";
@@ -154,6 +168,8 @@ function check_budget_elements ($dir) {
     }
     return array("start" => $fails_type,
                   "end" => $fails_date,
+                  "iso-start" => $fails_iso_start,
+                  "iso-end" => $fails_iso_end,
                   "value" => $fails_value,
                   "value-date" => $fails_value_date,
                   "fails" => $fails,
