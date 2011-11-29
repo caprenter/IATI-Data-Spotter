@@ -78,8 +78,45 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
         }
           print("</tbody></table>");
 
+    } elseif (empty($files)) {
+        print("<br/>No files found. ");
+        print("<span class=\"smaller\">[View:  <a id=\"p1\" href=\"?group=" . $myinputs['group'] . "&amp;org=1\">Organisation files only</a>]</span><br/>");
+        if (isset($myinputs['org']) && $myinputs['org'] == "1") {
+          print("<script type=\"text/javascript\">
+                    document.getElementById(\"p1\").innerHTML=\"All files\";
+                    document.getElementById(\"p1\").href=\"?group=" . $myinputs['group'] . "\";
+
+                  </script>"
+                );
+        }
     } else {
-        print("<br/>All files validate against $xsd");
+        print("<br/>These files validate against $xsd. ");
+        print("<span class=\"smaller\">[View:  <a id=\"p1\" href=\"?group=" . $myinputs['group'] . "&amp;org=1\">Organisation files only</a>]</span><br/>");
+        if (isset($myinputs['org']) && $myinputs['org'] == "1") {
+          print("<script type=\"text/javascript\">
+                    document.getElementById(\"p1\").innerHTML=\"All files\";
+                    document.getElementById(\"p1\").href=\"?group=" . $myinputs['group'] . "\";
+
+                  </script>"
+                );
+        }
+        print("<table id='table1' class='sortable'>
+                  <thead>
+                    <tr>
+                      <th><h3>#</h3></th>
+                      <th><h3>File</h3></th>
+                      <th><h3>Validate</h3></th>
+                    </tr>
+                  </thead>
+                  <tbody>");
+        foreach($files as $file) {
+            $i++;
+            echo '<tr>';
+            echo '<td>'. $i . '</td>';
+            echo '<td><a href="' . $url . $file .'">' . $file .'</a></td>';
+            echo '<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
+        }
+        print("</tbody></table>");
     } 
   print('</div>');
 }
