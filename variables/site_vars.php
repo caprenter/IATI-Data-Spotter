@@ -50,5 +50,12 @@ $transactions_menu =  array("transactions" => array("link"=>"transactions.php","
                             "transactions_count" => array("link"=> "transactions_count.php", "title"=>"Count"),
                             "transactions_missing_elements" => array("link"=>"transactions_missing_elements.php","title"=>"Missing Elements"),
                             );
+                            
+$budgets_menu =       array(//"transactions" => array("link"=>"transactions.php","title"=>"Overview"),
+                            //"transactions_by_year" => array("link"=>"transactions_by_year.php","title"=>"By Year"),
+                            //"transactions_list" => array("link"=>"transactions_list.php","title"=>"List"),
+                            "budgets_count" => array("link"=> "budgets_count.php", "title"=>"Count"),
+                            "budgets_missing_elements" => array("link"=>"budgets_missing_elements.php","title"=>"Missing Elements"),
+                            );
 
-$menus = array("overview","validation","activities","elements","codelists","transactions");
+$menus = array("overview","validation","activities","elements","codelists","transactions","budgets");
