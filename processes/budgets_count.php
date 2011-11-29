@@ -20,12 +20,17 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
             echo "<h4>Count Results</h4>";
             echo array_sum($results["results"]) . " budgets reported" . "<br/>";
           }
+
           if(!empty($results["codes"])) {
             echo "<h4>By type</h4>";
             $budget_types = array_count_values($results["codes"]);
             foreach ($budget_types as $type => $count) {
               echo $type . ": " . $count . "<br/>";
             }
+          }
+          if(!empty($results["total"])) {
+            echo "<h4>Sum of Budgets</h4>";
+            echo number_format($results["total"])  . "<br/>";
           }
           
           if (count($results["zeros"]) >0 ) {
@@ -102,6 +107,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 
 function get_count ($dir) {
   $bad_files = array();
+  $total = 0;
   if ($handle = opendir($dir)) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($file = readdir($handle))) {
@@ -112,13 +118,17 @@ function get_count ($dir) {
               if(!xml_child_exists($xml, "//iati-organisation")) {//ignore organisation files
                 //$count = $xml->count('.//transaction-date'); //php >5.3
                 //$count = count($xml->{'iati-activity'}->{'transaction'}); //php < 5.3
-                 $result = $xml->xpath("//budget");
+                
+                $result = $xml->xpath("//budget");
                 //print_r($result); die;
                   if (count($result)) {
                     foreach ($result as $value) {
                       if ($value->value == 0 ) {
                         $zero_transactions[] = $file;
                         //echo $file;
+                      } else {
+                        $total += (int)$value->value; 
+                        //echo $total; 
                       }
                       $codes[] = (string)$value->attributes()->type;
                     }
@@ -141,7 +151,8 @@ function get_count ($dir) {
                   "zeros" =>$zero_transactions,
                   "codes" => $codes,
                   "bad-files" => $bad_files,
-                  "no-budgets" => $files_with_no_budgets
+                  "no-budgets" => $files_with_no_budgets,
+                  "total" => $total
                   );
   
   return $return;
