@@ -33,7 +33,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
             echo number_format($results["total"])  . "<br/>";
           }
           
-          if (count($results["zeros"]) >0 ) {
+          if ($results["zeros"] !=NULL && count($results["zeros"]) > 0 ) {
             echo "<h4>Zero value budgets</h4>";
             echo count($results["zeros"]) . " budgets of 0 value from these files:" . "<br/>";
             print("
@@ -108,6 +108,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
 function get_count ($dir) {
   $bad_files = array();
   $total = 0;
+  $budgets_in_this_file = 0;
   if ($handle = opendir($dir)) {
     /* This is the correct way to loop over the directory. */
     while (false !== ($file = readdir($handle))) {
@@ -118,25 +119,43 @@ function get_count ($dir) {
               if(!xml_child_exists($xml, "//iati-organisation")) {//ignore organisation files
                 //$count = $xml->count('.//transaction-date'); //php >5.3
                 //$count = count($xml->{'iati-activity'}->{'transaction'}); //php < 5.3
-                
-                $result = $xml->xpath("//budget");
+                //$default_currency = $xml->attributes->
+                //echo $file;
+                $activities = $xml->xpath("//iati-activity");
                 //print_r($result); die;
-                  if (count($result)) {
-                    foreach ($result as $value) {
-                      if ($value->value == 0 ) {
-                        $zero_transactions[] = $file;
-                        //echo $file;
-                      } else {
-                        $total += (int)$value->value; 
-                        //echo $total; 
+                //echo count($activities); die;
+                    foreach ($activities as $activity) {
+                      //echo count($activites); die;
+                      //print_r($value); die;
+                      $budgets = $activity->xpath(".//budget");
+                     // echo count($budgets); die;
+                      if (count($budgets)) {
+                        foreach ($budgets as $budget) {
+                        //print_r($activity); die;
+                          if ($budget->value == 0 ) {
+                            $zero_transactions[] = $file;
+                            //echo $file;
+                          } else {
+                            $total += (int)$budget->value; 
+                            //echo $total; 
+                          }
+                          
+                          $codes[] = (string)$budget->attributes()->type;
+                        }
+                        //echo count($codes); die;
+                        $budgets_in_this_activity = count($budgets);
+                        $budgets_in_this_file += $budgets_in_this_activity;
+    
+                      } else { //no budgets found
+                        //really activities with no budgets
+                        $files_with_no_budgets[] = $file;
                       }
-                      $codes[] = (string)$value->attributes()->type;
-                    }
-                      $results[$file] = count($result);
-                  } else { //no budgets found
-                    $files_with_no_budgets[] = $file;
-                  }
-                }
+                      
+                     
+                    } //foreach activity
+                     $results[$file] = $budgets_in_this_file;
+                     $budgets_in_this_file = 0;
+                } //if not organisation
             } else { //simpleXML failed to load a file
                   array_push($bad_files,$file);
             }
@@ -146,6 +165,9 @@ function get_count ($dir) {
   }
   if (!isset($files_with_no_budgets)) {
       $files_with_no_budgets = NULL;
+    }
+  if (!isset($zero_transactions)) {
+      $zero_transactions = NULL;
     }
   $return = array("results" => $results,
                   "zeros" =>$zero_transactions,
