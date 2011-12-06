@@ -37,6 +37,7 @@ $activities_menu =    array("unique_activities" => array("link"=>"unique.php","t
 $elements_menu =      array("missing_elements" => array("link"=>"missing.php","title"=>"Missing Elements"),
                             "default_elements" => array("link"=>"defaults.php","title"=>"Default Elements"),
                             "iati_elements" => array("link"=>"iati.php","title"=>"IATI Elements"),
+                            "missing_country_elements" => array("link" => "missing_country_elements.php", "title" => "Region/Country")
                             );
 
 $codelists_menu =     array("codes" => array("link"=>"codes.php","title"=>"Codes"),
