@@ -1,6 +1,6 @@
 <?php
 // Turn off all error reporting
-error_reporting(0);
+//error_reporting(0);
 ini_set("memory_limit","128M");
 include('functions/init.php');
 include ('variables/site_vars.php');
@@ -13,7 +13,9 @@ foreach ($menus as $menu) {
   foreach ($menu_array  as $item) {
     //Check to see if this is the 'active' link and add css class if it is
     if (strstr($path,$item["link"])) {
-      $breadcrumb = " - " . ucwords($menu) .  " - " . $item["title"];
+      $menu_title = ucwords(str_replace("_"," ",$menu)); //format the menu title string, replaces _ with &
+      $menu_title = str_replace(" "," &amp; ",$menu_title);
+      $breadcrumb = " - " . $menu_title .  " - " . $item["title"];
     }
   }
 }
