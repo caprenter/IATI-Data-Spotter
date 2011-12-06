@@ -10,7 +10,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     libxml_use_internal_errors(true);
 
     //$xsd = "http://iatistandard.org/downloads/iati-activities-schema.xsd";
-    $invalid = FALSE;
+    //$invalid = FALSE;
 
     if ($handle = opendir($dir)) {
           /* This is the correct way to loop over the directory. */
@@ -29,8 +29,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   }
 
                   
-                  if (!$xml->schemaValidate($xsd)) {
-                      $files[] = $file; 
+                  if ($xml->schemaValidate($xsd)) {
+                      $good_files[] = $file; 
                       //print '<b>DOMDocument::schemaValidate() Generated Errors!</b>';
                       //if (isset($_GET['errors']) && $_GET['errors'] == "all") {
                       //  libxml_display_all_errors();
@@ -38,6 +38,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                       //  libxml_display_just_files();
                       //}
                       $invalid = TRUE;
+                  } else {
+                      $invalid_files[] = $file;
                   }
                   
                   
@@ -47,8 +49,14 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     }
 
   print('<div id="main-content">
-            <h4>Validation</h4>');
-    if ($invalid) {
+            <h4>Validation');
+              if ($myinputs['org'] == "1") { 
+                echo " - Organisation Files"; 
+              } else { 
+                echo " - Activity Files"; 
+              }
+            print('</h4>');
+    if (isset($invalid_files)) {
         print("<br/>Files with validation problems: ");
         print("<span class=\"smaller\">[View:  <a id=\"p1\" href=\"?group=" . $myinputs['group'] . "&amp;org=1\">Organisation files only</a>]</span><br/>");
         if (isset($myinputs['org']) && $myinputs['org'] == "1") {
@@ -69,7 +77,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                   </thead>
                   <tbody>");
         $i=0;
-        foreach($files as $file) {
+        foreach($invalid_files as $file) {
             $i++;
             echo '<tr>';
             echo '<td>'. $i . '</td>';
@@ -78,19 +86,9 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
         }
           print("</tbody></table>");
 
-    } elseif (empty($files)) {
-        print("<br/>No files found. ");
-        print("<span class=\"smaller\">[View:  <a id=\"p1\" href=\"?group=" . $myinputs['group'] . "&amp;org=1\">Organisation files only</a>]</span><br/>");
-        if (isset($myinputs['org']) && $myinputs['org'] == "1") {
-          print("<script type=\"text/javascript\">
-                    document.getElementById(\"p1\").innerHTML=\"All files\";
-                    document.getElementById(\"p1\").href=\"?group=" . $myinputs['group'] . "\";
-
-                  </script>"
-                );
-        }
-    } else {
-        print("<br/>These files validate against $xsd. ");
+    /**/
+    } elseif (isset($good_files)){
+        print("<br/>These files validate against <a href=\"" . $xsd . "\">" . $xsd . "</a><br/>");
         print("<span class=\"smaller\">[View:  <a id=\"p1\" href=\"?group=" . $myinputs['group'] . "&amp;org=1\">Organisation files only</a>]</span><br/>");
         if (isset($myinputs['org']) && $myinputs['org'] == "1") {
           print("<script type=\"text/javascript\">
@@ -109,7 +107,8 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                     </tr>
                   </thead>
                   <tbody>");
-        foreach($files as $file) {
+        $i=0;
+        foreach($good_files as $file) {
             $i++;
             echo '<tr>';
             echo '<td>'. $i . '</td>';
@@ -117,7 +116,18 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
             echo '<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
         }
         print("</tbody></table>");
-    } 
+    } else {
+        print("<br/>No files found. ");
+        print("<span class=\"smaller\">[View:  <a id=\"p1\" href=\"?group=" . $myinputs['group'] . "&amp;org=1\">Organisation files only</a>]</span><br/>");
+        if (isset($myinputs['org']) && $myinputs['org'] == "1") {
+          print("<script type=\"text/javascript\">
+                    document.getElementById(\"p1\").innerHTML=\"All files\";
+                    document.getElementById(\"p1\").href=\"?group=" . $myinputs['group'] . "\";
+
+                  </script>"
+                );
+        }
+    }
   print('</div>');
 }
 
