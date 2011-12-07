@@ -5,6 +5,18 @@ ini_set("memory_limit","128M");
 include('functions/init.php');
 include ('variables/site_vars.php');
 
+if (!in_array($myinputs['group'],array_keys($available_groups))) {
+  $redirect = explode("/",$_SERVER['PHP_SELF']);
+  foreach ($redirect as $string) {
+    if (!strstr($string,".php")) {
+      $path .= htmlentities($string) . "/"; 
+    }
+  }
+  //echo $path;
+  header("Location: " . $path ); /* Redirect browser */
+}
+
+
 //Breadcrumb
 $path = htmlentities($_SERVER['REQUEST_URI']);
 foreach ($menus as $menu) {

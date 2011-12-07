@@ -22,14 +22,19 @@ font-weight:bold;
 text-decoration:none;
 }
 #sidebar-left a:link,
-#sidebar-left a:visited {
+#sidebar-left a:visited,
+#home a:link,
+#home a:visited {
 text-decoration:none;
 }
 
 #sidebar-left a:focus, 
-#sidebar-left a:hover {
+#sidebar-left a:hover,
+#home a:focus, 
+#home a:hover {
 text-decoration:underline;
 }
+
 #sidebar-left a:active, 
 #sidebar-left li.active a {
 color: #000;
