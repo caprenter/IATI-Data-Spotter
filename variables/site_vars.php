@@ -32,6 +32,12 @@ $validation_menu =   array("validate" => array("link"=>"validate.php","title"=>"
 $activities_menu =    array("unique_activities" => array("link"=>"unique.php","title"=>"Unique Activities"),
                             "activity_list" => array("link"=>"activity_list.php","title"=>"Activity List"),
                             );
+$participating_org_menu =    array("part_org_missing_refs" => array("link"=>"part_org_missing_refs.php","title"=>"Missing Refs"),
+                                    "part_org_not_on_code_list" => array("link"=>"part_org_not_on_code_list.php","title"=>"Ref not on list"),
+                                    "part_org_mismatch_refs" => array("link"=>"part_org_mismatch_refs","title"=>"Mismatch Refs"),
+                                    //"part_org_missmatch_codes" => array("link"=>"part_org_missmatch_codes.php","title"=>"Mismatch Refs"),
+                            //"activity_list" => array("link"=>"activity_list.php","title"=>"Activity List"),
+                            );
                     
                     
 $elements_menu =      array("missing_elements" => array("link"=>"missing.php","title"=>"Missing Elements"),
@@ -41,7 +47,7 @@ $elements_menu =      array("missing_elements" => array("link"=>"missing.php","t
                             "currency" => array("link" => "currency.php", "title" => "Currency Checks")
                             );
 
-$codelists_menu =     array("codes" => array("link"=>"codes.php","title"=>"Codes"),
+$codelists_menu =     array(//"codes" => array("link"=>"codes.php","title"=>"Codes"),
                             "country_list" => array("link"=>"country.php","title"=>"Country Lists"),
                             "recipient_region_codes" => array("link"=>"region_codes.php","title"=>"Recipient Region"),
                       );
@@ -67,4 +73,4 @@ $date_time_menu =     array(//"transactions" => array("link"=>"transactions.php"
                             //"budgets_missing_elements" => array("link"=>"budgets_missing_elements.php","title"=>"Missing Elements"),
                             );
 
-$menus = array("overview","validation","activities","elements","codelists","transactions","budgets","date_time");
+$menus = array("overview","validation","activities","participating_org","elements","codelists","transactions","budgets","date_time");

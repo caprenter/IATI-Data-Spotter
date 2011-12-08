@@ -15,8 +15,18 @@
     //print("<h3>Select Test</h3>");
     foreach ($menus as $menu) {
       print('<div class="menu_block">');
-        $title = ucwords(str_replace("_"," ",$menu)); //format the menu title string, replaces _ with &
-        $title = str_replace(" "," &amp; ",$title);
+        $title = $menu;
+        switch ($title) {
+          case "participating_org":
+          $title = "participating org";
+          break;
+          case "date_time":
+          $title = "Date &amp; Time";
+          break;
+        }
+        //$title = ucwords(str_replace("_"," ",$menu)); //format the menu title string, replaces _ with &
+        //$title = str_replace(" "," &amp; ",$title);
+        $title = ucwords($title);
         print('<h3 class="menu-title">' . $title . '</h3>'); 
         echo '<ul class="menu">';
         //Each menu block is defined in site_vars in the form $title_menu
