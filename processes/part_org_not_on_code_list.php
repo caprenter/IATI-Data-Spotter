@@ -45,7 +45,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                             }
                           } else {
                             //empty ref
-                            $no_refs[] = array("ref"=>$participating_org_ref,"file"=>$file,"text"=>(string)$participating_org);
+                            //$no_refs[] = array("ref"=>$participating_org_ref,"file"=>$file,"text"=>(string)$participating_org);
                           }
                       }
                   }
@@ -104,53 +104,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
       echo "<p class=\"tick\">No participating-org refs found that are not on the code list</p>";
     }
     
-    if ($no_refs != NULL) {
-        foreach ($no_refs as $key=>$value) {
-          $affected_files[] = $value["file"];
-        }
-        //foreach ($no_refs as $key=>$value) {
-         // $codes[] = $value["ref"];
-        //}
-
-        print("
-            <p class='table-title'>Table of &lt;participating-org&gt; where reference is not specified.</p>
-            <p>Reported " . count($no_refs). " times from " . count(array_unique($affected_files)) . " affected files.</p>
-            <table id='table' class='sortable'>
-              <thead>
-                <tr>
-                  <th><h3>#</h3></th>
-                  <th><h3>Text</h3></th>
-                  <th><h3>File</h3></th>
-                  <th><h3>Valiate</h3></th>
-                </tr>
-              </thead>
-              <tbody>
-              ");
-              //$codes =array_keys($bad_codes);
-              //$codes = array_unique($codes);
-              //sort($codes);
-              $i=0;
-              foreach ($no_refs as $key=>$value) {
-                $i++;
-                echo '<tr>';
-                echo '<td>' . $i .'</td>';
-                echo '<td>' . $value["text"] . '</td>';
-                echo '<td><a href="' . $url . $value["file"] .'">' . $value["file"] .'</a></td>';
-                echo '<td><a href="' . validator_link($url,$value["file"]) . '">Validator</a></td>';
-                echo '</tr>';
-              }
-          print("</tbody>
-              </table>");
-    } else {
-      echo "<p class=\"tick\">No mismatch participating-org refs found</p>";
-    }
-    //echo $participating_org_ref_count;
     
-    //$bad_codes = array_unique($bad_codes);
-    //sort($bad_codes);
-    //print_r($bad_codes). PHP_EOL;
-    //print_r(array_unique($bad_files)). PHP_EOL;
-    //echo count(array_unique($bad_files)). PHP_EOL;
     if ($bad_files !=NULL) {
         theme_bad_files($bad_files,$url);
     }

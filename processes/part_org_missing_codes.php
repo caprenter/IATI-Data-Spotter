@@ -52,7 +52,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
       closedir($handle);
   }
   //print_r($bad_codes);die;
-  print('<div id="main-content"><h4>Checking participating-org/@ref against the code list:</h4>');
+  print('<div id="main-content"><h4>Checking participating-org/@ref against the code list for missing refs:</h4>');
     
     if ($no_refs != NULL) {
         foreach ($no_refs as $key=>$value) {
