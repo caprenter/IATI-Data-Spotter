@@ -67,7 +67,11 @@ function check_generated_time ($dir,$url) {
                       }
                       
                       if (strlen($generated) != 19) {
-                        $length = "too long";
+                        if(strlen($generated) > 19) {
+                          $length = "too long";
+                          } else {
+                            $length = "too short";
+                          }
                       } else {
                         $length ="ok";
                       }

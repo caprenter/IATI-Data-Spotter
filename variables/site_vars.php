@@ -70,6 +70,7 @@ $date_time_menu =     array(//"transactions" => array("link"=>"transactions.php"
                             //"transactions_by_year" => array("link"=>"transactions_by_year.php","title"=>"By Year"),
                             //"transactions_list" => array("link"=>"transactions_list.php","title"=>"List"),
                             "time_generated" => array("link"=> "time_generated.php", "title"=>"Generated Time"),
+                            "time_updated" => array("link"=> "time_updated.php", "title"=>"Last Updated Time"),
                             //"budgets_missing_elements" => array("link"=>"budgets_missing_elements.php","title"=>"Missing Elements"),
                             );
 
