@@ -79,5 +79,11 @@ $documents_menu =      array("document_links" => array("link"=>"document_links.p
                             //"missing_country_elements" => array("link" => "missing_country_elements.php", "title" => "Region/Country"),
                             //"currency" => array("link" => "currency.php", "title" => "Currency Checks")
                             );
+$sector_menu =      array("sector" => array("link"=>"sector.php","title"=>"Sector"),
+                            //"default_elements" => array("link"=>"defaults.php","title"=>"Default Elements"),
+                            //"iati_elements" => array("link"=>"iati.php","title"=>"IATI Elements"),
+                            //"missing_country_elements" => array("link" => "missing_country_elements.php", "title" => "Region/Country"),
+                            //"currency" => array("link" => "currency.php", "title" => "Currency Checks")
+                            );
 
-$menus = array("overview","validation","activities","participating_org","elements","codelists","transactions","budgets","date_time","documents");
+$menus = array("overview","validation","activities","participating_org","elements","codelists","transactions","budgets","sector","date_time","documents");
