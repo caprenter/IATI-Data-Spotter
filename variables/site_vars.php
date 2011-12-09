@@ -80,7 +80,7 @@ $documents_menu =      array("document_links" => array("link"=>"document_links.p
                             //"currency" => array("link" => "currency.php", "title" => "Currency Checks")
                             );
 $sector_menu =      array("sector" => array("link"=>"sector.php","title"=>"Sector"),
-                            //"default_elements" => array("link"=>"defaults.php","title"=>"Default Elements"),
+                            "sector_list" => array("link"=>"sector_list.php","title"=>"Sector List"),
                             //"iati_elements" => array("link"=>"iati.php","title"=>"IATI Elements"),
                             //"missing_country_elements" => array("link" => "missing_country_elements.php", "title" => "Region/Country"),
                             //"currency" => array("link" => "currency.php", "title" => "Currency Checks")
