@@ -73,5 +73,11 @@ $date_time_menu =     array(//"transactions" => array("link"=>"transactions.php"
                             "time_updated" => array("link"=> "time_updated.php", "title"=>"Last Updated Time"),
                             //"budgets_missing_elements" => array("link"=>"budgets_missing_elements.php","title"=>"Missing Elements"),
                             );
+$documents_menu =      array("document_links" => array("link"=>"document_links.php","title"=>"Document Links"),
+                            //"default_elements" => array("link"=>"defaults.php","title"=>"Default Elements"),
+                            //"iati_elements" => array("link"=>"iati.php","title"=>"IATI Elements"),
+                            //"missing_country_elements" => array("link" => "missing_country_elements.php", "title" => "Region/Country"),
+                            //"currency" => array("link" => "currency.php", "title" => "Currency Checks")
+                            );
 
-$menus = array("overview","validation","activities","participating_org","elements","codelists","transactions","budgets","date_time");
+$menus = array("overview","validation","activities","participating_org","elements","codelists","transactions","budgets","date_time","documents");
