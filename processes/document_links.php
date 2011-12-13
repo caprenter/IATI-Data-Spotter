@@ -7,7 +7,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     require_once 'variables/elements_list.php';
     
 
-    $elements = array("document-links");
+    $elements = array("document-link");
     $results = files_with_no_elements ($elements);
 
 
