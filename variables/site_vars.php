@@ -71,7 +71,8 @@ $date_time_menu =     array(//"transactions" => array("link"=>"transactions.php"
                             //"transactions_list" => array("link"=>"transactions_list.php","title"=>"List"),
                             "time_generated" => array("link"=> "time_generated.php", "title"=>"Generated Time"),
                             "time_updated" => array("link"=> "time_updated.php", "title"=>"Last Updated Time"),
-                            //"budgets_missing_elements" => array("link"=>"budgets_missing_elements.php","title"=>"Missing Elements"),
+                            "date_validates" => array("link"=>"date_validates.php","title"=>"Iso-date Validation"),
+                            "date_value_validates" => array("link"=>"date_value_validates.php","title"=>"Value-date Validation"),
                             );
 $documents_menu =      array("document_links" => array("link"=>"document_links.php","title"=>"Document Links"),
                             //"default_elements" => array("link"=>"defaults.php","title"=>"Default Elements"),

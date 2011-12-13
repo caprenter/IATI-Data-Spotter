@@ -8,7 +8,8 @@
       $args = array(
         'group'   => FILTER_SANITIZE_ENCODED,
         'transaction'   => FILTER_SANITIZE_ENCODED,
-        'org' => FILTER_SANITIZE_ENCODED
+        'org' => FILTER_SANITIZE_ENCODED,
+        'showall' => FILTER_SANITIZE_ENCODED
       );
       $myinputs = filter_input_array(INPUT_GET, $args);
 ?>
