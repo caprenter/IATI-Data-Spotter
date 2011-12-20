@@ -36,7 +36,7 @@
  * @return string $link A URL to the validator service
  */
 
-http://84.45.72.169:8080/exist/rest/db/apps/iati-api/xquery/validate.xq?type=activitySet&src=http%3A%2F%2Fsiteresources.worldbank.org%2FINTSOPE%2FResources%2F5929468-1305310586289%2FWB_NI.xml
+//http://84.45.72.169:8080/exist/rest/db/apps/iati-api/xquery/validate.xq?type=activitySet&src=http%3A%2F%2Fsiteresources.worldbank.org%2FINTSOPE%2FResources%2F5929468-1305310586289%2FWB_NI.xml
   function validator_link($url,$file,$id = NULL) {
     if ($id !=NULL) {
       $link ='http://webapps.kitwallace.me/exist/rest/db/apps/iati/xquery/validate.xq?mode=view&type=activity&id=';
