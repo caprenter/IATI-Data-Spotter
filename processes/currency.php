@@ -29,7 +29,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
           echo "</ul><br/>";
       } 
       if ($currencies["without"] !=NULL) {
-        print_r($currencies["without"]);
+        //print_r($currencies["without"]);
         echo "<h4>Activites without a default currency</h4>";
         theme_missing_currency_table($currencies["without"],1);
         //die;
@@ -95,12 +95,13 @@ function currency_check ($dir) {
                   $id = (string)$activity->{'iati-identifier'};
                   //<iati-activity last-updated-datetime="2011-10-06T00:00:00.0000000-07:00" default-currency="USD" xml:lang="en">
                   $default_currency = (string)$activity->attributes()->{'default-currency'};
-                  
+                  //echo $default_currency;
+                  //die;
                   
                   
                   
                   if ($default_currency !=NULL) {
-                    $currencies[] = $default_currency;
+                    $currencies[] = $default_currency; //an array of all curencies found, shove the defaults in for starters
                     $transaction = check_currency_against_default ($file,$activity,'transaction',$default_currency);//returns false or array
                     //print_r($transaction);
                     if ($transaction) {
@@ -119,7 +120,7 @@ function currency_check ($dir) {
                     }
                   } else {
                     echo xml_child_exists($xml, "//iati-organisation");
-                    print_r($activity); die;
+                    //print_r($activity); die;
                     $activities_without_deafult[] = array("id"=>$id,"file"=>$file);
                   }
                 }
@@ -165,9 +166,10 @@ function check_currency_against_default ($file,$activity,$element,$default_curre
   global $found_elements;
   $id = (string)$activity->{'iati-identifier'};
   foreach ($activity->{$element} as $element_with_value) {
+    //print_r($element_with_value);
       $currency = (string)$element_with_value->value->attributes()->currency;
+      //echo $currency;
       if ($element_with_value !=NULL) { 
-        //echo "yeah";
         $found_elements[] = $element; 
       }
       if ($currency !=NULL && $currency != $default_currency) {
