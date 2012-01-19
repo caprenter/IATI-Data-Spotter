@@ -22,6 +22,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "indtrust" => "Indigo Trust",
                           "nz" => "NewZealand",
                           "denmark" => "Denmark, Ministry of Foreign Affairs",
-                          "transparency_international" => "Transparency International"
+                          "transparency_international" => "Transparency International",
+                          "gavi" => "GAVI Alliance Secretariat"
                           );
 ?>                          
