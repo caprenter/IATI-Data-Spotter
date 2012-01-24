@@ -4,6 +4,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     //e.g. php detect_html.php dfid
     require_once 'variables/' .  $_GET['group'] . '.php';
     require_once 'functions/xml_child_exists.php';
+    require_once 'functions/validator_link.php';
     //require_once 'variables/elements_list.php';
     
     $defaults = array( "default-flow-type",
@@ -215,20 +216,6 @@ $how_many_of_each = array_count_values ($array);
       }
     }
 }
-
-function validator_link($url,$file,$id = NULL) {
-  if ($id !=NULL) {
-    $link ='http://webapps.kitwallace.me/exist/rest/db/apps/iati/xquery/validate.xq?mode=view&type=activity&id=';
-    $link .=$id;
-    $link .= '&source=' . urlencode($url) . urlencode(preg_replace("/ /", "%20", $file));
-  } else {
-    $link ='http://webapps.kitwallace.me/exist/rest/db/apps/iati/xquery/validate.xq?type=activitySet&source=';
-    $link .= urlencode($url) . urlencode(preg_replace("/ /", "%20", $file));
-    $link .= '&mode=download';
-  }
-  return $link;
-}
-
 ?>
 
 <script type="text/javascript" src="javascript/tinytable/script.js"></script>
