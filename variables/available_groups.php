@@ -23,6 +23,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "nz" => "NewZealand",
                           "denmark" => "Denmark, Ministry of Foreign Affairs",
                           "transparency_international" => "Transparency International",
-                          "gavi" => "GAVI Alliance Secretariat"
+                          "gavi" => "GAVI Alliance Secretariat",
+                          "rem" => "Resource Extraction Monitoring"
                           );
 ?>                          
