@@ -45,7 +45,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
                                   $expected = $codes[$participating_org_ref][2];
                                   $found = $participating_org[0];
                                   if ($participating_org_ref == NULL) { $participating_org_ref = "empty string"; } //no-ref given
-                                  $rows .= '<tr><td>'. $participating_org_ref . '</td><td>' . $expected . '</td><td>' . $found . '</td><td>' . $file . '</td></tr>';
+                                  $rows .= '<tr><td>'. $participating_org_ref . '</td><td>' . $expected . '</td><td>' . $found . '</td><td><a href="' .$url . urlencode($file) . '">' . $file . '</a></td></tr>';
                                 }
                                 
                             }
