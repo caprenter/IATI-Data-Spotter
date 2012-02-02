@@ -24,7 +24,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     if (!$results == NULL) {
           if(!empty($results["results"])) {
             echo "<h4>Count Results</h4>";
-            echo array_sum($results["results"]) . " transactions reported" . "<br/>";
+            echo array_sum($results["results"]) . " activity status elements reported" . "<br/>";
           }
           if(!empty($results["codes"])) {
             echo "<h4>By type</h4>";
