@@ -27,7 +27,7 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
     if (!$results == NULL) {
           if(!empty($results["results"])) {
             echo "<h4>Count Results</h4>";
-            echo array_sum($results["results"]) . " activity status elements reported" . "<br/>";
+            echo array_sum($results["results"]) . " participating-org elements reported" . "<br/>";
           }
           if(!empty($results["codes"])) {
             //print_r($codes);
