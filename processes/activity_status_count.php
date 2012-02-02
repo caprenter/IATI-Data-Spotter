@@ -135,7 +135,7 @@ function get_count ($dir) {
                       //Check the text given matches the code supplied
                       if ((string)$status != $activity_status_codes[$this_code]) {
                         //array_push($bad_files,$file);
-                        $bad_codes[] = array($this_code, (string)$status, $activity_status_codes[$this_code-1]);
+                        $bad_codes[] = array($this_code, (string)$status, $activity_status_codes[$this_code]);
                       } else {
                         $codes[] = (string)$status->attributes()->code;
                       }

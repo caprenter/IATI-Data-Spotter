@@ -50,7 +50,8 @@ $elements_menu =      array("missing_elements" => array("link"=>"missing.php","t
 $codelists_menu =     array(//"codes" => array("link"=>"codes.php","title"=>"Codes"),
                             "country_list" => array("link"=>"country.php","title"=>"Country Lists"),
                             "recipient_region_codes" => array("link"=>"region_codes.php","title"=>"Recipient Region"),
-                            "activity_status_count" => array("link"=> "activity_status_count.php", "title"=>"Activity Status Count")
+                            "activity_status_count" => array("link"=> "activity_status_count.php", "title"=>"Activity Status Count"),
+                            "participating_org_count" => array("link"=> "participating_org_count.php", "title"=>"Participating Org. Count")
                       );
 
 $transactions_menu =  array("transactions" => array("link"=>"transactions.php","title"=>"Overview"),
