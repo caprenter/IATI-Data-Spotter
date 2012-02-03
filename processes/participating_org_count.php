@@ -135,6 +135,11 @@ function get_count ($dir) {
                         //echo $file;
                       }*/
                       $this_code = (string)$status->attributes()->type;
+                      //if (empty($this_code)) {
+                      ///  echo "aaaargh";
+                        //echo $file;
+                      //  die;
+                      //}
                       //echo (string)$status;  echo $codes[$this_code]; die;
                       //Check the text given matches the code supplied
                       //if ((string)$status != $codes[$this_code]) {

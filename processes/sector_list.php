@@ -37,17 +37,21 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
               //print_r($xml); //debug
                   if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation files
                     foreach ($xml as $activity) {
-                      $i++;
-                        //Push this value into 2 different arrays
-                        echo '<tr>';
-                        echo '<td>'. $i . '</td>';
-                        echo '<td><a href="' . validator_link($url,$file,(string)$activity->{'iati-identifier'}) .'">' . (string)$activity->{'iati-identifier'} . '</a></td>';
-                        echo '<td>' . (string)$activity->{'sector'} . '</td>';
-                        echo '<td>' . (string)$activity->sector->attributes()->code  .'</td>';
-                        echo '<td>' . (string)$activity->sector->attributes()->vocabulary . '</td>';
-                        echo '<td>' . (string)$activity->sector->attributes()->percentage . '</td>';
-                        echo '<td><a href="' . $url . $file .'">' . $file .'</a></td>';
-                        echo '<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
+                      $sectors = $activity->xpath('.//sector');
+                      //print_r($sectors); //die;
+                      foreach ($sectors as $sector) { 
+                        $i++;
+                          //Push this value into 2 different arrays
+                          echo '<tr>';
+                          echo '<td>'. $i . '</td>';
+                          echo '<td><a href="' . validator_link($url,$file,(string)$activity->{'iati-identifier'}) .'">' . (string)$activity->{'iati-identifier'} . '</a></td>';
+                          echo '<td>' . (string)$sector . '</td>';
+                          echo '<td>' . (string)$sector->attributes()->code  .'</td>';
+                          echo '<td>' . (string)$sector->attributes()->vocabulary . '</td>';
+                          echo '<td>' . (string)$sector->attributes()->percentage . '</td>';
+                          echo '<td><a href="' . $url . $file .'">' . $file .'</a></td>';
+                          echo '<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';
+                      }
                     } 
                   }
     
