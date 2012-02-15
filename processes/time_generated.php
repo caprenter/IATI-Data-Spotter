@@ -82,13 +82,13 @@ function check_generated_time ($dir,$url) {
                         $gotT = "yes";
                       }
                       
-                      if ($gotT == "no" || $length == "too long" || $valid == "x") {
+                      if ($gotT == "no" || $length == "too long" || $length == "too short" || $valid == "x") {
                         //$generated = "x";
                         array_push($files,$file);                      
                         $rows .='<tr><td>' . $i . '</td>';
                         $rows .='<td>'. $generated . '</td>';
                         $rows .='<td>'. $valid . '</td>';
-                        $rows .='<td>'. $length . '</td>';
+                        $rows .='<td>'. $length . '?</td>';
                         $rows .='<td>'. $gotT . '</td>';
                         $rows .='<td><a href="' . $url . $file .'">' . $file .'</a></td>';
                         $rows .='<td><a href="' . validator_link($url,$file) . '">Validator</a></td></tr>';

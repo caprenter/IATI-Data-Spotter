@@ -128,10 +128,36 @@ function check_date_attributes ($dir) {
 }
 
 function valid_date ($string) {
-  if (strtotime($string) && strlen($string) == 10) {
+  if (strtotime($string)) {
+    $length = strlen($string);
+    switch ($length) {
+      case 10:
+       return TRUE;
+       break;
+      case 11:
+       if (substr($string,-1) == "Z") {
+         return TRUE;
+       }
+       break;
+       case 16:
+        if ((strstr($string, '-') || strstr($string, '+')) && strstr($string, ':')) {
+          $this_timezone = substr($string,-5);
+          echo $this_timezone;
+          $this_timezone = explode(":",$this_timezone);
+          print_r($this_timezone);
+          if ($this_timezone[0] <= 14) {
+            return TRUE;
+          } else {
+            return FALSE;
+          }
+        }
+        break;
+      default:
+        return FALSE;
+        break;
+      }
     ///echo strtotime($string);
-    //echo ($string) .":" .strtotime($string) .":".strlen($string). "---";
-    return TRUE;    
+    //echo ($string) .":" .strtotime($string) .":".strlen($string). "---";  
   } else {
     return FALSE;
   }
