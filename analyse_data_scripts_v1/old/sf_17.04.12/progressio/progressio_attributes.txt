@@ -1,0 +1,81 @@
+Element,Attribute
+iati-activity,hierarchy
+,1
+iati-activity,default-currency
+51,1
+iati-activity,lang
+,1
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+21,1
+reporting-org,ref
+GB-CHC-294329,1
+activity-status,code
+2,1
+activity-date,type
+start-actual,1
+activity-date,iso-date
+2010,1
+participating-org,role
+None found
+participating-org,type
+None found
+participating-org,ref
+None found
+sector,vocabulary
+,1
+sector,code
+92030,1
+policy-marker,code
+None found
+policy-marker,vocabulary
+None found
+policy-marker,significance
+None found
+default-tied-status,code
+None found
+default-flow-type,code
+None found
+default-aid-type,code
+None found
+default-finance-type,code
+None found
+recipient-country,code
+None found
+recipient-region,code
+None found
+budget,type
+None found
+budget/value,currency
+None found
+budget/period-start,iso-date
+None found
+planned-disbursement/value,currency
+None found
+planned-disbursement/period-start,iso-date
+None found
+transaction/transaction-type,code
+None found
+transaction/value,currency
+None found
+transaction/provider-org,ref
+None found
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+None found
+document-link,format
+application/msword,1
+document-link,category
+,1
+related-activity,type
+None found
+conditions,type
+None found
+result,type
+None found
+result/indicator,measure
+None found

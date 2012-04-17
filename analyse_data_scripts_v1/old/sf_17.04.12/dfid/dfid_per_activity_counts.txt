@@ -1,0 +1,17 @@
+Testing: participating-org,role
+Out of 9809 activities at level not specified
+Activities with participating-org elements = 9809
+Activities without participating-org elements = 0
+Failing activities 0
+Number of activities with a Funding participating-org code = 9809
+Number of activities with a Extending participating-org code = 9809
+Number of activities with a Implementing participating-org code = 5955
+Testing: activity-date,type
+Out of 9809 activities at level not specified
+Activities with activity-date elements = 9809
+Activities without activity-date elements = 0
+Failing activities 0
+Number of activities with a end-actual activity-date code = 9761
+Number of activities with a end-planned activity-date code = 9761
+Number of activities with a start-actual activity-date code = 9809
+Number of activities with a start-planned activity-date code = 9809

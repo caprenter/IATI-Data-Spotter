@@ -1,0 +1,75 @@
+Activities with/without elements
+Ignore Hierarchy Activities counted=6
+
+reporting-org: with,6
+other-identifier: without,6
+activity-status: with,6
+activity-date: with,6
+contact-info: with,6
+participating-org: with,6
+sector: with,5
+sector: without,1
+default-tied-status: without,6
+default-flow-type: with,6
+default-aid-type: with,6
+default-finance-type: without,6
+recipient-country: with,6
+recipient-region: without,6
+location: without,6
+location/location-type: without,6
+location/name: without,6
+location/description: without,6
+location/administrative: without,6
+location/coordinates: without,6
+location/gazetteer-entry: without,6
+budget: with,6
+budget/period-start: without,6
+budget/period-end: without,6
+budget/value: with,6
+planned-disbursement: without,6
+planned-disbursement/period-start: without,6
+planned-disbursement/period-end: without,6
+planned-disbursement/value: without,6
+activity-website: with,6
+collaboration-type: with,6
+policy-marker: without,6
+transaction: without,6
+transaction/value: without,6
+transaction/description: without,6
+transaction/transaction-type: without,6
+transaction/provider-org: without,6
+transaction/receiver-org: without,6
+transaction/transaction-date: without,6
+transaction/flow-type: without,6
+transaction/aid-type: without,6
+transaction/finance-type: without,6
+transaction/tied-status: without,6
+transaction/disbursement-channel: without,6
+provider-org: without,6
+receiver-org: without,6
+document-link: without,6
+related-activity: without,1
+related-activity: with,5
+legacy-data: without,6
+conditions: without,6
+conditions/condition: without,6
+result: with,4
+result: without,2
+result/indicator: without,6
+result/indicator/baseline: without,6
+result/indicator/period: without,6
+result/indicator/period/period-start: without,6
+result/indicator/period/period-end: without,6
+result/indicator/period/target: without,6
+result/indicator/period/actual: without,6
+contact-info/organisation: without,6
+contact-info/person-name: with,6
+contact-info/telephone: without,6
+contact-info/email: with,6
+contact-info/mailing-address: without,6
+
+Hierarchy=1 Activities counted=0
+
+
+Hierarchy=2 Activities counted=0
+

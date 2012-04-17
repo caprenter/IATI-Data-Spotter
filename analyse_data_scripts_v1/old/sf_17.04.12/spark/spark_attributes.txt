@@ -1,0 +1,95 @@
+Element,Attribute
+iati-activity,hierarchy
+1,25
+iati-activity,default-currency
+EUR,25
+iati-activity,lang
+en,25
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+60,25
+reporting-org,ref
+NL-KVK-41213450,25
+activity-status,code
+,3
+2,22
+activity-date,type
+end-actual,25
+end-planned,25
+start-actual,25
+start-planned,25
+activity-date,iso-date
+2010,4
+2011,72
+2012,24
+participating-org,role
+None found
+participating-org,type
+None found
+participating-org,ref
+None found
+sector,vocabulary
+None found
+sector,code
+None found
+policy-marker,code
+None found
+policy-marker,vocabulary
+None found
+policy-marker,significance
+None found
+default-tied-status,code
+5,25
+default-flow-type,code
+10,25
+default-aid-type,code
+B03,25
+default-finance-type,code
+110,25
+recipient-country,code
+BI,3
+KS,11
+LR,1
+PS,6
+RW,4
+recipient-region,code
+89,11
+298,8
+589,6
+budget,type
+,25
+budget/value,currency
+EUR,25
+budget/period-start,iso-date
+2010,2
+2011,19
+2012,4
+planned-disbursement/value,currency
+None found
+planned-disbursement/period-start,iso-date
+None found
+transaction/transaction-type,code
+None found
+transaction/value,currency
+None found
+transaction/provider-org,ref
+None found
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+None found
+document-link,format
+None found
+document-link,category
+None found
+related-activity,type
+None found
+conditions,type
+None found
+result,type
+None found
+result/indicator,measure
+None found

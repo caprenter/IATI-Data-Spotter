@@ -1,0 +1,554 @@
+Element
+reporting-org
+"The William and Flora Hewlett Foundation";776
+participating-org
+"The William and Flora Hewlett Foundation";1552
+"African Population and Health Research Centre Inc.";13
+"Center for Global Development";12
+"Stanford University Board of Trustees of the Leland Stanford Junior University";11
+"Regents of the University of California";10
+"German Marshall Fund of the US";10
+"Population Council, Inc.";10
+"Population Reference Bureau, Inc.";10
+"Woodrow Wilson International Center for Scholars";9
+"INDEPTH Network";9
+"Massachusetts Institute of Technology";8
+"Michigan State University";8
+"Women Thrive Worldwide";8
+"Tides Foundation";8
+"Brookings Institution";8
+"Oxfam-America, Inc.";7
+"African Economic Research Consortium, Inc.";7
+"Tides Center";7
+"United Nations Foundation";7
+"Bread for the World Institute, Inc.";7
+"Instituto Mexicano para la Competitividad, A.C.";6
+"World Health Organization";6
+"Trustees of Columbia University in the City of New York";6
+"Ipas";6
+"African Center for Economic Transformation";6
+"President and Fellows of Harvard College";6
+"The Aspen Institute, Inc.";6
+"Family Care International, Inc.";6
+"Engenderhealth, Inc.";6
+"Johns Hopkins University";6
+"Revenue Watch Institute";6
+"Centro de Investigación y Docencia Económicas, A.C.";6
+"MSI-US";6
+"Centro de Investigaciones y Estudios Superiores en Antropología Social";6
+"Deutsche Stiftung Weltbevoelkerung";6
+"Guttmacher Institute Inc.";5
+"Stichting Hivos";5
+"Population Action International";5
+"Link Media, Inc.";5
+"Iniciativa Ciudadana y Desarrollo Social, Incide Social, A.C.";5
+"Independent Television Service, Inc.";5
+"Population Association of America, Inc.";5
+"Wits Health Consortium (PTY) LTD";5
+"Environmental Working Group";5
+"PATH";5
+"Institute of International Education, Inc.";5
+"International Planned Parenthood Federation Worldwide Inc.";5
+"The International Bank for Reconstruction and Development";5
+"Partners in Population and Development";5
+"International Union for the Scientific Study of Population";5
+"Academy for Educational Development, Inc.";5
+"Global Integrity";5
+"Equilibres et Populations";5
+"Initiative for Global Development";5
+"Sonora Ciudadana AC";5
+"Center for US Global Leadership";5
+"International Fertilizer Development Center";4
+"International Food Policy Research Institute";4
+"Gesoc, Agencia para el Desarrollo, A.C.";4
+"Save the Children Federation, Inc.";4
+"Global AIDS Alliance";4
+"Pathfinder International";4
+"Fundar, Centro de Análisis e Investigación, Asociacion Civil";4
+"World Security Institute";4
+"The College of William and Mary";4
+"America Abroad Media";4
+"Global Fund for Women Inc.";4
+"Center on Budget and Policy Priorities";4
+"International Center for Research on Women";4
+"Yale University";4
+"Communications Consortium Media Center";4
+"International Womens Health Coalition";4
+"Union for African Population Studies";4
+"Pratham USA";4
+"IntraHealth International, Inc.";4
+"National Security Archive Fund, Inc.";4
+"University of San Diego";3
+"Results for Development Institute Inc";3
+"Transparency International e.V.";3
+"Rutgers WPF";3
+"International HIV/AIDS Alliance";3
+"Regents of the University of Colorado";3
+"International Senior Lawyers Corporation";3
+"Population Services International";3
+"Article 19 Research and Information Centre on Censorship";3
+"Ibis Reproductive Inc.";3
+"EU Transparency";3
+"Public Radio International, Inc.";3
+"American University in Cairo";3
+"Salzburg Global Seminar Inc.";3
+"Proyecto Fronterizo de Educación Ambiental, A.C.";3
+"Stichting Oxfam Novib";3
+"El Colegio de México A.C.";3
+"Transparencia Mexicana, A.C.";3
+"International Policy Council on Agriculture, Food and Trade, Inc.";3
+"Regents of the University of California at Berkeley";3
+"The Carter Center, Inc.";3
+"Open Society Foundation";3
+"Centro de Investigación para el Desarrollo, A.C.";3
+"The International Center for Not-for-Profit Law Inc";3
+"University of the Witwatersrand";3
+"University of Ghana";3
+"Overseas Development Institute";3
+"Institute for Financial Management and Research";3
+"Mexico Evalua, Centro de Analisis de Politicas Publicas, A.C.";3
+"Development Initiatives Poverty Research Limited";3
+"International Initiative for Impact Evaluation, Inc.";3
+"GlobalWorks Foundation";3
+"Oeuvre Malienne d'Aide à l'Enfance du Sahel";3
+"Mango Tree Educational Enterprises, LTD";3
+"Center for American Progress";3
+"University of Cape Town";3
+"International Centre for Trade and Sustainable Development";3
+"Innovations for Poverty Action, A New Jersey Nonprofit Corporation";3
+"CARE, Inc.";3
+"National Audubon Society, Inc.";2
+"Izaak Walton League of America, Inc.";2
+"Henry L Stimson Center";2
+"Centro Mexicano de Derecho Ambiental, A.C.";2
+"Sin Fronteras, I.A.P.";2
+"Synergos Institute, Inc.";2
+"National Wildlife Federation";2
+"Congressional Economic Leadership Institute";2
+"Foods Resource Bank";2
+"Public Health Institute";2
+"Human Rights Watch, Inc.";2
+"Globalworks Projects Fund";2
+"Sierra Club Foundation";2
+"Environmental Defense Fund Incorporated";2
+"International Health Economics Association";2
+"Center for Rural Affairs";2
+"Council on Foreign Relations, Inc.";2
+"Liverpool VCT, Care and Treatment";2
+"International Development Research Centre";2
+"Fritz Institute";2
+"Global Campaign for Education";2
+"Instituto Tecnológico Autónomo de México";2
+"ICONE - Instituto de Estudos do Comercio e das Negociacoes Internacionais";2
+"Taxpayers for Common Sense";2
+"Corporate Council on Africa";2
+"Netherlands Organisation for Scientific Research";2
+"Carnegie Endowment for International Peace";2
+"Boston Critic, Inc.";2
+"Center for Strategic and International Studies Inc.";2
+"Action Canada for Population and Development";2
+"International Rescue Committee, Inc.";2
+"Gynuity Health Projects, LLC";2
+"Consumer Unity and Trust Society";2
+"Center for Health and Gender Equity, Inc.";2
+"The Funders Network on Population Reproductive Health and Rights, Inc.";2
+"Educational Broadcasting Corp";2
+"WGBH Educational Foundation";2
+"Consejo Ciudadano del Premio Nacional de Periodismo, A.C.";2
+"International Council on Management of Population Programmes";2
+"Institut de Formation et de Recherche Demographiques";2
+"International Planned Parenthood Federation - Worldwide Inc";2
+"Reproductive Health Matters";2
+"NEPAD Business Foundation";2
+"DKT International, Inc.";2
+"World Neighbors, Inc.";2
+"Raising Voices";2
+"Associates in Research and Education for Development Inc.";2
+"Institucion Renace ABP";2
+"Redstone Strategy Group, LLC";2
+"Calvert Social Investment Foundation Inc";2
+"Cornell University";2
+"Interaction American Council for Voluntary International Action, Inc.";2
+"Family Health International";2
+"Center for Reproductive Rights Inc.";2
+"The Pennsylvania State University";2
+"Brown University of Providence State of RI and Prov Plantations";2
+"Université de Ouagadougou";1
+"Instituto para la Seguridad y la Democracia, A.C.";1
+"Oxfam";1
+"Japanese Organization for International Cooperation in Family Planning";1
+"Economic and Social Research Council";1
+"Farmworker Justice Fund, Inc.";1
+"Catholics for Choice";1
+"World Young Women's Christian Association";1
+"Institute of Development Studies";1
+"International AIDS Vaccine Initiative, Inc.";1
+"The International Community of Women Living with HIV/AIDS";1
+"Eastern Virginia Medical School";1
+"Centre for Governance and Development";1
+"Aga Khan Foundation USA";1
+"Australian Reproductive Health Alliance, Inc.";1
+"Centre for Development and Population Activities";1
+"Planned Parenthood Federation of America, Inc.";1
+"Montana State University Foundation";1
+"Centro Internacional de Transparencia y Acceso a la Informacion, A.C.";1
+"University of North Carolina at Raleigh";1
+"Publish What You Fund";1
+"Global Glimpse";1
+"The Pew Research Center";1
+"Citizens Against Government Waste";1
+"National Public Radio, Inc.";1
+"Center for Cultural and Technical Interchange between East and West, Inc.";1
+"New Zealand Family Planning Association";1
+"Center for Public Integrity";1
+"Education, Training and Research Associates";1
+"Global Partnerships";1
+"The Public Agenda Foundation, Inc.";1
+"The Philanthropic Initiative, Inc.";1
+"Universidade Federal de Minas Gerais";1
+"Cato Institute";1
+"Refugees International";1
+"Fundación Mexicana para la Planeación Familiar, A.C.";1
+"Wellesley College";1
+"Washington State University";1
+"American Farmland Trust";1
+"United States Department of State";1
+"Chicago Council on Foreign Relations";1
+"Dt. Naturschutz Dachverband d.dt. Natur-u. Umweltschutzver";1
+"University of Sussex";1
+"Trustafrica";1
+"Management Sciences for Health, Inc.";1
+"Womens Funding Network";1
+"United Nations";1
+"The Global Development Incubator, Inc.";1
+"Firelight Foundation";1
+"International Institute for Sustainable Development";1
+"Université Cheikh Anta Diop de Dakar";1
+"Institut de Recherche pour le Developpement";1
+"Asociacion de Desarrollo Socio-Economico Indigena Bayan";1
+"Africa Agricultural Development Company Limited";1
+"BoardSource";1
+"Kiwanja Foundation Inc";1
+"Global Citizen Year Incorporated";1
+"University of Toronto Office of the Comptroller";1
+"Shirkat Gah - Women's Resource Centre";1
+"Mercy Corps";1
+"Social Development Network";1
+"Manobi Development Foundation";1
+"International Reading Association, Inc.";1
+"Cordell Hull Institute, Inc.";1
+"The President and Directors of Georgetown College";1
+"Ohio State University Research Foundation";1
+"London School of Hygiene and Tropical Medicine";1
+"Musequality";1
+"Norges Forskningsrad";1
+"University of Wisconsin System";1
+"Alliance for Open Society International, Inc.";1
+"International Planned Parenthood Federation";1
+"Swadhikar";1
+"Centre for Policy Research";1
+"Montana State University";1
+"Women Deliver Inc";1
+"Educational Initiatives Private Limited";1
+"World Wide Web Foundation";1
+"Foundation Center";1
+"Basic Education Coalition";1
+"San Francisco Film Society";1
+"Rostros y Voces, FDS, A.C.";1
+"University of Georgia Research Foundation, Inc.";1
+"University Corp ATMO";1
+"Locallis S.C.";1
+"Futures Group International, LLC";1
+"ACE Agricultural Commodity Exchange for Africa Limited";1
+"United Nations Population Fund";1
+"David and Lucile Packard Foundation";1
+"CUTS Geneva Resource Centre";1
+"Meridian Institute";1
+"Alternativas y Capacidades A.C.";1
+"The Planned Parenthood Association of Thailand";1
+"Tiri (The Governance-Access-Learning Network)";1
+"Global Network of People Living With HIV/AIDS";1
+"Regents of the University of California at San Diego";1
+"ActionAid USA";1
+"Brandeis University";1
+"Duke University";1
+"Association pour le Développement de la Langue Saafi";1
+"Tostan Inc";1
+"IDEAS Centre";1
+"Foreningen Sex and Samfund";1
+transaction/provider-org
+"The William and Flora Hewlett Foundation";776
+transaction/receiver-org
+"African Population and Health Research Centre Inc.";13
+"Center for Global Development";12
+"Stanford University Board of Trustees of the Leland Stanford Junior University";11
+"Population Reference Bureau, Inc.";10
+"German Marshall Fund of the US";10
+"Regents of the University of California";10
+"Population Council, Inc.";10
+"INDEPTH Network";9
+"Woodrow Wilson International Center for Scholars";9
+"Tides Foundation";8
+"Women Thrive Worldwide";8
+"Michigan State University";8
+"Massachusetts Institute of Technology";8
+"Brookings Institution";8
+"United Nations Foundation";7
+"Bread for the World Institute, Inc.";7
+"Tides Center";7
+"Oxfam-America, Inc.";7
+"African Economic Research Consortium, Inc.";7
+"MSI-US";6
+"Ipas";6
+"President and Fellows of Harvard College";6
+"Centro de Investigación y Docencia Económicas, A.C.";6
+"Centro de Investigaciones y Estudios Superiores en Antropología Social";6
+"Engenderhealth, Inc.";6
+"African Center for Economic Transformation";6
+"Revenue Watch Institute";6
+"Deutsche Stiftung Weltbevoelkerung";6
+"Johns Hopkins University";6
+"Instituto Mexicano para la Competitividad, A.C.";6
+"Family Care International, Inc.";6
+"World Health Organization";6
+"Trustees of Columbia University in the City of New York";6
+"The Aspen Institute, Inc.";6
+"Iniciativa Ciudadana y Desarrollo Social, Incide Social, A.C.";5
+"Environmental Working Group";5
+"Population Association of America, Inc.";5
+"Partners in Population and Development";5
+"Population Action International";5
+"PATH";5
+"International Planned Parenthood Federation Worldwide Inc.";5
+"The International Bank for Reconstruction and Development";5
+"International Union for the Scientific Study of Population";5
+"Academy for Educational Development, Inc.";5
+"Stichting Hivos";5
+"Independent Television Service, Inc.";5
+"Guttmacher Institute Inc.";5
+"Global Integrity";5
+"Center for US Global Leadership";5
+"Initiative for Global Development";5
+"Sonora Ciudadana AC";5
+"Equilibres et Populations";5
+"Wits Health Consortium (PTY) LTD";5
+"Link Media, Inc.";5
+"Institute of International Education, Inc.";5
+"Save the Children Federation, Inc.";4
+"Global AIDS Alliance";4
+"World Security Institute";4
+"International Food Policy Research Institute";4
+"International Fertilizer Development Center";4
+"Center on Budget and Policy Priorities";4
+"America Abroad Media";4
+"The College of William and Mary";4
+"Pathfinder International";4
+"Fundar, Centro de Análisis e Investigación, Asociacion Civil";4
+"Union for African Population Studies";4
+"International Center for Research on Women";4
+"Pratham USA";4
+"IntraHealth International, Inc.";4
+"International Womens Health Coalition";4
+"Communications Consortium Media Center";4
+"Gesoc, Agencia para el Desarrollo, A.C.";4
+"Global Fund for Women Inc.";4
+"National Security Archive Fund, Inc.";4
+"Yale University";4
+"Overseas Development Institute";3
+"International Senior Lawyers Corporation";3
+"Mexico Evalua, Centro de Analisis de Politicas Publicas, A.C.";3
+"American University in Cairo";3
+"Regents of the University of Colorado";3
+"Stichting Oxfam Novib";3
+"Transparencia Mexicana, A.C.";3
+"Rutgers WPF";3
+"University of San Diego";3
+"Article 19 Research and Information Centre on Censorship";3
+"El Colegio de México A.C.";3
+"International Centre for Trade and Sustainable Development";3
+"Public Radio International, Inc.";3
+"The Carter Center, Inc.";3
+"The International Center for Not-for-Profit Law Inc";3
+"University of the Witwatersrand";3
+"International Initiative for Impact Evaluation, Inc.";3
+"Population Services International";3
+"GlobalWorks Foundation";3
+"Proyecto Fronterizo de Educación Ambiental, A.C.";3
+"Development Initiatives Poverty Research Limited";3
+"International HIV/AIDS Alliance";3
+"Transparency International e.V.";3
+"Regents of the University of California at Berkeley";3
+"Ibis Reproductive Inc.";3
+"Results for Development Institute Inc";3
+"Mango Tree Educational Enterprises, LTD";3
+"Center for American Progress";3
+"Oeuvre Malienne d'Aide à l'Enfance du Sahel";3
+"Institute for Financial Management and Research";3
+"CARE, Inc.";3
+"Innovations for Poverty Action, A New Jersey Nonprofit Corporation";3
+"University of Cape Town";3
+"Centro de Investigación para el Desarrollo, A.C.";3
+"Salzburg Global Seminar Inc.";3
+"Open Society Foundation";3
+"International Policy Council on Agriculture, Food and Trade, Inc.";3
+"EU Transparency";3
+"University of Ghana";3
+"Consumer Unity and Trust Society";2
+"Corporate Council on Africa";2
+"Gynuity Health Projects, LLC";2
+"Associates in Research and Education for Development Inc.";2
+"The Pennsylvania State University";2
+"National Audubon Society, Inc.";2
+"Center for Strategic and International Studies Inc.";2
+"International Rescue Committee, Inc.";2
+"Sin Fronteras, I.A.P.";2
+"Family Health International";2
+"Action Canada for Population and Development";2
+"International Health Economics Association";2
+"Human Rights Watch, Inc.";2
+"Environmental Defense Fund Incorporated";2
+"Henry L Stimson Center";2
+"The Funders Network on Population Reproductive Health and Rights, Inc.";2
+"Globalworks Projects Fund";2
+"Boston Critic, Inc.";2
+"Centro Mexicano de Derecho Ambiental, A.C.";2
+"Sierra Club Foundation";2
+"Instituto Tecnológico Autónomo de México";2
+"International Council on Management of Population Programmes";2
+"Foods Resource Bank";2
+"Brown University of Providence State of RI and Prov Plantations";2
+"Center for Rural Affairs";2
+"Liverpool VCT, Care and Treatment";2
+"International Development Research Centre";2
+"Fritz Institute";2
+"Congressional Economic Leadership Institute";2
+"National Wildlife Federation";2
+"NEPAD Business Foundation";2
+"Global Campaign for Education";2
+"Council on Foreign Relations, Inc.";2
+"Reproductive Health Matters";2
+"International Planned Parenthood Federation - Worldwide Inc";2
+"Calvert Social Investment Foundation Inc";2
+"WGBH Educational Foundation";2
+"Institucion Renace ABP";2
+"Educational Broadcasting Corp";2
+"Carnegie Endowment for International Peace";2
+"World Neighbors, Inc.";2
+"Consejo Ciudadano del Premio Nacional de Periodismo, A.C.";2
+"Raising Voices";2
+"Interaction American Council for Voluntary International Action, Inc.";2
+"Center for Health and Gender Equity, Inc.";2
+"Public Health Institute";2
+"Center for Reproductive Rights Inc.";2
+"ICONE - Instituto de Estudos do Comercio e das Negociacoes Internacionais";2
+"Izaak Walton League of America, Inc.";2
+"Taxpayers for Common Sense";2
+"Cornell University";2
+"Redstone Strategy Group, LLC";2
+"Institut de Formation et de Recherche Demographiques";2
+"DKT International, Inc.";2
+"Synergos Institute, Inc.";2
+"Netherlands Organisation for Scientific Research";2
+"Centre for Development and Population Activities";1
+"Montana State University Foundation";1
+"The Pew Research Center";1
+"Australian Reproductive Health Alliance, Inc.";1
+"Université Cheikh Anta Diop de Dakar";1
+"Foreningen Sex and Samfund";1
+"ACE Agricultural Commodity Exchange for Africa Limited";1
+"Farmworker Justice Fund, Inc.";1
+"Locallis S.C.";1
+"Institute of Development Studies";1
+"Womens Funding Network";1
+"Cato Institute";1
+"Washington State University";1
+"United Nations";1
+"The Global Development Incubator, Inc.";1
+"United States Department of State";1
+"Management Sciences for Health, Inc.";1
+"Education, Training and Research Associates";1
+"Center for Public Integrity";1
+"The Public Agenda Foundation, Inc.";1
+"Fundación Mexicana para la Planeación Familiar, A.C.";1
+"Refugees International";1
+"Global Partnerships";1
+"Center for Cultural and Technical Interchange between East and West, Inc.";1
+"New Zealand Family Planning Association";1
+"National Public Radio, Inc.";1
+"American Farmland Trust";1
+"Chicago Council on Foreign Relations";1
+"Economic and Social Research Council";1
+"International AIDS Vaccine Initiative, Inc.";1
+"Universidade Federal de Minas Gerais";1
+"Oxfam";1
+"Japanese Organization for International Cooperation in Family Planning";1
+"Eastern Virginia Medical School";1
+"The International Community of Women Living with HIV/AIDS";1
+"World Young Women's Christian Association";1
+"The Philanthropic Initiative, Inc.";1
+"Citizens Against Government Waste";1
+"Dt. Naturschutz Dachverband d.dt. Natur-u. Umweltschutzver";1
+"International Institute for Sustainable Development";1
+"University of North Carolina at Raleigh";1
+"University Corp ATMO";1
+"Catholics for Choice";1
+"Centro Internacional de Transparencia y Acceso a la Informacion, A.C.";1
+"Firelight Foundation";1
+"Swadhikar";1
+"Centre for Policy Research";1
+"Global Glimpse";1
+"Africa Agricultural Development Company Limited";1
+"Global Citizen Year Incorporated";1
+"Asociacion de Desarrollo Socio-Economico Indigena Bayan";1
+"Women Deliver Inc";1
+"International Planned Parenthood Federation";1
+"Publish What You Fund";1
+"Regents of the University of California at San Diego";1
+"University of Wisconsin System";1
+"Musequality";1
+"Alliance for Open Society International, Inc.";1
+"Social Development Network";1
+"Shirkat Gah - Women's Resource Centre";1
+"CUTS Geneva Resource Centre";1
+"Meridian Institute";1
+"San Francisco Film Society";1
+"Foundation Center";1
+"United Nations Population Fund";1
+"David and Lucile Packard Foundation";1
+"Aga Khan Foundation USA";1
+"Association pour le Développement de la Langue Saafi";1
+"Planned Parenthood Federation of America, Inc.";1
+"Educational Initiatives Private Limited";1
+"World Wide Web Foundation";1
+"Centre for Governance and Development";1
+"Tostan Inc";1
+"Instituto para la Seguridad y la Democracia, A.C.";1
+"University of Sussex";1
+"Manobi Development Foundation";1
+"Mercy Corps";1
+"University of Toronto Office of the Comptroller";1
+"Institut de Recherche pour le Developpement";1
+"Kiwanja Foundation Inc";1
+"Wellesley College";1
+"Global Network of People Living With HIV/AIDS";1
+"Alternativas y Capacidades A.C.";1
+"IDEAS Centre";1
+"University of Georgia Research Foundation, Inc.";1
+"Brandeis University";1
+"ActionAid USA";1
+"The Planned Parenthood Association of Thailand";1
+"Cordell Hull Institute, Inc.";1
+"Montana State University";1
+"Duke University";1
+"Tiri (The Governance-Access-Learning Network)";1
+"Basic Education Coalition";1
+"Trustafrica";1
+"Université de Ouagadougou";1
+"International Reading Association, Inc.";1
+"BoardSource";1
+"Ohio State University Research Foundation";1
+"London School of Hygiene and Tropical Medicine";1
+"Norges Forskningsrad";1
+"Futures Group International, LLC";1
+"The President and Directors of Georgetown College";1
+"Rostros y Voces, FDS, A.C.";1

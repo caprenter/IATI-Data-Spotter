@@ -1,0 +1,10 @@
+Testing: participating-org,role
+Out of  activities at level not specified
+Activities with participating-org elements = 
+Activities without participating-org elements = 
+Failing activities 
+Testing: activity-date,type
+Out of  activities at level not specified
+Activities with activity-date elements = 
+Activities without activity-date elements = 
+Failing activities 

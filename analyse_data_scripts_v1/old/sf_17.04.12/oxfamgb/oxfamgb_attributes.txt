@@ -1,0 +1,158 @@
+Element,Attribute
+iati-activity,hierarchy
+2,834
+iati-activity,default-currency
+GBP,834
+iati-activity,lang
+en,834
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+21,834
+reporting-org,ref
+GB-CHC-202918,834
+activity-status,code
+2,834
+activity-date,type
+end-planned,834
+start-planned,834
+activity-date,iso-date
+2006,12
+2007,57
+2008,122
+2009,211
+2010,485
+2011,429
+2012,256
+2013,78
+2014,14
+2015,4
+participating-org,role
+funding,834
+participating-org,type
+21,834
+participating-org,ref
+GB-CHC-202918,834
+sector,vocabulary
+oxfamgb,1985
+sector,code
+Aim1,406
+Aim2,222
+Aim3,356
+Aim4,412
+Aim5,589
+policy-marker,code
+None found
+policy-marker,vocabulary
+None found
+policy-marker,significance
+None found
+default-tied-status,code
+None found
+default-flow-type,code
+None found
+default-aid-type,code
+None found
+default-finance-type,code
+None found
+recipient-country,code
+AF,19
+AL,9
+AM,6
+AO,1
+AZ,10
+BD,24
+BF,1
+BO,88
+BR,12
+CD,20
+CL,1
+CO,14
+ER,5
+ET,8
+GB,31
+GE,7
+GH,4
+GT,22
+HN,27
+HT,33
+ID,21
+IN,2
+KE,43
+KH,19
+LK,14
+LR,7
+ML,9
+MW,16
+MZ,5
+NE,9
+NG,5
+NI,18
+NP,17
+PH,15
+PK,31
+PS,9
+RU,3
+RW,5
+SD,1
+SL,11
+SN,1
+SO,9
+SV,1
+TD,3
+TH,12
+TJ,7
+TZ,12
+UG,14
+VN,22
+YE,9
+ZA,7
+ZM,12
+ZW,18
+recipient-region,code
+289,29
+489,4
+589,3
+679,15
+798,11
+998,43
+budget,type
+2,460
+budget/value,currency
+,460
+budget/period-start,iso-date
+2011,460
+planned-disbursement/value,currency
+None found
+planned-disbursement/period-start,iso-date
+None found
+transaction/transaction-type,code
+C,834
+E,1277
+transaction/value,currency
+,2111
+transaction/provider-org,ref
+None found
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+2006,12
+2007,57
+2008,122
+2009,211
+2010,817
+2011,892
+document-link,format
+None found
+document-link,category
+None found
+related-activity,type
+None found
+conditions,type
+None found
+result,type
+None found
+result/indicator,measure
+None found

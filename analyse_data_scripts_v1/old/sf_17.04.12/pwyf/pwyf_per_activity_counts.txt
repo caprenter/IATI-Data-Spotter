@@ -1,0 +1,14 @@
+Testing: participating-org,role
+Out of 3 activities at level not specified
+Activities with participating-org elements = 3
+Activities without participating-org elements = 0
+Failing activities 0
+Number of activities with a Implementing participating-org code = 3
+Number of activities with a Funding participating-org code = 3
+Testing: activity-date,type
+Out of 3 activities at level not specified
+Activities with activity-date elements = 3
+Activities without activity-date elements = 0
+Failing activities 0
+Number of activities with a start-actual activity-date code = 3
+Number of activities with a end-planned activity-date code = 3

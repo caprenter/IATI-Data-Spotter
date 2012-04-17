@@ -1,0 +1,35 @@
+Element
+reporting-org
+"European Union Institutions";796
+participating-org
+"European Union Institutions";796
+"Commission of the European Communities";501
+"European Development Fund";295
+"PUBLIC SECTOR INSTITUTIONS";231
+"PUBLIC SECTOR (donor, recipient, other)";201
+"OTHER";132
+"NON-GOVERNMENTAL ORGANISATIONS (NGOs) AND CIVIL SOCIETY";56
+"UNITED NATIONS AGENCIES, FUNDS AND COMMISSIONS";37
+"United Nations agency, fund or commission (UN)";32
+"OTHER MULTILATERAL INSTITUTIONS";19
+"Other multilateral institution";19
+"WORLD BANK GROUP";14
+"PUBLIC SECTOR";9
+"MULTILATERAL ORGANISATIONS";8
+"World Bank Group (WB)";7
+"INTERNATIONAL NGOs";5
+"OTHER UN (Core Contributions Reportable in Part)";4
+"UNITED NATIONS";4
+"MULTILATERAL INSTITUTIONS";3
+"REGIONAL DEVELOPMENT BANKS";3
+"European Investment Bank (Trust fund via EIB like FEMIP, NIF, Interest subsidies...)";3
+"Regional Development Bank";2
+"LOCAL/REGIONAL NGOs";2
+"PUBLIC-PRIVATE PARTNERSHIPS (PPPs) and NETWORKS";2
+"INTERNATIONAL MONETARY FUND";1
+"Developing country-based NGO";1
+"NON GOVERNMENTAL ORGANISATIONS (NGOs) AND CIVIL SOCIETY";1
+transaction/provider-org
+None found
+transaction/receiver-org
+None found

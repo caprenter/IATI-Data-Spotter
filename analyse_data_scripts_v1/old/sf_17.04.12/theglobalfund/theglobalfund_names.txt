@@ -1,0 +1,9 @@
+Element
+reporting-org
+"The Global Fund to Fight AIDS, Tuberculosis and Malaria";1002
+participating-org
+"The Global Fund to Fight AIDS, Tuberculosis and Malaria";1002
+transaction/provider-org
+None found
+transaction/receiver-org
+None found

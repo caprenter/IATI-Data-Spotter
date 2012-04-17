@@ -1,0 +1,16 @@
+Element
+reporting-org
+"Swedish International Development Agency";22162
+"Ministry of Foreign Affairs";340
+participating-org
+"Ministry of Foreign Affairs";23206
+"Swedish International Development Cooperation Agency";21697
+"";18295
+"Ministry of the Envirionment";52
+"Miljödepartementet";44
+"Other Department";4
+"Sida";1
+transaction/provider-org
+None found
+transaction/receiver-org
+None found

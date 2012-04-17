@@ -1,0 +1,210 @@
+Element
+reporting-org
+"The Indigo Trust";33
+participating-org
+"
+    The Indigo Trust
+  ";33
+"
+          "Co-Creation Hub"
+        ";5
+"
+          "Omidyar Network"
+        ";3
+"
+          iCow
+        ";2
+"
+          "Green Dreams Ltd"
+        ";2
+"
+          "Africa Gathering"
+        ";2
+"
+          "Institute for Philanthropy"
+        ";2
+"
+          FrontlineSMS:Radio
+        ";2
+"
+          "Open University"
+        ";1
+"
+          "Mobile Consortium Ghana"
+        ";1
+"
+          "International Association for Digital Publications"
+        ";1
+"
+          "iLab Liberia"
+        ";1
+"
+          "Youth for Technology Foundation"
+        ";1
+"
+          mySociety
+        ";1
+"
+          BongoHive
+        ";1
+"
+          "VVOB Zambia"
+        ";1
+"
+          "Social Development Network"
+        ";1
+"
+          "ActionAid UK"
+        ";1
+"
+          "ActionAid Tanzania"
+        ";1
+"
+          "SHM Foundation"
+        ";1
+"
+          "TEDx Dzorwulu"
+        ";1
+"
+          "Open Society Institute"
+        ";1
+"
+          "Reconstructed Living Lab"
+        ";1
+"
+          "Open Mind"
+        ";1
+"
+          "Tactical Tech"
+        ";1
+"
+          "Mobile Active"
+        ";1
+"
+          "Ford Foundation"
+        ";1
+"
+          iWatchLive
+        ";1
+"
+          "Pamoja FM"
+        ";1
+"
+          activspaces
+        ";1
+"
+          "Hive Colab"
+        ";1
+"
+          "The William and Flora Hewlett Foundation"
+        ";1
+"
+          Hivos
+        ";1
+"
+          "Transparency and Accountability Initiative"
+        ";1
+"
+          "Map Kibera Trust"
+        ";1
+"
+          "OneWorld UK"
+        ";1
+"
+          ukaid
+        ";1
+"
+          "Revenue Watch Institute"
+        ";1
+"
+          "International Budget Partnership"
+        ";1
+"
+          "Open Society Foundations"
+        ";1
+"
+          "Wikimedia Foundation"
+        ";1
+transaction/provider-org
+"
+              Indigo Trust
+            ";34
+"
+              Indigo Name
+            ";1
+"
+              The Indigo Trust
+            ";1
+transaction/receiver-org
+"
+              Institute for Philanthropy
+            ";3
+"
+              Co-Creation Hub
+            ";3
+"
+              Mobile Active
+            ";2
+"
+              Green Dreams Ltd
+            ";2
+"
+              Mobile Consortium Ghana
+            ";2
+"
+              Africa Gathering
+            ";2
+"
+              iLab Liberia
+            ";1
+"
+              International Association for Digital Publications
+            ";1
+"
+              Youth for Technology Foundation
+            ";1
+"
+              V V O B ABOS EURO
+            ";1
+"
+              ActionAid
+            ";1
+"
+              mySociety
+            ";1
+"
+              SHM Foundation
+            ";1
+"
+              OneWorld UK
+            ";1
+"
+              Transparency and Accountability Initiative
+            ";1
+"
+              FrontlineSMS:Radio
+            ";1
+"
+              Pamoja FM
+            ";1
+"
+              Hive Colab
+            ";1
+"
+              Kiwanja UK Community Company
+            ";1
+"
+              Co-Creation Hub Nigeria
+            ";1
+"
+              Open Mind
+            ";1
+"
+              activspaces
+            ";1
+"
+              Irwin Grayson Associates
+            ";1
+"
+              Map Kibera Trust
+            ";1

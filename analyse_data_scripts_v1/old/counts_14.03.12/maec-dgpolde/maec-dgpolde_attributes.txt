@@ -1,0 +1,5 @@
+Element,Attribute
+transaction/transaction-type,code
+C,16392
+D,16185
+R,207

@@ -1,0 +1,4 @@
+No hierarchy specified = 0
+Hierarchy specified = 22502
+16339 activities at hierarchy 2
+6163 activities at hierarchy 1

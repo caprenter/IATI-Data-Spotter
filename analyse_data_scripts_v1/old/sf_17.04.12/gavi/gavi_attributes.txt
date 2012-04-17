@@ -1,0 +1,190 @@
+Element,Attribute
+iati-activity,hierarchy
+1,1581
+iati-activity,default-currency
+USD,1581
+iati-activity,lang
+en,1581
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+40,1581
+reporting-org,ref
+47122,1581
+activity-status,code
+02,529
+03,1052
+activity-date,type
+end-actual,1581
+start-actual,1581
+activity-date,iso-date
+1970,20
+2001,51
+2002,200
+2003,302
+2004,323
+2005,301
+2006,293
+2007,320
+2008,211
+2009,165
+2010,122
+2011,168
+2012,242
+2013,157
+2014,67
+2015,41
+2016,171
+2017,8
+participating-org,role
+Funding,1581
+participating-org,type
+40,1581
+participating-org,ref
+47122,1581
+sector,vocabulary
+,1581
+sector,code
+12220,1581
+policy-marker,code
+None found
+policy-marker,vocabulary
+None found
+policy-marker,significance
+None found
+default-tied-status,code
+None found
+default-flow-type,code
+None found
+default-aid-type,code
+B02,1581
+default-finance-type,code
+110,1581
+recipient-country,code
+AF,24
+AL,15
+AM,26
+AO,16
+AZ,27
+BA,10
+BD,28
+BF,19
+BI,26
+BJ,29
+BO,14
+BT,16
+CD,33
+CF,25
+CG,23
+CI,22
+CM,35
+CN,15
+CU,3
+DJ,13
+ER,23
+ET,22
+GE,24
+GH,41
+GM,36
+GN,25
+GW,19
+GY,17
+HN,17
+HT,9
+ID,22
+IN,12
+KE,32
+KG,22
+KH,24
+KI,4
+KM,19
+KP,27
+LA,22
+LK,16
+LR,24
+LS,17
+MG,31
+ML,33
+MM,25
+MN,11
+MR,14
+MW,19
+MZ,23
+NE,24
+NG,14
+NI,17
+NP,24
+PG,8
+PK,31
+RW,25
+SB,3
+SD,27
+SL,29
+SN,22
+SO,12
+SS,11
+ST,25
+TD,21
+TG,23
+TJ,24
+TM,10
+TZ,54
+UA,10
+UG,20
+UZ,16
+VN,22
+YE,24
+ZM,22
+ZW,14
+recipient-region,code
+None found
+budget,type
+None found
+budget/value,currency
+None found
+budget/period-start,iso-date
+None found
+planned-disbursement/value,currency
+None found
+planned-disbursement/period-start,iso-date
+None found
+transaction/transaction-type,code
+C,2453
+D,1719
+transaction/value,currency
+,4172
+transaction/provider-org,ref
+None found
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+2001,100
+2002,296
+2003,306
+2004,340
+2005,261
+2006,300
+2007,352
+2008,442
+2009,321
+2010,278
+2011,288
+2012,378
+2013,215
+2014,160
+2015,127
+2016,8
+document-link,format
+None found
+document-link,category
+None found
+related-activity,type
+None found
+conditions,type
+None found
+result,type
+None found
+result/indicator,measure
+None found

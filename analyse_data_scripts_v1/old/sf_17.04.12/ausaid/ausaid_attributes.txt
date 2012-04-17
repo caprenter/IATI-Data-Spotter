@@ -1,0 +1,104 @@
+Element,Attribute
+iati-activity,hierarchy
+1,132
+iati-activity,default-currency
+AUD,132
+iati-activity,lang
+en,132
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+10,132
+reporting-org,ref
+AU-5,132
+activity-status,code
+2,122
+3,10
+activity-date,type
+end-actual,132
+end-planned,132
+start-actual,132
+start-planned,132
+activity-date,iso-date
+2008,62
+2009,170
+2010,48
+2011,12
+2012,46
+2013,70
+2014,46
+2015,54
+2016,14
+2017,4
+2019,2
+participating-org,role
+None found
+participating-org,type
+None found
+participating-org,ref
+None found
+sector,vocabulary
+None found
+sector,code
+None found
+policy-marker,code
+None found
+policy-marker,vocabulary
+None found
+policy-marker,significance
+None found
+default-tied-status,code
+None found
+default-flow-type,code
+10,132
+default-aid-type,code
+A02,132
+default-finance-type,code
+110,132
+recipient-country,code
+KH,12
+KI,10
+MN,3
+NR,7
+PH,20
+SB,26
+TO,13
+VN,15
+VU,16
+WS,10
+recipient-region,code
+None found
+budget,type
+None found
+budget/value,currency
+None found
+budget/period-start,iso-date
+None found
+planned-disbursement/value,currency
+None found
+planned-disbursement/period-start,iso-date
+None found
+transaction/transaction-type,code
+E,122
+transaction/value,currency
+,122
+transaction/provider-org,ref
+None found
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+2010,122
+document-link,format
+None found
+document-link,category
+None found
+related-activity,type
+None found
+conditions,type
+None found
+result,type
+None found
+result/indicator,measure
+None found

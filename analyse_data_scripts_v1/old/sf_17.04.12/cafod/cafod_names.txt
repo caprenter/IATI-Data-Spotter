@@ -1,0 +1,866 @@
+Element
+reporting-org
+"CAFOD";749
+participating-org
+"CAFOD";749
+"CAFOD Harare";14
+"Catholic Diocese of Tombura-Yambio Development and Peace Office";12
+"Caritas Niger";11
+"Catholic Diocese of Marsabit";10
+"CAFOD Maputo";8
+"Secretariado Nacional de Pastoral Social";7
+"Caritas Bulawayo";7
+"Catholic Diocese of Isiolo";7
+"Caritas Harare";7
+"Caritas Hwange";6
+"Caritas Masvingo";6
+"Diocese of Ndola";6
+"Associação de Auxílio Mútuo da Região Leste";6
+"CAFOD Nairobi";6
+"Adigrat Diocese Catholic Secretariat";6
+"Caritas Bangladesh National Office";6
+"CAFOD Kinshasa";6
+"Caritas Zambia";5
+"Caritas National Office";5
+"Caritas DR Congo Bukavu Diocese";5
+"Caritas Gweru";5
+"Sudanaid (SCBC)";5
+"Caritas Yei";5
+"Catholic Diocese of Kitui";5
+"CAFOD London";4
+"CAFOD Freetown";4
+"Caritas Guatemala El Quiché Diocese";4
+"Caritas DR Congo Bunia Diocese";4
+"Caritas DR Congo Goma Diocese";4
+"Gayo Pastoral Development Initiative";4
+"Movimento de Defesa do Favelado - Regiao Episcopal Belem";4
+"Islamic Relief Worldwide - UK HQ";4
+"Caritas Switzerland National Office";4
+"Catholic Diocese of Maralal ";4
+"Diocese of Maralal";4
+"Caritas Gokwe";4
+"Progressio";4
+"Sudanaid - Juba";4
+"Caritas Sierra Leone Makeni Diocese";4
+"Caritas Mutare";4
+"Caritas Tanzania National Office";3
+"Diocese of Jalingo ";3
+"Catholic Relief Services, Haiti";3
+"Caritas Africa";3
+"ACEAC Justice and Peace";3
+"Diocese of Monze";3
+"St Albert's Mission Hospital";3
+"Caritas de l'Archidiocese de Port-au-Prince";3
+"Equipo Maíz";3
+"Centre for Justice and Peace studies";3
+"Sisters of the Sacred Heart of Jesus and Mary";3
+"Norwegian Church Aid (NCA)";3
+"Congregacao das Irmas Franciscanas Hospitaleiras da Imaculada Conceicao";3
+"Comisión Episcopal de Acción Social";3
+"Jesuit Centre for Theological Reflection";3
+"CAFOD Khartoum";3
+"Commission Diocésaine Justice et Paix Bukavu";3
+"Diocese of Yola";3
+"Trócaire Northern Ireland";3
+"Ethiopian Catholic Secretariat";3
+"Instituto de Acción Social Juan XXIII";3
+"Action for Development";3
+"Universidad Centroamericana";3
+"Action on Disability and Development - Bangladesh";3
+"KEC - Catholic Justice and Peace Commission";2
+"Catholic Relief Services, East Africa Office, Kenya";2
+"Ecosystems Work for Essential Benefits";2
+"The Kenya Climate Change Working Group";2
+"KontraS Aceh";2
+"Catholic Relief Services, Sudan";2
+"Centro de Comunicación y Desarrollo Andino";2
+"Sudan Ecumenical Forum";2
+"ZCBC Health Commission";2
+"Mashambanzou Care Trust";2
+"National Council of Disabled Persons of Zimbabwe";2
+"Catholic Commission for Justice and Peace - Zimbabwe";2
+"Diocese of Moshi ";2
+"Zvishavane Water Project";2
+"Dupoto-e-Maa";2
+"HUNDEE";2
+"Caritas Chinhoyi";2
+"Uganda Catholic Commission for Justice and Peace ";2
+"Inter Regional Meeting of the Bishops of Southern Africa";2
+"Archdiocese of Khartoum";2
+"The Jesuit Hakimani Centre";2
+"Centre for Minority Rights Development";2
+"Lembaga Bantuan Hukum - Banda Aceh (Legal Aid Foundation)";2
+"Archdiocesan Association for Social Action, Nampula";2
+"Parroquia La Natividad";2
+"Centro de Capacitação da Juventude";2
+"Grito dos Excluidos";2
+"Caritas Latin America and Caribbean";2
+"Catholic Eparchial Secretariat of Keren ";2
+"Eritrean Catholic Secretariat";2
+"Conselho Indigenista Missionário - Tefé";2
+"Centro de Desenvolvimento Comunitario";2
+"Centro Ecumênico de Serviços à Evangelizaçao Popular";2
+"Kdadalak Sulimutuk Institut";2
+"Pastoral de Salud, Diocesis de la Verapaz";2
+"Conferência Nacional dos Bispos do Brasil";2
+"St Francis Hospital Nsambya";2
+"Sudan Catholic Bishops Conference (SCBC)";2
+"Programa de Desarrollo y Paz del Magdalena Medio";2
+"Caritas Kenya National Office";2
+"Strengthening Participatory Organization";2
+"Comité Ecuménico Para o Desenvolvimento Social";2
+"Catholic Relief Services, Pakistan";2
+"Comissao Episcopal Para a pastoral dos Servicios de Saude";2
+"Acción Cultural Loyola";2
+"LATINDADD";2
+"Zimbabwe Catholic Bishops Conference";2
+"CAFOD Managua ";2
+"Commission Diocésaine Justice et Paix Nyundo";2
+"Movement for National Land and Agricultural Reform";2
+"HelpAge International";2
+"Commission Episcopale Justice et paix ";2
+"Daughters of Charity - Tigray";2
+"CAFOD Rwanda";2
+"Diocese of Kano";2
+"Derechos Humanos y Medio Ambiente Puno";2
+"Luta Hamutuk";2
+"Caritas DR Congo Butembo Beni Diocese";2
+"Commission Episcopale Ad Hoc pour les ressources naturelles";2
+"Dhaka Ahsania Mission";2
+"International Training Network-Bangladesh University of Engineering and Technolo";2
+"Thailand Burma Border Consortium";2
+"Archdiocese of Arusha";2
+"Network Movement for Justice and Development";2
+"Catholic Secretariat of Nigeria";2
+"Archdiocese of Jos";2
+"Fundación Servicio Jesuita para el Desarrollo";2
+"CAFOD Jos";2
+"Caritas Honduras, Tegucigalpa Archdiocese";2
+"Community Initiative Facilitation and Assistance";2
+"Radio Waumini FM 88.3";2
+"Assumption Sisters of Nairobi";2
+"Vicaria de Solidaridad de la Prelatura de Sicuani";2
+"Archdiocese of Mombasa ";2
+"Archdiocese of Abuja";2
+"Diocese of Makurdi";2
+"Instituto Bartolomé de Las Casas";2
+"St Francis Community Integrated Care Programme ";2
+"Solidaridad Para El Desarrollo";2
+"Agri Service Ethiopia";2
+"Asociación de Mujeres Productoras ";2
+"Archdiocese of Lusaka";2
+"Kosti Pastoral Region Office";2
+"St. Francis Community Development Programme";2
+"Bolivia Civil Society Climate Change Platform";1
+"Hope and Homes for Children/Rwanda";1
+"Uyisenga N'Manzi";1
+"CEPAS";1
+"Comissão Pastoral da Terra - Paraíba";1
+"Grupo Pela Vidda - Rio de Janeiro";1
+"Pastoral Activities and Services for people with AIDS Dar es Salaam Archdiocese";1
+"AVEGA Agahozo Est";1
+"Instituto Cultivar Movimento dos Sem Terra";1
+"Dar es Salaam Archdiocese Community Health Education Programme";1
+"AVEGA Agahozo National";1
+"Bolivia Information Forum";1
+"Centro de Investigación y Promoción del Campesinado (UAP)";1
+"ARCT - Ruhuka";1
+"Comissão Pastoral da Terra - Bahia";1
+"Sudanaid Regional Office - Nyala";1
+"Southern Sudan Older People's Organisation";1
+"Caritas Rwanda National Office";1
+"Sudan Focal Point - Africa";1
+"Centro de Desarrollo Comunitario "Causananchispaj"";1
+"Commission Diocésaine Justice et Paix Cyangugu";1
+"Instituto para el Desarrollo Humano";1
+"Commission Episcopale Justice et Paix RWANDA";1
+"Centro de Promoción y Capacitación del Campesinado-La Paz";1
+"Sudan Catholic Radio Network";1
+"Comissão Pastoral da Terra - Rondônia";1
+"Fundación Nuna Bolivia";1
+"Commission Diocésaine Justice et Paix Kigali";1
+"Catholic Relief Services - USCC (CRS)";1
+"Unión de Instituciones para el Trabajo de Acción Social";1
+"Sudan Council of Churches";1
+"UCL Institute for Risk and Disaster Reduction";1
+"Resource Centre for Civil Leadership - International";1
+"Caritas Thailand";1
+"Rural Human Rights Activists Programme";1
+"Centro de Derechos Humanos Fray Bartolomé de Las Casas AC";1
+"Fomento Cultural y Educativo AC";1
+"Clínica Ana Manganaro";1
+"CEPS-Caritas Mexico";1
+"VIHas de VIDA";1
+"Centre d'Appui Pédagogique";1
+"Haiti Support Group ";1
+"Programme pour une Alternative de Justice";1
+"CONTRASIDA";1
+"Oficina de Tutela Legal del Arzobispado";1
+"Newcastle University Institute for Research on Sustainability";1
+"Red Muqui";1
+"Movimiento Ciudadano Para Que No Se Repita ";1
+"Catholic Relief Services, Niger";1
+"Oxfam GB";1
+"Yesh Din";1
+"The Workers Advice Centre - Ma'an";1
+"Hotline for Migrant Workers";1
+"Caritas Diocésaine de Jacmel";1
+"Caritas Haiti National Office";1
+"Caring for Environment for Development";1
+"Kenya Debt Relief Network";1
+"St. John Sports Society, Korogocho";1
+"Solar Works East Africa Limited ";1
+"Trócaire East Africa Regional Office";1
+"Inter-Regional Meeting of Bishops of Southern Africa";1
+"Caritas Benin National Office";1
+"Guyana Human Rights Centre";1
+"The Diocese of Kisii";1
+"Kutoka Network";1
+"Association Mary Barreda";1
+"Unión Nacional de Agricultures y Ganaderos";1
+"Service Jésuite aux Migrants Haïti ";1
+"Caritas Diocesana de Jinotega";1
+"Amani People's Theatre";1
+"Kenya Youth Foundation";1
+"Kenya Episcopal Conference";1
+"Instituto de Fomento de una Educación de Calidad - EDUCA";1
+"Warmi Huasi";1
+"Broederlijk Delen";1
+"Quaker Peace and Social Witness";1
+"Jerusalem Legal Aid and Human Rights Centre";1
+"Caritas Chile";1
+"Corporacion de Apoyo a Comunidades Populares";1
+"Centro de Investigacion y Educacion Popular";1
+"Asociación de los Cabildos  Norte del Cauca";1
+"Vicariato Apostólico de San Vicente-Puerto Leguízamo";1
+"Comissão Pastoral da Terra -Marabá / Xinguara";1
+"Galpao de meninos e Meninas em Santa Amaro";1
+"Comissão Brasileira de Justiça  e Paz";1
+"ISA Instituto SocioAmbiental";1
+"Conselho Indígena de Roraima";1
+"Jubileu Sul";1
+"Hutukara Associação Yanomami";1
+"Pastoral da Aids";1
+"Survival International";1
+"ABC group (inter-agency)";1
+"Corporación Unidades Democráticas para el Desarrollo";1
+"Don Bosco Homes Liberia";1
+"Social Enterprise Development Foundation";1
+"Our Lady of Fatima Parish";1
+"Federación Guatemalteca de Escuelas Radiofónicas";1
+"Caritas Cape Palmas";1
+"Instituto de Educación Y Salud";1
+"National Caritas of Liberia";1
+"Caritas Gbarnga";1
+"Diocese of Pagadian";1
+"DIOPIM Committee on Mining issues";1
+"AMECEA Justice and Peace Desk";1
+"Nairobi Peace Initiative";1
+"Pastoral Social de Florencia";1
+"PAKIGDAIT";1
+"Legal Rights and Natural Resources Center, Inc.-";1
+"Philippine Indigenous Peoples Links (PIPLinks)";1
+"Gukom of the Subanons of the Pito ka Dolungan";1
+"Comissão Pro-Indio de Sao Paulo";1
+"Christian Outreach Relief and Development";1
+"ACEAC General Secretariat";1
+"Concert d’Actions des Jeunes et Enfants Défavorisés";1
+"Caritas Dungu-Doruma";1
+"Centre Olame";1
+"Commission Diocésaine Justice et Paix du Diocèse d'Uvira";1
+"Commission Diocésaine Justice et Paix Bunia";1
+"The British and Irish Agencies Afghanistan Group";1
+"Commission Diocésaine Justice et Paix du Diocèse Goma";1
+"Commission Episcopale Pour l'Apostolat des Laics";1
+"Asian Muslim Action Network";1
+"Minority Rights Group";1
+"Forum of Conscience";1
+"The Fatima Institute ";1
+"Caritas Middle East North Africa";1
+"Caritas Kenema";1
+"Caritas Freetown and Bo";1
+"Pesticide Action Network, Asia and the Pacific";1
+"Caritas Asia";1
+"National Caritas Sierra Leone";1
+"Puerta Abierta";1
+"Red de Comercializacion Comunitaria Alternativa";1
+"Jesuit AIDS project";1
+"The African Forum for Catholic Social Teaching";1
+"Poverty Reduction Forum Trust";1
+"Justice for Children Trust";1
+"Restless Development (formerly Students Partnership Worldwide)";1
+"Island Hospice Service";1
+"Zimbabwe Women Lawyers Association";1
+"Women's Action Group";1
+"Chinhoyi Diocese Justice and Peace Programme";1
+"Mavambo Orphan Care";1
+"Tearfund";1
+"Caritas Chipata";1
+"Youth Alive Zambia";1
+"St Theresa's Hospital";1
+"Integrated HIV and AIDS Programme";1
+"Integrated HIV and AIDS Programme IAP";1
+"Environment Africa";1
+"Southern Alliance for Indigenous Resources ";1
+"St Theresa Mission Hospital Ibenga";1
+"Association Najdeh";1
+"Caritas Lebanon Migrant Centre";1
+"DECIDAMOS";1
+"The Lighthouse Trust";1
+"Archdiocese of Lilongwe Integrated HIV and AIDS Response";1
+"Lilongwe Diocese";1
+"Centro de Estudios Paraguayos 'Antonio Guash'";1
+"Centro de Documentación y Estudios";1
+"Poverty Action Network Ethiopia";1
+"Archdiocese of Addis Ababa Catholic Secretariat";1
+"Watersheds Organizational and Legal Aspects Support";1
+"The Lighthouse Project";1
+"Pax Christi International ASBL";1
+"Departamento de Justicia y Solidaridad, Consejo Episcopal Latinoamericano";1
+"AMERINDIA";1
+"Instituto Cooperativo Interamericano";1
+"Comunicaciones  Aliadas";1
+"Fundación Radialistas Apasionadas y Apasionados";1
+"Servicio Jesuita a Migrantes México";1
+"Latin America Bureau#'";1
+"Hermanas de Santa Clara #";1
+"Network of Civil Society Organisations in Oromia";1
+"Organsiation for Women in Self-Employment";1
+"Roehampton University";1
+"Youth Development Association";1
+"SOS Sahel";1
+"Agency for Cooperation and Research Development";1
+"Ashar Alo Society";1
+"Organisation Diocésaine pour le Développement du Bujumbura";1
+"Commission Diocésaine Justice et Paix Bubanza";1
+"Commission Diocésaine Justice et Paix Bujumbura";1
+"Commission Episcopale Justice et Paix Burundi";1
+"Mekdim Ethiopian National Association";1
+"Brother of Good Works";1
+"Daughters of Charity - Addis Ababa";1
+"Relief Society of Tigray Addis Ababa";1
+"Alliance of Civil Society Organisations of Tigray";1
+"Union of Ethiopian Women Charitable Associations ";1
+"Organisation for Social Services for AIDS";1
+"Apostolic Vicariate of Soddo-Gamo Gofa and South Omo Catholic Church";1
+"Gemini Foundation";1
+"Joint Office of CAFOD, SCIAF and Trocaire";1
+"Musasa ";1
+"RAU";1
+"Diocese of Minna";1
+"Diocese of Idah";1
+"Catholic Overseas Development Agency";1
+"Instituto Histórico Centroamericano";1
+"Medical Missionaries of Mary, Gussoro PHC";1
+"Malumfashi Primary Health Care ";1
+"Hope for the Village Child Foundation";1
+"Diocese Of Makurdi";1
+"Diocese of Shendam";1
+"La Comisión Provincial de Apostolado Social de la Provincia Centroamericana de ";1
+"Caritas Cambodia";1
+"Banteay Srei";1
+"Maryknoll";1
+"Karol and Setha";1
+"Commune Council Support Project";1
+"Cambodian HIV/AIDS Education and Care ";1
+"Development and Partnership in Action";1
+"NGO Forum on Cambodia";1
+"HIV/AIDS Coordinating Committee";1
+"Diocese of Ikot Ekpene";1
+"Justice Development and Peace/Caritas, Jos";1
+"Resources for Peace and Reconciliation";1
+"Centre for Communication Training";1
+"Savisthri";1
+"Centre for Human Rights and Development";1
+"Peace and Community Action";1
+"National Peace Council";1
+"SEDEC Caritas Sri Lanka";1
+"Caritas Sri Lanka Batticaloa Office";1
+"Oblates of Mary Immaculate Jaffna Province";1
+"Sramabimani ";1
+"SETIK";1
+"Justice, Development and Peace Commission, Catholic Archdiocese of Abuja";1
+"Centre for Women Studies and Intervention ";1
+"Apostolic Vicariate of Kontagora";1
+"Youth Formation Centre (Bauchi)";1
+"JDPC National";1
+"Swaziland Coalition of Concerned Civic Organisations";1
+"Virgilus Memorial Catholic Rural Health Centre Namu, Catholic Diocese of Shendam";1
+"Catholic Caritas Foundation of Nigeria";1
+"Salvation Centre Cambodia";1
+"Diocese of Moroto";1
+"Pietermaritzburg Agency for Christian Social Awareness";1
+"KwaZulu Natal Christian Council";1
+"KwaZulu Regional Christian Council";1
+"Thandanani Association";1
+"Home and Family Life Foundation";1
+"Comissão Diocesana da Saúde Lichinga";1
+"Associacao Progresso";1
+"Episcopal Commission for Justice and Peace";1
+"Caritas Lichinga";1
+"Diakonia Council of Churches";1
+"Institute for Essential Services Reform";1
+"Solidaritas Kelompok Sipil";1
+"TAPOL";1
+"Bridge Indonesia (Down to Earth)";1
+"Regional Development Foundation (YPK)";1
+"Cordia Caritas Medan";1
+"Civil Society Forum for Climate Justice (CSF)";1
+"KARINA";1
+"Karina - KAS";1
+"União Nacional de Camponeses";1
+"Caritas Mozambique Maputo Diocese";1
+"Hospice Africa Uganda";1
+"Kitovu Mobile AIDS Organisation";1
+"Association for Women’s Awareness and Rural Development";1
+"Sarhad Rural Support Programme";1
+"Caritas Gulu Archdiocese";1
+"Moroto Catholic Diocese";1
+"Community Development Resource Network ";1
+"Conflict Resolution by Youth - Uganda";1
+"Uganda Catholic Secretariat";1
+"Society for Disabled Women";1
+"Caritas Internationalis";1
+"Nacala Diocesan Justice and Peace Comission";1
+"Oikos Cooperacao e Desenvolvimento";1
+"Comissão Diocesana de Justiça e Paz - Chimoio";1
+"FONGTIL (NGO Forum)";1
+"Caritas Diocesana Baucau";1
+"Catholic Relief Services, East Timor";1
+"Caritas Diocesana Dili";1
+"Mata Dalan Institut";1
+"Instituto Centroamericano de Espiritualidad";1
+transaction/provider-org
+"CGF";4670
+"CARITAS";171
+"DfiD";122
+"DFID";81
+"EC";80
+"COMIC RELIEF";68
+"UN";38
+"OTHER";15
+"GRM";14
+"ECHO";8
+"DEC";7
+"Small Islands";4
+"BIG LOTTERY";1
+transaction/receiver-org
+"CAFOD Harare";348
+"Catholic Diocese of Tombura-Yambio Development and Peace Office";245
+"CAFOD Nairobi";198
+"CAFOD Maputo";125
+"Norwegian Church Aid (NCA)";112
+"CAFOD Rwanda";101
+"CAFOD London";85
+"Caritas Bulawayo";81
+"CAFOD Jos";77
+"ABC group (inter-agency)";72
+"Caritas Gweru";68
+"CAFOD Freetown";67
+"Caritas Hwange";64
+"Caritas Masvingo";63
+"Comissão Pastoral da Terra - Bahia";58
+"Movimento de Defesa do Favelado - Regiao Episcopal Belem";55
+"Caritas Mutare";47
+"Associação de Auxílio Mútuo da Região Leste";42
+"Zvishavane Water Project";40
+"Sudan Focal Point - Africa";35
+"Caritas Zambia";34
+"Comissão Pastoral da Terra - Rondônia";33
+"Kosti Pastoral Region Office";33
+"Jerusalem Legal Aid and Human Rights Centre";32
+"Secretariado Nacional de Pastoral Social";32
+"Sudanaid - Juba";31
+"Caritas Sierra Leone Makeni Diocese";31
+"Centro Ecumênico de Serviços à Evangelizaçao Popular";31
+"Corporacion de Apoyo a Comunidades Populares";30
+"Sudanaid (SCBC)";30
+"Oficina de Tutela Legal del Arzobispado";28
+"Instituto Cultivar Movimento dos Sem Terra";27
+"Catholic Diocese of Marsabit";27
+"Acción Cultural Loyola";27
+"CAFOD Kinshasa";26
+"Caritas Gokwe";26
+"Centro de Comunicación y Desarrollo Andino";26
+"Comissão Pastoral da Terra - Paraíba";26
+"Caritas Bangladesh National Office";25
+"Conselho Indigenista Missionário - Tefé";25
+"Sramabimani ";25
+"Thailand Burma Border Consortium";24
+"Bridge Indonesia (Down to Earth)";24
+"SETIK";24
+"Kdadalak Sulimutuk Institut";24
+"Caritas Chinhoyi";24
+"Caritas Harare";24
+"Centre for Justice and Peace studies";23
+"DECIDAMOS";23
+"Caritas National Office";22
+"Savisthri";21
+"Instituto Cooperativo Interamericano";21
+"Programme pour une Alternative de Justice";21
+"National Council of Disabled Persons of Zimbabwe";20
+"CAFOD Managua ";20
+"Caritas Yei";20
+"Parroquia La Natividad";19
+"Nairobi Peace Initiative";19
+"St Albert's Mission Hospital";19
+"Environment Africa";19
+"Instituto de Educación Y Salud";19
+"Assumption Sisters of Nairobi";18
+"Movement for National Land and Agricultural Reform";18
+"Eritrean Catholic Secretariat";18
+"Centro de Derechos Humanos Fray Bartolomé de Las Casas AC";18
+"The Fatima Institute ";18
+"Centro de Estudios Paraguayos 'Antonio Guash'";18
+"Solidaridad Para El Desarrollo";18
+"Caritas Guatemala El Quiché Diocese";17
+"Archdiocese of Arusha";17
+"Centre for Human Rights and Development";17
+"Commission Diocésaine Justice et Paix Nyundo";17
+"Conselho Indígena de Roraima";17
+"AVEGA Agahozo Est";16
+"Uyisenga N'Manzi";16
+"Ethiopian Catholic Secretariat";16
+"Guyana Human Rights Centre";16
+"ARCT - Ruhuka";16
+"Caritas DR Congo Bukavu Diocese";16
+"Hope and Homes for Children/Rwanda";16
+"Archdiocese of Khartoum";16
+"Fomento Cultural y Educativo AC";16
+"Adigrat Diocese Catholic Secretariat";15
+"Diocese of Ndola";15
+"St Francis Hospital Nsambya";15
+"Grito dos Excluidos";15
+"Resources for Peace and Reconciliation";15
+"Instituto Bartolomé de Las Casas";15
+"Instituto Centroamericano de Espiritualidad";15
+"Galpao de meninos e Meninas em Santa Amaro";14
+"St. Francis Community Development Programme";14
+"AVEGA Agahozo National";14
+"TAPOL";14
+"Universidad Centroamericana";14
+"Network Movement for Justice and Development";14
+"Commission Diocésaine Justice et Paix Kigali";14
+"Catholic Diocese of Isiolo";13
+"Grupo Pela Vidda - Rio de Janeiro";13
+"Don Bosco Homes Liberia";12
+"Conferência Nacional dos Bispos do Brasil";12
+"Diocese of Yola";12
+"Radio Waumini FM 88.3";12
+"Instituto de Fomento de una Educación de Calidad - EDUCA";12
+"FONGTIL (NGO Forum)";12
+"Trócaire Northern Ireland";12
+"Jesuit Centre for Theological Reflection";12
+"Action on Disability and Development - Bangladesh";12
+"Instituto de Acción Social Juan XXIII";12
+"Peace and Community Action";12
+"Centro de Desarrollo Comunitario "Causananchispaj"";12
+"Diocese of Jalingo ";12
+"Diocese of Moshi ";11
+"Centro de Capacitação da Juventude";11
+"Hutukara Associação Yanomami";11
+"ACEAC Justice and Peace";11
+"Vicariato Apostólico de San Vicente-Puerto Leguízamo";11
+"The Lighthouse Project";11
+"Centre for Communication Training";11
+"Asociación de los Cabildos  Norte del Cauca";10
+"Comissão Diocesana da Saúde Lichinga";10
+"Comisión Episcopal de Acción Social";10
+"Warmi Huasi";10
+"ISA Instituto SocioAmbiental";10
+"Kitovu Mobile AIDS Organisation";10
+"Instituto para el Desarrollo Humano";10
+"Caritas Niger";10
+"Amani People's Theatre";10
+"Equipo Maíz";10
+"Commission Diocésaine Justice et Paix Bukavu";10
+"Quaker Peace and Social Witness";9
+"Caritas Lichinga";9
+"Comissão Pro-Indio de Sao Paulo";9
+"Progressio";9
+"Agri Service Ethiopia";9
+"Social Enterprise Development Foundation";9
+"PAKIGDAIT";9
+"Programa de Desarrollo y Paz del Magdalena Medio";9
+"CAFOD Khartoum";9
+"Southern Alliance for Indigenous Resources ";9
+"Youth Alive Zambia";9
+"Diocese of Monze";9
+"Archdiocese of Jos";9
+"St Theresa's Hospital";9
+"CEPAS";9
+"Caritas Diocesana Baucau";9
+"Southern Sudan Older People's Organisation";9
+"Vicaria de Solidaridad de la Prelatura de Sicuani";9
+"Jubileu Sul";9
+"Unión Nacional de Agricultures y Ganaderos";9
+"Centro de Documentación y Estudios";9
+"CONTRASIDA";9
+"Caritas Latin America and Caribbean";8
+"Centre for Minority Rights Development";8
+"Comissão Brasileira de Justiça  e Paz";8
+"Caritas Kenema";8
+"International Training Network-Bangladesh University of Engineering and Technolo";8
+"Zimbabwe Catholic Bishops Conference";8
+"The Diocese of Kisii";8
+"Comité Ecuménico Para o Desenvolvimento Social";8
+"Diocese of Kano";8
+"Diocese of Makurdi";8
+"Archdiocese of Abuja";8
+"Caritas Gulu Archdiocese";8
+"AMERINDIA";8
+"Caritas DR Congo Goma Diocese";8
+"Sudan Ecumenical Forum";7
+"Catholic Relief Services, East Africa Office, Kenya";7
+"Diocese of Maralal";7
+"Departamento de Justicia y Solidaridad, Consejo Episcopal Latinoamericano";7
+"Catholic Diocese of Kitui";7
+"Commission Diocésaine Justice et Paix Bunia";7
+"Unión de Instituciones para el Trabajo de Acción Social";7
+"Caritas Africa";7
+"Dupoto-e-Maa";7
+"Archdiocese of Mombasa ";7
+"Uganda Catholic Commission for Justice and Peace ";7
+"The Jesuit Hakimani Centre";7
+"Fundación Radialistas Apasionadas y Apasionados";7
+"Inter Regional Meeting of the Bishops of Southern Africa";7
+"Movimiento Ciudadano Para Que No Se Repita ";7
+"Fundación Servicio Jesuita para el Desarrollo";7
+"Centro de Investigacion y Educacion Popular";7
+"Islamic Relief Worldwide - UK HQ";7
+"Agency for Cooperation and Research Development";7
+"Hotline for Migrant Workers";7
+"Organisation Diocésaine pour le Développement du Bujumbura";7
+"Dhaka Ahsania Mission";7
+"Catholic Diocese of Maralal ";7
+"Pastoral de Salud, Diocesis de la Verapaz";6
+"Red Muqui";6
+"Salvation Centre Cambodia";6
+"Caritas Lebanon Migrant Centre";6
+"Ashar Alo Society";6
+"KEC - Catholic Justice and Peace Commission";6
+"Association Mary Barreda";6
+"Bolivia Information Forum";6
+"Caritas DR Congo Bunia Diocese";6
+"Hospice Africa Uganda";6
+"Episcopal Commission for Justice and Peace";6
+"Catholic Eparchial Secretariat of Keren ";6
+"Catholic Commission for Justice and Peace - Zimbabwe";6
+"Centro de Investigación y Promoción del Campesinado (UAP)";5
+"AMECEA Justice and Peace Desk";5
+"Commission Diocésaine Justice et Paix du Diocèse d'Uvira";5
+"Luta Hamutuk";5
+"The Workers Advice Centre - Ma'an";5
+"Caritas Cape Palmas";5
+"Daughters of Charity - Tigray";5
+"Caritas Switzerland National Office";5
+"Broederlijk Delen";5
+"União Nacional de Camponeses";5
+"Diocese of Moroto";5
+"Commission Diocésaine Justice et Paix du Diocèse Goma";5
+"Puerta Abierta";5
+"Oblates of Mary Immaculate Jaffna Province";5
+"Tearfund";5
+"Pastoral da Aids";5
+"Gayo Pastoral Development Initiative";5
+"Clínica Ana Manganaro";5
+"HUNDEE";5
+"Kenya Episcopal Conference";5
+"Maryknoll";5
+"Lembaga Bantuan Hukum - Banda Aceh (Legal Aid Foundation)";5
+"Comunicaciones  Aliadas";5
+"Kenya Youth Foundation";5
+"Kutoka Network";5
+"Kenya Debt Relief Network";5
+"Commune Council Support Project";5
+"Banteay Srei";5
+"Pastoral Activities and Services for people with AIDS Dar es Salaam Archdiocese";5
+"Catholic Relief Services, Pakistan";5
+"Karol and Setha";5
+"Community Development Resource Network ";5
+"Lilongwe Diocese";5
+"CEPS-Caritas Mexico";5
+"Catholic Relief Services, Haiti";5
+"Caritas Tanzania National Office";5
+"Catholic Overseas Development Agency";5
+"Concert d’Actions des Jeunes et Enfants Défavorisés";5
+"Cambodian HIV/AIDS Education and Care ";5
+"Mata Dalan Institut";4
+"Centre Olame";4
+"Caritas Rwanda National Office";4
+"Centro de Desenvolvimento Comunitario";4
+"Catholic Relief Services, Sudan";4
+"Bolivia Civil Society Climate Change Platform";4
+"KwaZulu Regional Christian Council";4
+"Caritas de l'Archidiocese de Port-au-Prince";4
+"Derechos Humanos y Medio Ambiente Puno";4
+"Centre d'Appui Pédagogique";4
+"Asociación de Mujeres Productoras ";4
+"St. John Sports Society, Korogocho";4
+"KontraS Aceh";4
+"Diakonia Council of Churches";4
+"Thandanani Association";4
+"Home and Family Life Foundation";4
+"Comissão Pastoral da Terra -Marabá / Xinguara";4
+"Pietermaritzburg Agency for Christian Social Awareness";4
+"KwaZulu Natal Christian Council";4
+"Gukom of the Subanons of the Pito ka Dolungan";4
+"Legal Rights and Natural Resources Center, Inc.-";4
+"Associacao Progresso";4
+"Congregacao das Irmas Franciscanas Hospitaleiras da Imaculada Conceicao";4
+"Diocese of Shendam";4
+"Federación Guatemalteca de Escuelas Radiofónicas";4
+"Medical Missionaries of Mary, Gussoro PHC";4
+"ACEAC General Secretariat";4
+"Diocese of Minna";4
+"Diocese Of Makurdi";4
+"Hope for the Village Child Foundation";4
+"Caritas Honduras, Tegucigalpa Archdiocese";4
+"Swaziland Coalition of Concerned Civic Organisations";4
+"National Peace Council";4
+"Commission Episcopale Pour l'Apostolat des Laics";4
+"Diocese of Idah";4
+"Malumfashi Primary Health Care ";4
+"HIV/AIDS Coordinating Committee";4
+"Conflict Resolution by Youth - Uganda";4
+"Uganda Catholic Secretariat";4
+"NGO Forum on Cambodia";3
+"Corporación Unidades Democráticas para el Desarrollo";3
+"Development and Partnership in Action";3
+"Diocese of Ikot Ekpene";3
+"Sisters of the Sacred Heart of Jesus and Mary";3
+"Comissao Episcopal Para a pastoral dos Servicios de Saude";3
+"Commission Episcopale Justice et Paix Burundi";3
+"Youth Development Association";3
+"The Kenya Climate Change Working Group";3
+"DIOPIM Committee on Mining issues";3
+"Community Initiative Facilitation and Assistance";3
+"LATINDADD";3
+"Commission Diocésaine Justice et Paix Bujumbura";3
+"Instituto Histórico Centroamericano";3
+"Watersheds Organizational and Legal Aspects Support";3
+"Moroto Catholic Diocese";3
+"Regional Development Foundation (YPK)";3
+"Organsiation for Women in Self-Employment";3
+"VIHas de VIDA";3
+"Solidaritas Kelompok Sipil";3
+"Caritas Gbarnga";3
+"Action for Development";3
+"La Comisión Provincial de Apostolado Social de la Provincia Centroamericana de ";3
+"Philippine Indigenous Peoples Links (PIPLinks)";3
+"Association Najdeh";3
+"Centro de Promoción y Capacitación del Campesinado-La Paz";3
+"Sudan Catholic Radio Network";3
+"Commission Diocésaine Justice et Paix Bubanza";3
+"SEDEC Caritas Sri Lanka";3
+"Commission Diocésaine Justice et Paix Cyangugu";3
+"Commission Episcopale Justice et Paix RWANDA";3
+"Caritas Internationalis";3
+"Commission Episcopale Ad Hoc pour les ressources naturelles";3
+"Catholic Secretariat of Nigeria";2
+"Organisation for Social Services for AIDS";2
+"Caritas Sri Lanka Batticaloa Office";2
+"Union of Ethiopian Women Charitable Associations ";2
+"Caritas Asia";2
+"Dar es Salaam Archdiocese Community Health Education Programme";2
+"Rural Human Rights Activists Programme";2
+"Network of Civil Society Organisations in Oromia";2
+"Hermanas de Santa Clara #";2
+"Alliance of Civil Society Organisations of Tigray";2
+"Relief Society of Tigray Addis Ababa";2
+"Ecosystems Work for Essential Benefits";2
+"ZCBC Health Commission";2
+"Oxfam GB";2
+"Archdiocese of Addis Ababa Catholic Secretariat";2
+"Mashambanzou Care Trust";2
+"Christian Outreach Relief and Development";2
+"KARINA";2
+"Asian Muslim Action Network";2
+"Sudan Catholic Bishops Conference (SCBC)";2
+"Minority Rights Group";2
+"HelpAge International";2
+"Caritas Mozambique Maputo Diocese";2
+"Roehampton University";2
+"Caritas DR Congo Butembo Beni Diocese";2
+"Comissão Diocesana de Justiça e Paz - Chimoio";2
+"Caritas Diocésaine de Jacmel";2
+"Caritas Kenya National Office";2
+"Strengthening Participatory Organization";2
+"Caritas Haiti National Office";2
+"Karina - KAS";2
+"Yesh Din";2
+"Pesticide Action Network, Asia and the Pacific";2
+"St Francis Community Integrated Care Programme ";2
+"Sudan Council of Churches";2
+"Survival International";2
+"Archdiocese of Lusaka";2
+"Caritas Diocesana de Jinotega";1
+"Service Jésuite aux Migrants Haïti ";1
+"Integrated HIV and AIDS Programme";1
+"Servicio Jesuita a Migrantes México";1
+"Caritas Dungu-Doruma";1
+"RAU";1
+"Caring for Environment for Development";1
+"The African Forum for Catholic Social Teaching";1
+"Jesuit AIDS project";1
+"Restless Development (formerly Students Partnership Worldwide)";1
+"Solar Works East Africa Limited ";1
+"Trócaire East Africa Regional Office";1
+"Justice for Children Trust";1
+"Inter-Regional Meeting of Bishops of Southern Africa";1
+"Caritas Benin National Office";1
+"Poverty Reduction Forum Trust";1
+"Fundación Nuna Bolivia";1
+"Island Hospice Service";1
+"Mavambo Orphan Care";1
+"Caritas Cambodia";1
+"Integrated HIV and AIDS Programme IAP";1
+"Caritas Diocesana Dili";1
+"Commission Episcopale Justice et paix ";1
+"Musasa ";1
+"Chinhoyi Diocese Justice and Peace Programme";1
+"Women's Action Group";1
+"Zimbabwe Women Lawyers Association";1
+"Caritas Thailand";1
+"Latin America Bureau#'";1
+"Civil Society Forum for Climate Justice (CSF)";1
+"Youth Formation Centre (Bauchi)";1
+"Apostolic Vicariate of Soddo-Gamo Gofa and South Omo Catholic Church";1
+"Caritas Chile";1
+"Catholic Caritas Foundation of Nigeria";1
+"Justice, Development and Peace Commission, Catholic Archdiocese of Abuja";1
+"Gemini Foundation";1
+"Apostolic Vicariate of Kontagora";1
+"Pastoral Social de Florencia";1
+"Centre for Women Studies and Intervention ";1
+"Virgilus Memorial Catholic Rural Health Centre Namu, Catholic Diocese of Shendam";1
+"Brother of Good Works";1
+"The British and Irish Agencies Afghanistan Group";1
+"Oikos Cooperacao e Desenvolvimento";1
+"Archdiocesan Association for Social Action, Nampula";1
+"Catholic Relief Services - USCC (CRS)";1
+"Red de Comercializacion Comunitaria Alternativa";1
+"Mekdim Ethiopian National Association";1
+"St Theresa Mission Hospital Ibenga";1
+"Resource Centre for Civil Leadership - International";1
+"Justice Development and Peace/Caritas, Jos";1
+"Association for Women’s Awareness and Rural Development";1
+"Institute for Essential Services Reform";1
+"Poverty Action Network Ethiopia";1
+"National Caritas Sierra Leone";1
+"Caritas Chipata";1
+"Catholic Relief Services, Niger";1
+"Pax Christi International ASBL";1
+"Society for Disabled Women";1
+"Cordia Caritas Medan";1
+"Caritas Freetown and Bo";1
+"Sarhad Rural Support Programme";1
+"Diocese of Pagadian";1
+"Sudanaid Regional Office - Nyala";1
+"Catholic Relief Services, East Timor";1
+"Our Lady of Fatima Parish";1
+"Daughters of Charity - Addis Ababa";1
+"National Caritas of Liberia";1
+"Forum of Conscience";1
+"Caritas Middle East North Africa";1
+"Haiti Support Group ";1

@@ -1,0 +1,9 @@
+Element,Attribute
+activity-date
+1970,1191
+transaction-date
+None found
+budget/period-start
+None found
+planned-disbursement/period-start
+None found

@@ -1,0 +1,86 @@
+Element
+reporting-org
+"International HIV/AIDS Alliance";20
+"	International HIV/AIDS Alliance	";18
+participating-org
+"	International HIV/AIDS Alliance	";22
+"International HIV/AIDS Alliance";20
+"International HIV/AIDS Alliance in Myanmar";5
+"International HIV/AIDS Alliance in Zambia";4
+"KANCO";3
+"International HIV/AIDS Alliance in South Sudan";2
+"	International HIV/AIDS Alliance in China	";2
+"International HIV/AIDS Alliance in Uganda";2
+"International HIV/AIDS Alliance in India";2
+"	Initiative Privee et Communautaire de lutte contre le VIH/SIDA  (IPC)";1
+"	International HIV/AIDS Alliance in South Sudan	";1
+"Friends of the Global Fund Latin America";1
+"International HIV/Alliance in India";1
+"Social Awareness Service Organization (SASO)";1
+"KHANA";1
+"	Pact	";1
+"Stop Aids Now";1
+"	International HIV/AIDS Alliance in Myanmar";1
+"	International HIV/AIDS Alliance in Zambia ";1
+"	International HIV/AIDS Alliance in Zambia";1
+"Family Life Associations of Swaziland (FLAS)";1
+"Young, Happy, Healthy and Safe (YHHS)";1
+"	Asociacion Atlacatl Vivo Positivo (Atlacatl)";1
+"All Ukrainian Network of PLHA(PLHA Network)";1
+"HIV/AIDS and STD Alliance Bangladesh(HASAB)";1
+"	International HIV/AIDS Alliance in Uganda	";1
+"	Alliance Ukraine";1
+"	International HIV/AIDS Alliance in China";1
+"Southern Africa HIV and AIDS Information Dissemination Service (SAfAIDS)";1
+"KHANA - Regional Technical Support Hub for South East Asia and the Pacific";1
+"Alliance Ukraine";1
+"International HIV/AIDS Alliance in China";1
+"Rumah Cemara";1
+"Association de Lutte Contre le Sida (ALCS),Morocco";1
+"Helem,Lebanon";1
+"Association de Protection Contre le Sida(APCS),Algeria";1
+"Association Tunisienne de Lutte contre les MST/Sida (ATL), Tunisia";1
+"Soins Infirmiers et Développement Communautaire (SIDC),Lebanone";1
+"Malaysia AIDS Council";1
+"International Drug Policy Consortium (IDPC)";1
+"Action Aid";1
+"Association Marocaine de Solidarité et de Développement (AMSED), Morocco";1
+"Eastern African National Networks of AIDS Service Organisations (EANNASO)";1
+"Prevention Informations Lutte Contre La Sida(PILS)";1
+"AIDS Foundation East-West(AFEW)";1
+"International Harm Reduction Association (IHRA)";1
+"International Network of People who Use Drugs(INPUD)";1
+"Health Connections International (HCI) ";1
+"UK AIDS Consortium - AIDS Portal Project";1
+transaction/provider-org
+"European Commision (EC)";5
+"United States  Agency for International Development (USAID)";3
+"Department for International Development (DFID)";2
+"	Pact	";2
+"	Management Sciences for Health (MSH)	";2
+"Private Donor";1
+"	PATH AIDSTAR 1	";1
+"	South Sudan Multi Donor Trust Fund (MDTF) / UNDP	";1
+"PATH AIDSTAR 1";1
+"Swiss Agency for Development and Co-operation (SDC)";1
+"	Norwegian Agency for Development Co-operation (NORAD)	";1
+"Swedish International Development Agency( Sida)";1
+"Danish International Development Agency (DANIDA)";1
+"Levi Strauss Foundation	";1
+"Department of Foreign Affairs and Trade (Irish Aid)";1
+"ViiV Healthcare Ltd";1
+"Deutsche Gesellschaft fur Technische Zusammenarbeit (GTZ)";1
+"PATH (AIDSTAR)";1
+"Family Health International (FHI)";1
+"Netherlands Ministry of Foreign Affairs (BUZA)";1
+"Australia AID (AusAID)";1
+"Action Aid";1
+"The Bill and Melinda Gates Foundation (GATES)";1
+"Save the Children US  - Principal Recipient";1
+"UNOPS(3DF)";1
+"Zambia National Aids Network (ZNAN) - Prinicipal Recipient";1
+"Zambia National Aids Network  (ZNAN) - Prinicipal Recipient";1
+"The Global Fund to Fight AIDS, Tuberculosis and Malaria (Global Fund)";1
+"Johns Hopkins University (JHU)";1
+transaction/receiver-org
+None found

@@ -1,0 +1,15 @@
+5202 Activities have at least one transaction
+
+No.Transactions with [IR] => 4702
+No.Transactions with      [LR] => 3213
+No.Transactions with     [C] => 512
+No.Transactions with    [D] => 1527
+
+Total number of transactions types 17728
+Total number of transactions 17728
+0 Failing activities
+0 activities without a transaction
+
+Number of negative transactions: 13625
+Number of negative transactions of more than -1,000,000: 2460
+

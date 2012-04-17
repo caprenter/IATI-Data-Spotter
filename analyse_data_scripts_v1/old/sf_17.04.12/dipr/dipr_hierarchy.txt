@@ -1,0 +1,4 @@
+No hierarchy specified = 0
+Hierarchy specified = 11
+9 activities at hierarchy 1
+2 activities at hierarchy 2

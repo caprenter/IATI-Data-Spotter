@@ -1,0 +1,3 @@
+Element,Attribute
+transaction/transaction-type,code
+E,122

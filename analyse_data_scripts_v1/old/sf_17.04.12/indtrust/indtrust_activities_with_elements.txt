@@ -1,0 +1,86 @@
+Activities with/without elements
+Ignore Hierarchy Activities counted=40
+
+reporting-org: with,40
+other-identifier: without,40
+activity-status: with,40
+activity-date: with,40
+contact-info: with,40
+participating-org: with,40
+sector: with,39
+sector: without,1
+default-tied-status: with,40
+default-flow-type: with,40
+default-aid-type: with,40
+default-finance-type: with,40
+recipient-country: with,35
+recipient-country: without,5
+recipient-region: without,40
+location: with,21
+location: without,19
+location/location-type: with,21
+location/location-type: without,19
+location/name: without,40
+location/description: without,40
+location/administrative: without,40
+location/coordinates: without,40
+location/gazetteer-entry: without,40
+budget: with,40
+budget/period-start: without,40
+budget/period-end: without,40
+budget/value: with,40
+planned-disbursement: without,40
+planned-disbursement/period-start: without,40
+planned-disbursement/period-end: without,40
+planned-disbursement/value: without,40
+activity-website: with,38
+activity-website: without,2
+collaboration-type: with,40
+policy-marker: without,40
+transaction: with,34
+transaction: without,6
+transaction/value: with,34
+transaction/value: without,6
+transaction/description: without,32
+transaction/description: with,8
+transaction/transaction-type: with,34
+transaction/transaction-type: without,6
+transaction/provider-org: with,34
+transaction/provider-org: without,6
+transaction/receiver-org: with,31
+transaction/receiver-org: without,9
+transaction/transaction-date: with,34
+transaction/transaction-date: without,6
+transaction/flow-type: without,40
+transaction/aid-type: without,40
+transaction/finance-type: without,40
+transaction/tied-status: without,40
+transaction/disbursement-channel: without,40
+provider-org: without,40
+receiver-org: without,40
+document-link: without,39
+document-link: with,1
+related-activity: without,40
+legacy-data: without,40
+conditions: without,40
+conditions/condition: without,40
+result: without,31
+result: with,9
+result/indicator: without,40
+result/indicator/baseline: without,40
+result/indicator/period: without,40
+result/indicator/period/period-start: without,40
+result/indicator/period/period-end: without,40
+result/indicator/period/target: without,40
+result/indicator/period/actual: without,40
+contact-info/organisation: without,40
+contact-info/person-name: with,40
+contact-info/telephone: without,40
+contact-info/email: with,40
+contact-info/mailing-address: without,40
+
+Hierarchy=1 Activities counted=0
+
+
+Hierarchy=2 Activities counted=0
+

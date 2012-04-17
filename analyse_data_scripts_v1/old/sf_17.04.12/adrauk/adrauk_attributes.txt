@@ -1,0 +1,87 @@
+Element,Attribute
+iati-activity,hierarchy
+,1
+iati-activity,default-currency
+51,1
+iati-activity,lang
+en,1
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+21,1
+reporting-org,ref
+ADRAUK,1
+activity-status,code
+2,1
+activity-date,type
+end-actual,1
+start-actual,1
+activity-date,iso-date
+2011,1
+2014,1
+participating-org,role
+Accountable,1
+Extending,1
+Implementing,1
+participating-org,type
+10,1
+21,1
+22,1
+participating-org,ref
+,3
+sector,vocabulary
+RO,1
+sector,code
+,1
+policy-marker,code
+None found
+policy-marker,vocabulary
+None found
+policy-marker,significance
+None found
+default-tied-status,code
+5,1
+default-flow-type,code
+10,1
+default-aid-type,code
+C01,1
+default-finance-type,code
+110,1
+recipient-country,code
+RW,1
+recipient-region,code
+None found
+budget,type
+1,1
+budget/value,currency
+GBP,1
+budget/period-start,iso-date
+2011,1
+planned-disbursement/value,currency
+None found
+planned-disbursement/period-start,iso-date
+None found
+transaction/transaction-type,code
+None found
+transaction/value,currency
+None found
+transaction/provider-org,ref
+None found
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+None found
+document-link,format
+None found
+document-link,category
+None found
+related-activity,type
+None found
+conditions,type
+None found
+result,type
+None found
+result/indicator,measure
+None found

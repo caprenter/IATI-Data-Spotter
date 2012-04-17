@@ -1,0 +1,977 @@
+Element,Attribute
+iati-activity,hierarchy
+1,4209
+2,12174
+iati-activity,default-currency
+USD,16383
+iati-activity,lang
+en,16383
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+10,16383
+reporting-org,ref
+SE-2,51
+SE-6,16332
+activity-status,code
+1,16
+2,8818
+4,7549
+activity-date,type
+end-planned,16383
+start-planned,16383
+activity-date,iso-date
+1993,8
+1994,2
+1996,12
+1997,9
+1998,13
+1999,10
+2000,139
+2001,22
+2002,128
+2003,258
+2004,226
+2005,609
+2006,1615
+2007,909
+2008,2046
+2009,3507
+2010,10026
+2011,6075
+2012,2896
+2013,2111
+2014,1227
+2015,190
+2016,699
+2017,11
+2018,4
+2019,4
+2020,8
+2022,2
+participating-org,role
+Accountable,13214
+Extending,16383
+Funding,16383
+participating-org,type
+,13214
+10,32766
+participating-org,ref
+ABC Honduras,3
+ACF Action Contre la Faim,20
+ACHEST African Center for Glob,2
+ACWUA,Arab Countries Water Uti,3
+AIDS Foundation,South Africa,5
+AIEKA AB,2
+AMRN Africa Midwives Research,5
+AMS Arbetsförmedlingen,14
+ANERELA,3
+ARASA-AIDS Rights Alliance SYA,4
+ARDHI Univ.Tanzania(ARU),4
+AWEPA,4
+Afghan Analyst Network,5
+African Medical and Research F,6
+African Union,2
+Afrikagrupperna i Sverige,46
+Aga Khan Foundation,5
+Ain o Salish Kendra (ASK),3
+Albanian Nat Employm Serv. NES,6
+Ann Kämpe Projektkonsult AB,4
+Arias stiftelsen Costa Rica,2
+Asian Development Bank,16
+Association of African Univers,2
+BDO Consulting Group AB,2
+BNWLA/Ban Nat Wom Lawyers Ass,3
+Belgian Technical Cooperation,4
+Blekinge Tekniska Högskola,3
+Bolivia Transparente,2
+Bolivian Min for DevPlanning,32
+Bonz Unlimited AB,3
+Boverket:Sw.Ag Housing/Plannin,2
+C-Libre,Comité Libre Expresión,2
+CARE International,2
+CCICED - China Council,4
+CEP,Corridor Empowerment Proje,5
+CGCC,Center Counterterrorism C,2
+CGD Centre Governance/Developm,4
+CIP,Centro Integridade Public,2
+CONCERN,3
+COWIconsult,4
+CSE Centre for Science&Enviro.,3
+CSUCA Cons.Univ.Centroamerican,3
+Camara Ind Comercio Santa Cruz,3
+Cambodian Development Resource,7
+Caritas,4
+CeProSARD,6
+Cent Nicarague Derecho Humanos,3
+Cent f Construc Resolu Dispute,4
+Center for Global Development,2
+Center for Invest. Reporting,5
+Centre for Policy Dialogue,3
+Centro Agronómico Tropical de,8
+Chalmers Tekniska Högskola,2
+Chamber of Comme Industry/Agri,4
+ChamberComme Indust South Swed,2
+Citizens Association MOST,2
+Civil Rights Defenders,13
+Civil Society Promotion Center,3
+Clowner utan gränser,2
+Colling Water Management AB,4
+Columbia University,2
+Com C-americ Ambiente Sarrollo,3
+Com Trab Ass Econ Mocambique,3
+Comisión Verdad y la Reconcia,2
+Commis. for Science&Technology,2
+Consejo Latinoamericano de Cie,4
+Consejo Nacional Anticorrupció,2
+Consejo Nacional de Univ,8
+Corte Suprema de Justicia,2
+Cos.Nacional,mujeres,Ecuador,2
+Council Europe Devel Bank CEDB,2
+Council for the Development of,7
+Cross Cult Proj Assoc, Danmark,10
+DCAF(Cent.Control.Armed.Forces,4
+DDG Danish De-mining Group,2
+DFID Dep. for Int. Development,22
+Danida,4
+Danish Church Aid, DCA,2
+Danish Refugee Counsil,23
+Deloitte and Touche,2
+Dep of Arts Cult Sci Techn,121
+Department of Trade and Indust,5
+Deutsche Gesell.Techn.Zus. GTZ,13
+Developm.Bank Philippines,2
+Diakonia,313
+Document Center of Cambodia,5
+Domstolsverket,18
+EAC, East African Community,14
+EANNASO,2
+ECOVIC,3
+ESAAG East and Southerna Afric,5
+EU Integration Office,3
+EURASIA Partnership Foundation,2
+Eastern Asia Commercial Bank,2
+Econ Com Latin Am/Caribbean,2
+Economic Relations Division,10
+Ecorys Nederland BV,3
+Edita,2
+Ekonomistyrningsverket,7
+Electoral Institute of South A,8
+Embassy of Norway-Nic,2
+Energy Regulation Board,2
+Ericsson AB,2
+Ernst & Young AB,5
+Escuela Agric Reg Tropl Humed,3
+Espacio Regional Occident EROC,5
+Estamos,4
+Estonian School of Diplomacy,18
+Eurasia Foundation,11
+Europ Council Foreign Relation,2
+Europarådet,2
+European Bank for Reconstructi,22
+European Development Fund,2
+Europeiska Kommissionen,2
+Europeiska Unionen,9
+Exportrådet,17
+External Resources Department,43
+FAUTAPO,4
+FCI France Coop.Internationale,2
+FHI Statens Folkhälsoinstitut,6
+FOJO Inst fortbildn journalist,2
+FONAENF,2
+FPCCIA,3
+FPD,Foundation Prof.Developmen,6
+FPH Fondation Partners.Health,8
+FPP Forest People Programme,2
+FUNDEVI Costa Rica,2
+Facultad Lationamericana de Ci,3
+Fed of Chambers Com/Ind, Sri L,2
+Fiscalía General,El Salvador,2
+Folke Bernadotteakademin,20
+Food and Agriculture Organisat,71
+Forum Syd,667
+Friends of Earth Middle East,4
+Fundacão do Desavolimento Admi,7
+Försvarsmakten,2
+GOHAB Konsult HB,2
+GRM International AB,2
+Georgian Young Lawyer's Assoc.,2
+Global Action Plan(GAP),2
+Global Reporting,3
+Global Witness,3
+Golden Valley Agric Res.Trust,3
+Gordon Evans Associates,3
+Goverm of Bosnia&Herzegovina,3
+Governance & Develop Institute,2
+Governm of Serbien/Montenegro,6
+Government of Bangladesh,3
+Government of Botswana,4
+Government of Burkina Faso,29
+Government of Kenya,57
+Government of Mali,28
+Government of Mozambique,159
+Government of Nicaragua,2
+Government of Rwanda,11
+Government of Uganda,49
+Grant Thornton,2
+Göteborgs Universitet,7
+HELVETAS,4
+HIVOS, Humanist Institute for,4
+HJP Int. Ltd,4
+Hand in Hand International,2
+Handelshögskolan, Stockholm,8
+Handicap International,6
+Hanoi Medical University,2
+HelpAge Int. - ARDC,9
+Hifab International AB,5
+Human Rights Dev. Initiative,6
+Hyltenstan & Son AB,2
+Högskolan i Jönköping,2
+IAS International Aid Services,4
+IBRD,Intl Bank Reconstruction,11
+ICMPD, International Centre fo,2
+ICTJ,5
+IDA   Intl Dev.Association,2
+IFC, International Fin Corp.,15
+IHAA International HIV/AIDS Al,6
+INAM, Honduras,4
+INRUD,3
+INTERPEACE,4
+IOM Internat. Org Migration,32
+IUCEA Inter-UnivCouncil EastAf,2
+IVA,Ingenjörsvetenskapsakademi,2
+IVL Svenska Miljöinstitutet AB,8
+Ibis,3
+InDevelop-IPM,27
+Inst Estud Estratég Pol Publ,2
+Inst Interam Derechos Humanos,6
+Inst.for Dev.Studies(IDS),2
+Institute for Democray SouthAf,2
+Institute of Social Studies,4
+Int Centre Diarrhoeal Disease,4
+Int Legal Assist. Consortium,2
+Int Mother and Child Health,2
+Int Org for Standardization,3
+Inter-American Development Ban,10
+Inter-American Dialogue,2
+Internal decision Letter of Co,724
+International AIDS Society,IAS,2
+International Alert,5
+International Food Policy Res,4
+International Fund Agriculture,5
+International Institute for Ed,3
+International Labour Organisat,9
+International Management Group,14
+International Monetary Fund,2
+International RescueCommittee,27
+International Union for the Co,10
+Islamic Relief,22
+Joint UN Programme on HIV/AIDS,2
+Jordbruksverket,7
+KAMER Turkiska kvinnorättsorg,2
+KHRC,2
+KKCAF K Kaunda Child Afr Found,2
+KPMG Peat Marwick,12
+Ka.Der,2
+Karolinska Institutet,4
+Kemikalieinspektionen,16
+Kenya Land Alliance,5
+Kjell Hayling,2
+Konkurrensverket,5
+Kristdem. råd, demokrati, utv.,2
+Kronofogden,4
+Kulturarv utan gränser,12
+Kulturrådet,10
+Kungliga Tekniska Högskolan,10
+Kungliga musikhögskolan Sthlm,9
+Kvinna till kvinna,28
+LAC Legal Assistance Centre,5
+LACWHN,2
+LDH, Liga de Direitos Humanos,2
+LEDA,   Zenica,2
+LFV Luftfartsverket,9
+LIDEMA,LigaDefensaMedioAmbient,4
+LO/TCOs Biståndsnämnd,501
+Lake Victoria Local Authoritie,9
+Lantbrukarnas Riksförbund,3
+Lantmäteriverket,28
+Legal&Human Rights Centre LHRC,2
+Liberia Dujar Association,2
+Liberian Reconstr.Dev.Com.Sec.,4
+Life & Peace Institute, Sweden,8
+Linköpings Universitet,2
+Local Government Engineering D,4
+Lunds Universitet,15
+Lusaka City Council,3
+Lux-Development,2
+Läkare utan gränser,53
+MEFMI MacroEconomic and Finan.,3
+MERLIN U.K.,8
+MONASO,2
+MR-fonden,8
+MSB,Mynd.samhällsskydd o bered,78
+Maji na Ufanisi,4
+Makerere University,42
+Medair,6
+Medecines Sans Frontieres,68
+Mercy Corps,2
+Middle East Awareness,2
+Migrationsverket,5
+Min of Policy Dev&Implem Sri L,7
+Min of Science &Technology VIE,10
+Min. Finance/Econom Develop,3
+Min. of Agric. Water&Rural Dev,14
+Min.of Finance in Indonesia,2
+Min.of Reg.and Local Gov./ Nam,2
+Mines Advisory Group,6
+Ministerio de Cooperación Exte,11
+Ministry Finance & TreasuryBiH,4
+Ministry of Agriculture,20
+Ministry of Agriculture and Fo,12
+Ministry of Communication, Tra,11
+Ministry of Culture and Inform,3
+Ministry of Education,10
+Ministry of Energy,24
+Ministry of Environment,21
+Ministry of Finance,160
+Ministry of Finance and Planni,17
+Ministry of Foreign Affairs of,35
+Ministry of Health,20
+Ministry of Higher Education a,46
+Ministry of Human Rights,2
+Ministry of Industry,17
+Ministry of Justice,2
+Ministry of Lands/Housing KEN,9
+Ministry of Planning and Inter,5
+Ministry of Planning and Inves,25
+Ministry of Public Service and,2
+Ministry of Science and Techno,2
+Ministry of Works,8
+Misc,776
+Muhimbili University,5
+Musika,3
+Mölnlycke Health Care AB,3
+NDI National Democratic Inst,6
+NERDA Northeast Reg. Dev. Ass.,4
+NGO Coalition,3
+NGO Expert Group,2
+NGOn ACTED,2
+NID Namibia Inst for Democracy,4
+NIR Näringslivets Intern.Råd,2
+NORAD,2
+NUR,National University Rwanda,14
+NUTEK,11
+Namibia Broadcasting Corporat.,2
+Nat.Board of Trade(Kommerskoll,11
+National AIDS Forum,2
+National HIV/AIDS/STI Councill,2
+National Police of Nicaragua,4
+National Science Found.NSF,Sri,2
+National Statistical Centre,3
+National Treasury,17
+National University of Laos,10
+Naturvårdsverket,28
+Nederländska Ambassaden,2
+Nile Basin Initiative,8
+Nordic Consulting Group,10
+Norska Amb. Elfenbenskusten,2
+Norway MoFA,5
+Norwegian Church Aid,4
+Norwegian People's Aid,3
+Norwegian Refugee Council,64
+OCHA,135
+OECD,3
+OHCHR UN High C Human Rights,18
+OSSE Org säkerhet/samarb EU,24
+Office of the Auditor General,2
+Office of the High Representat,2
+Okänd,3
+Olof Palmes Internationella Ce,179
+Open University of Tanzania,3
+Organisation of American State,6
+Orgut Consulting AB,5
+Osienala,3
+Oxfam,39
+Oxfam Novib,2
+Oxford Policy Management Ltd,2
+PEM Consultant,6
+PLS Ramboll Management AB,2
+PMU Interlife,1156
+PRISMA,2
+PUMA  (NGO Bolivia),2
+PWC,8
+Pact,2
+Padrigu Consultants,2
+Palestinian Energy Authority,6
+Palestinian Water Authority,3
+Pan African Christian AIDS Net,6
+Pan-American Health Organisati,18
+Plan Sverige,116
+Population Council,5
+Population Service Int. PSI,2
+Praktisk Solidaritet,6
+Price Waterhouse,7
+Pride Zambia,4
+Prime Minister's Office,4
+Private Sector Foundation,3
+Professional Management AB,2
+Qandil,4
+RCC, Regional Coop. Council,2
+REC Regional Environment Centr,52
+REPSSI,5
+RHSTEP Repr Health Train/Educ,3
+Ramboll Natura AB,12
+Raoul Wallenberg Institutet,23
+Real Estate Cadastre,Macedonia,3
+Regional AIDS Training Network,7
+Republic of Moldava,5
+Riksantikvarieämbetet,2
+Riksförbundet för sexuell uppl,31
+Rikspolisstyrelsen,21
+Riksskatteverket,3
+Rwanda National Electoral Comm,2
+Rädda Barnen,277
+Räddningsverket,2
+SADC Parliamentary Forum,2
+SADC Sekr. Botswana,6
+SALA-IDA Svenska Kommunförbund,12
+SANORD S-Africa Nordic Center,2
+SE-2,16536
+SE-6,16227
+SE-99,3
+SEGEPLAN,6
+SIPU International AB,31
+SIS Service AB,3
+SIWI Stockholm Int.Water Inst.,10
+SLU Inst skoglig resurs/geomat,14
+SMHI Sv.Meteorolog Inst.,17
+SNV Netherlands Developm org,7
+SOS - BARNBYAR,2
+SPM Consultants KB,4
+SWECO,10
+Sala IDA AB,3
+Sapsama AB,2
+Sassarsson Cameron,2
+Save the Children,21
+Search for common ground,4
+Sebas HB,2
+Sec. de Obras Púb, Transp,Vivi,4
+Skatteverket,10
+Smart Kolektiv,3
+Smittskyddsinstitutet,7
+Society for International Dev,4
+Sonke Gender Justice Network,6
+Soros Foundation,4
+Southern African AIDS Trust,16
+Språngbrädan Utveckling,2
+Standing Conf Town& Municipali,4
+Statens Energimyndighet STEM,4
+Statens Räddningsverk,124
+Statens veterinärmedicinska An,4
+Statistiska Centralbyrån/Inter,52
+Steps Towards Development,6
+Sthlms Handelskammares Serv AB,2
+Stiftelsen Spinalis,4
+Stiftelsen Swecare,2
+Stockholm vatten - Sthlm Water,2
+Stockholms Universitet,8
+Supreme Electoral AuthorityTSE,2
+Sustain.Business Hub Scand AB,2
+Svensk Teaterunion/Svenska ITI,3
+Svenska Afghanistankommittén,10
+Svenska Handikappades organisa,156
+Svenska Helsingforskommittén,20
+Svenska Institutet,2
+Svenska Missionsrådet,1203
+Svenska Naturskyddsföreningen,139
+Svenska Röda Korset,268
+Svenska kyrkan,827
+Sveriges Geologiska Undersökni,6
+Sveriges Kristna Råd,6
+Sveriges Lantbruksuniversitet,11
+Sveriges Meterologiska och Hyd,2
+Sveriges Radio,2
+Sveriges kommuner o landsting,21
+Swedac,45
+Swedesurvey AB,2
+Swedfund,17
+Swedish Cooperative Centre,29
+Swedish Development Advisers,2
+Swedish Embassies,3
+Swedmar,6
+Swiss Development Cooperation,7
+TESEV,2
+TGNP,TZA Gender Networking Pro,2
+Tanzania Development Finance C,2
+Tarun Bharat Sangh,3
+The AIDS Support Org. TASO,3
+The Managment Centre,4
+The Registry, Bosnia,5
+Training and Research, TARSC,2
+Transparency International BGD,2
+Tullverket,2
+Tyréns AB,2
+UN Association,4
+UN Centre for Human Settlement,7
+UN Childrens Fund,206
+UN Development Programme,253
+UN Education, Science and Cult,7
+UN High Commission for Refugee,61
+UN Industrial Development Orga,6
+UN International Drug Control,3
+UN Population Fund,29
+UN-Habitat,2
+UNAIDS Reg.East.South.Africa,5
+UNAIDS West Africa,2
+UNESCWA,5
+UNFPA - UN Population Fund,8
+UNHCO Ugandan Nat HealthConOrg,3
+UNOPS,11
+UNRWA Relief and Works Agency,12
+UNWOMEN Int.,8
+UPSA,3
+USAID,16
+Uganda Coalition for Sust Dev,7
+Umeå Universitet,2
+Ungdomsstyrelsen,2
+United Nations,25
+Univ.of Sri Jayewardenepura,8
+Univer Nacion Autón NICManagua,3
+Univers Nacion Autón deNICLeón,3
+Univers Nacional Auton Hondura,12
+Universidad Mayor de San Andre,16
+Universidad Mayor de San Simon,11
+Universidad Nacional Agraria,4
+Universidad Nacional de Ingeni,3
+Universidad del Valle,2
+University of Bergen,2
+University of Cape Town,7
+University of Colombo,16
+University of Dar es Salaam,7
+University of Eduardo Mondlane,28
+University of Jaffna,3
+University of KwaZulu-Natal,9
+University of Peradeniya,Sri,10
+Uppsala Universitet,10
+Utan Gränser,607
+Utbildning för biståndsverksam,14
+Uzbekistan Press Freedom group,2
+VSO,2
+Veterinaires Sans Frontieres,2
+Vietnam Chamber Comm/Industry,4
+Vägverket,2
+WSP International Sweden AB,2
+WWF World WildlifeFund/Världsn,41
+Women for Womens Human Rights,5
+World Bank,143
+World Food Programme,38
+World Health Organisation,14
+World Vision - Germany,2
+World Vision UK,2
+Youth Media,2
+Zambia National Farmer´s Union,2
+Zambian Governnace Foundation,2
+Zanzibar legal services center,2
+Zivikele Training,5
+ung Drive,2
+ÅF International AB,2
+Övriga Individer,28
+Övriga Stiftelser,7
+Övriga internationella enskil,25
+Övrigt företag,2
+sector,vocabulary
+DAC,16234
+RO,149
+sector,code
+00000,29
+9888,1
+11110,35
+11120,31
+11130,4
+11182,21
+11220,80
+11230,24
+11320,4
+11330,15
+11420,19
+11430,12
+12110,105
+12181,8
+12182,85
+12191,4
+12220,854
+12230,3
+12250,8
+12261,6
+12281,20
+13010,5
+13020,71
+13040,1065
+14010,125
+14015,20
+14020,33
+14030,37
+14050,49
+14081,3
+15110,428
+15111,117
+15112,93
+15113,8
+15120,1
+15130,123
+15140,5
+15150,1710
+15151,105
+15152,19
+15153,58
+15160,544
+15161,2
+15162,4
+15163,5
+15170,75
+15210,59
+15220,397
+15230,6
+15240,2
+15250,54
+15261,4
+16010,18
+16020,18
+16030,49
+16040,129
+16050,11
+16061,73
+16062,86
+16064,109
+21010,9
+21020,97
+21040,2
+21050,7
+21081,4
+22010,5
+22020,6
+22030,7
+22040,19
+23010,110
+23020,7
+23030,12
+23040,59
+23062,1
+23065,30
+23070,3
+23081,3
+23082,9
+24010,41
+24020,4
+24030,11
+24040,484
+24081,10
+25010,111
+25012,9
+25021,88
+31110,56
+31120,66
+31130,42
+31140,3
+31150,2
+31162,2
+31164,11
+31166,10
+31181,4
+31182,12
+31191,8
+31193,6
+31194,5
+31195,11
+31210,36
+31220,11
+31281,4
+31282,6
+31291,3
+31320,7
+31382,4
+32120,2
+32130,50
+32161,7
+32162,2
+32182,128
+32210,6
+32220,4
+32310,2
+33110,2
+33112,14
+33113,18
+33120,9
+33130,2
+33140,8
+33144,4
+33145,4
+33148,4
+33150,6
+33151,16
+33181,10
+33182,26
+41010,257
+41020,4
+41050,4
+41081,29
+41082,58
+43010,155
+43030,186
+43040,699
+43050,2
+43081,595
+43082,133
+43092,162
+51010,10
+52010,6
+60030,2
+72010,1310
+72022,149
+72040,40
+72050,187
+73010,31
+74010,15
+91010,142
+99810,2847
+99820,491
+policy-marker,code
+1,16380
+2,16381
+3,16381
+4,16381
+5,16381
+6,16381
+7,16331
+8,16381
+policy-marker,vocabulary
+DAC,130997
+policy-marker,significance
+0,89381
+1,29314
+2,12302
+default-tied-status,code
+None found
+default-flow-type,code
+10,16382
+default-aid-type,code
+None found
+default-finance-type,code
+None found
+recipient-country,code
+AF,254
+AL,167
+AM,51
+AO,71
+AR,55
+AZ,21
+BA,311
+BD,274
+BF,235
+BI,85
+BJ,44
+BO,333
+BR,105
+BW,78
+BY,1
+CD,309
+CF,79
+CG,50
+CI,90
+CL,35
+CM,63
+CN,218
+CO,309
+CR,92
+CV,2
+DJ,21
+DO,8
+DZ,17
+EC,58
+EE,5
+EG,148
+ER,58
+ET,454
+FJ,2
+GE,149
+GH,41
+GM,43
+GN,45
+GT,288
+GW,8
+HN,203
+HR,28
+HT,62
+ID,145
+IN,308
+IQ,154
+IR,2
+JO,36
+KE,551
+KG,67
+KH,255
+KP,33
+KZ,21
+LA,180
+LB,64
+LK,329
+LR,195
+LS,14
+LV,2
+LY,20
+MA,11
+MD,192
+ME,46
+MG,51
+MK,158
+ML,198
+MM,119
+MN,65
+MR,64
+MU,6
+MW,119
+MY,21
+MZ,468
+NA,111
+NE,64
+NG,56
+NI,273
+NP,124
+PA,23
+PE,148
+PG,2
+PH,197
+PK,188
+PS,420
+PY,100
+RO,9
+RS,231
+RW,123
+SB,2
+SD,264
+SL,61
+SN,61
+SO,205
+SV,102
+SY,19
+SZ,20
+TD,117
+TG,77
+TH,111
+TJ,90
+TL,50
+TM,2
+TN,28
+TR,138
+TZ,489
+UA,3
+UG,484
+UY,9
+UZ,20
+VE,2
+VN,404
+WS,6
+YE,78
+ZA,449
+ZM,357
+ZW,339
+recipient-region,code
+189,35
+289,281
+298,105
+380,58
+389,200
+489,102
+498,141
+589,322
+619,41
+679,110
+689,23
+789,2
+798,38
+889,5
+budget,type
+,10642
+budget/value,currency
+,10642
+budget/period-start,iso-date
+1998,9
+1999,12
+2000,25
+2001,25
+2002,44
+2003,70
+2004,134
+2005,225
+2006,442
+2007,871
+2008,1302
+2009,1851
+2010,2093
+2011,1858
+2012,1029
+2013,451
+2014,156
+2015,45
+planned-disbursement/value,currency
+,26479
+planned-disbursement/period-start,iso-date
+1998,12
+1999,16
+2000,46
+2001,67
+2002,113
+2003,221
+2004,314
+2005,509
+2006,859
+2007,1692
+2008,2796
+2009,4750
+2010,5820
+2011,5155
+2012,2919
+2013,956
+2014,182
+2015,52
+transaction/transaction-type,code
+D,21951
+transaction/value,currency
+,21951
+transaction/provider-org,ref
+None found
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+1998,12
+1999,16
+2000,44
+2001,64
+2002,112
+2003,218
+2004,303
+2005,502
+2006,844
+2007,1672
+2008,2766
+2009,4694
+2010,5609
+2011,5093
+2021,1
+2022,1
+document-link,format
+application/pdf,67379
+document-link,category
+,67379
+related-activity,type
+1,12174
+2,260317
+3,2256585
+conditions,type
+None found
+result,type
+None found
+result/indicator,measure
+None found

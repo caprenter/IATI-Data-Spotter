@@ -1,0 +1,100 @@
+Element,Attribute
+iati-activity,hierarchy
+1,9
+2,2
+iati-activity,default-currency
+GBP,11
+iati-activity,lang
+en,11
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+22,11
+reporting-org,ref
+GB-COH-06368740,11
+activity-status,code
+1,1
+2,9
+3,1
+activity-date,type
+end-actual,1
+end-planned,10
+start-actual,10
+start-planned,1
+activity-date,iso-date
+2010,10
+2011,12
+participating-org,role
+Funding,11
+Implementing,11
+participating-org,type
+22,11
+60,11
+participating-org,ref
+GB-COH-06368740,11
+US-EIN-941655673,11
+sector,vocabulary
+,14
+sector,code
+15120,2
+15163,10
+22040,1
+91010,1
+policy-marker,code
+None found
+policy-marker,vocabulary
+None found
+policy-marker,significance
+None found
+default-tied-status,code
+None found
+default-flow-type,code
+None found
+default-aid-type,code
+D02,11
+default-finance-type,code
+None found
+recipient-country,code
+GH,1
+NP,1
+ZA,1
+recipient-region,code
+289,1
+998,7
+budget,type
+None found
+budget/value,currency
+None found
+budget/period-start,iso-date
+None found
+planned-disbursement/value,currency
+None found
+planned-disbursement/period-start,iso-date
+None found
+transaction/transaction-type,code
+E,34
+IF,1
+transaction/value,currency
+,35
+transaction/provider-org,ref
+US-EIN-941655673,1
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+2010,21
+2011,14
+document-link,format
+None found
+document-link,category
+None found
+related-activity,type
+1,10
+2,10
+conditions,type
+None found
+result,type
+None found
+result/indicator,measure
+None found

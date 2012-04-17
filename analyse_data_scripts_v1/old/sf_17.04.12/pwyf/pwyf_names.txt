@@ -1,0 +1,16 @@
+Element
+reporting-org
+"Publish What You Fund";3
+participating-org
+"World Vision";3
+"Save the Children";3
+"ONE";3
+"CAFOD";3
+"Open Society Foundations";3
+"Publish What You Fund";3
+"The William and Flora Hewlett Foundation";3
+"New Venture Fund";1
+transaction/provider-org
+None found
+transaction/receiver-org
+None found

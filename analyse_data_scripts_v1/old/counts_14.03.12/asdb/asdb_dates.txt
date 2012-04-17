@@ -1,0 +1,22 @@
+Element,Attribute
+activity-date
+1998,59
+1999,60
+2000,88
+2001,85
+2002,110
+2003,93
+2004,100
+2005,124
+2006,129
+2007,127
+2008,150
+2009,196
+2010,181
+2011,98
+transaction-date
+None found
+budget/period-start
+None found
+planned-disbursement/period-start
+None found

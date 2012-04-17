@@ -1,0 +1,77 @@
+Activities with/without elements
+Ignore Hierarchy Activities counted=5202
+
+reporting-org: with,5202
+other-identifier: without,5202
+activity-status: with,5202
+activity-date: with,5202
+contact-info: with,5202
+participating-org: with,5196
+participating-org: without,6
+sector: with,5202
+default-tied-status: with,5202
+default-flow-type: with,5202
+default-aid-type: with,5202
+default-finance-type: with,5202
+recipient-country: with,5127
+recipient-country: without,75
+recipient-region: without,5127
+recipient-region: with,75
+location: without,5202
+location/location-type: without,5202
+location/name: without,5202
+location/description: without,5202
+location/administrative: without,5202
+location/coordinates: without,5202
+location/gazetteer-entry: without,5202
+budget: without,5202
+budget/period-start: without,5202
+budget/period-end: without,5202
+budget/value: without,5202
+planned-disbursement: without,5202
+planned-disbursement/period-start: without,5202
+planned-disbursement/period-end: without,5202
+planned-disbursement/value: without,5202
+activity-website: with,5202
+collaboration-type: with,5202
+policy-marker: with,5202
+transaction: with,5202
+transaction/value: with,5202
+transaction/description: with,5202
+transaction/transaction-type: with,5202
+transaction/provider-org: with,5202
+transaction/receiver-org: with,5202
+transaction/transaction-date: with,5202
+transaction/flow-type: with,5196
+transaction/flow-type: without,6
+transaction/aid-type: with,5202
+transaction/finance-type: with,5202
+transaction/tied-status: with,5202
+transaction/disbursement-channel: with,5202
+provider-org: without,5202
+receiver-org: without,5202
+document-link: without,5202
+related-activity: without,4581
+related-activity: with,621
+legacy-data: without,5202
+conditions: without,5202
+conditions/condition: without,5202
+result: without,5202
+result/indicator: without,5202
+result/indicator/baseline: without,5202
+result/indicator/period: without,5202
+result/indicator/period/period-start: without,5202
+result/indicator/period/period-end: without,5202
+result/indicator/period/target: without,5202
+result/indicator/period/actual: without,5202
+contact-info/organisation: with,5202
+contact-info/person-name: without,5202
+contact-info/telephone: with,5202
+contact-info/email: with,5202
+contact-info/mailing-address: with,5202
+
+Hierarchy=1 Activities counted=0
+
+
+Hierarchy=2 Activities counted=0
+

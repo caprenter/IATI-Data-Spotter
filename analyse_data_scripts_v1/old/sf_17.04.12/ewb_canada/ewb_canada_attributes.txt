@@ -1,0 +1,85 @@
+Element,Attribute
+iati-activity,hierarchy
+,6
+iati-activity,default-currency
+CAD,6
+iati-activity,lang
+en,6
+iati-activity/title,lang
+None found
+iati-activity/description,lang
+None found
+reporting-org,type
+22,6
+reporting-org,ref
+CA-CRA-89980-1815-RR0001,6
+activity-status,code
+3,6
+activity-date,type
+end-planned,6
+start-actual,6
+activity-date,iso-date
+2010,6
+2011,6
+participating-org,role
+,6
+participating-org,type
+22,6
+participating-org,ref
+CA-CRA-89980-1815-RR0001,6
+sector,vocabulary
+DAC,8
+sector,code
+14010,4
+14030,4
+policy-marker,code
+None found
+policy-marker,vocabulary
+None found
+policy-marker,significance
+None found
+default-tied-status,code
+None found
+default-flow-type,code
+30,6
+default-aid-type,code
+D02,5
+G01,1
+default-finance-type,code
+None found
+recipient-country,code
+MW,6
+recipient-region,code
+None found
+budget,type
+,6
+budget/value,currency
+CAD,6
+budget/period-start,iso-date
+None found
+planned-disbursement/value,currency
+None found
+planned-disbursement/period-start,iso-date
+None found
+transaction/transaction-type,code
+None found
+transaction/value,currency
+None found
+transaction/provider-org,ref
+None found
+transaction/receiver-org,ref
+None found
+transaction/transaction-date,iso-date
+None found
+document-link,format
+None found
+document-link,category
+None found
+related-activity,type
+1,5
+conditions,type
+None found
+result,type
+output,4
+result/indicator,measure
+None found

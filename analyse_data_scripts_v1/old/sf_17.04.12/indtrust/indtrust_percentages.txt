@@ -1,0 +1,6 @@
+39 activities have more than one sector element
+39 sector sums don't make 100%
+Percentage,Count
+0,39
+recipient-region
+None found

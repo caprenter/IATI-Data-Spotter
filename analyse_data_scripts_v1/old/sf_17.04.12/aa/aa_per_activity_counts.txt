@@ -1,0 +1,17 @@
+Testing: participating-org,role
+Out of 38 activities at level not specified
+Activities with participating-org elements = 38
+Activities without participating-org elements = 0
+Failing activities 0
+Number of activities with a Funding participating-org code = 31
+Number of activities with a Implementing participating-org code = 38
+Number of activities with a Accountable participating-org code = 1
+Testing: activity-date,type
+Out of 38 activities at level not specified
+Activities with activity-date elements = 38
+Activities without activity-date elements = 0
+Failing activities 0
+Number of activities with a start-actual activity-date code = 38
+Number of activities with a start-planned activity-date code = 38
+Number of activities with a end-actual activity-date code = 38
+Number of activities with a end-planned activity-date code = 38
