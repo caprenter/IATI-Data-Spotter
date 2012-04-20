@@ -28,38 +28,20 @@ array=( aa
         unops
         worldbank
       )
-array=( aa
-        adrauk
-        asdb )
+#To overide the large array above, e.g. to run the tests on only a few datasets
+#create a new array below
+#e.g. 
+#array=( aa adrauk asdb )
 
-#DIRECTORY="../data/"
+#Assuming your data is held in a directory that can be found at ../data/
+#see settings.php to alter this.
 
 ##Loop through each element of the array
 for i in "${array[@]}"
 do
   echo $i
-
-  #echo "element_count"
-  #./element_count_all.sh $DIRECTORY$i
-
-  #echo "data_analysis"
-  #./data_analysis.sh $DIRECTORY$i
-
-  #echo "name"
-  #php name.php $DIRECTORY$i
-
-  #echo "dates"
-  #php dates.php $DIRECTORY$i
-
-  #echo "attributes"
-  #php attribute_counts.php $DIRECTORY$i
-
-  #echo "strings"
-  #php string_lengths.php $DIRECTORY$i
   
-  #echo "percentage"
-  #php percentage.php $DIRECTORY$i
-  
+  ##The tests. Feel free to comment out ones you don't want to run
   echo "activity dates"
   php activity-dates_test.php $i
   
