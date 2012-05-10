@@ -31,7 +31,7 @@ array=( aa
 #array=( CAFOD gavi )
 #array=( dfid )
 #array=( aa )
-#array=( undp )
+array=( gavi )
 DIRECTORY="../data/"
 
 ##Loop through each element of the array

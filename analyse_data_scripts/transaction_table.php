@@ -397,7 +397,7 @@ function get_transaction_data($dir) {
                         $transactions = $activity->transaction;
                         if (count($transactions) == 0) {
                           echo $id;
-                          die;
+                          //die;
                         }
 
                         if (isset($transactions) && count($transactions) > 0) { //something not quite right here
@@ -420,7 +420,7 @@ function get_transaction_data($dir) {
                             }
                             if ($transaction_type !="D") {
                               echo $id;
-                              die;
+                              //die;
                             }
                             $activities_with_transaction_type[$hierarchy][$transaction_type][] = $id;
                             

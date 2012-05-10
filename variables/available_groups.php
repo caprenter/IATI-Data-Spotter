@@ -25,6 +25,7 @@ $available_groups = array("worldbank"=>"World Bank",
                           "transparency_international" => "Transparency International",
                           "gavi" => "GAVI Alliance Secretariat",
                           "rem" => "Resource Extraction Monitoring",
-                          "spark" => "SPARK"
+                          "spark" => "SPARK",
+                          "globalgiving" => "Global Giving"
                           );
 ?>                          
