@@ -1,6 +1,0 @@
-sector
-None found
-2 activities have more than one recipient-region element
-2 recipient-region sums don't make 100%
-Percentage,Count
-0,2

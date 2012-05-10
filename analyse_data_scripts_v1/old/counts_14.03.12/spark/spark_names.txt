@@ -1,9 +1,0 @@
-Element
-reporting-org
-"Spark head office Amsterdam";2
-participating-org
-None found
-transaction/provider-org
-None found
-transaction/receiver-org
-None found

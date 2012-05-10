@@ -1,4 +1,0 @@
-sector
-None found
-recipient-region
-None found

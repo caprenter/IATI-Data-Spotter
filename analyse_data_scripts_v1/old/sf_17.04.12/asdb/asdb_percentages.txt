@@ -1,6 +1,0 @@
-1088 activities have more than one sector element
-1088 sector sums don't make 100%
-Percentage,Count
-0,1088
-recipient-region
-None found

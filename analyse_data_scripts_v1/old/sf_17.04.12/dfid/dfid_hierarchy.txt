@@ -1,4 +1,0 @@
-No hierarchy specified = 0
-Hierarchy specified = 9809
-3360 activities at hierarchy 1
-6449 activities at hierarchy 2

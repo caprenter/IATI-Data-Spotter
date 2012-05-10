@@ -1,9 +1,0 @@
-Element
-reporting-org
-"The Global Alliance for Vaccination and Immunisation";1581
-participating-org
-"The Global Alliance for Vaccination and Immunisation";1581
-transaction/provider-org
-None found
-transaction/receiver-org
-None found

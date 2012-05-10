@@ -1,9 +1,0 @@
-Activities with/without elements
-Ignore Hierarchy Activities counted=0
-
-
-Hierarchy=1 Activities counted=0
-
-
-Hierarchy=2 Activities counted=0
-

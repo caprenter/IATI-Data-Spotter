@@ -1,2 +1,0 @@
-No hierarchy specified = 3
-Hierarchy specified = 0

@@ -1,9 +1,0 @@
-Element
-reporting-org
-"Asian Development Bank";1600
-participating-org
-"Asian Development Bank";1600
-transaction/provider-org
-None found
-transaction/receiver-org
-None found

@@ -1,9 +1,0 @@
-Element,Attribute
-activity-date
-1970,22
-transaction-date
-None found
-budget/period-start
-None found
-planned-disbursement/period-start
-None found

@@ -1,5 +1,0 @@
-iati-activity/description
-None found
-iati-activity/title
-<100,681
->100,72

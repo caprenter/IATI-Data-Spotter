@@ -1,3 +1,0 @@
-Element,Attribute
-transaction/transaction-type,code
-D,21951

@@ -1,3 +1,0 @@
-Element,Attribute
-activity-date
-2010,1

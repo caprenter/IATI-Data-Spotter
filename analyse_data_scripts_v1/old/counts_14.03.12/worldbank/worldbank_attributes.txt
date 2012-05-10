@@ -1,6 +1,0 @@
-Element,Attribute
-transaction/transaction-type,code
-C,625
-D,3816
-IR,7992
-LR,5295

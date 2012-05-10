@@ -1,5 +1,0 @@
-Element,Attribute
-activity-date
-2010,4
-2011,72
-2012,24

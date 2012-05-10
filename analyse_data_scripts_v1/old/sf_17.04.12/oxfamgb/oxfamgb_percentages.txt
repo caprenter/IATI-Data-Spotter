@@ -1,6 +1,0 @@
-622 activities have more than one sector element
-0 sector sums don't make 100%
-Percentage,Count
-100,622
-recipient-region
-None found

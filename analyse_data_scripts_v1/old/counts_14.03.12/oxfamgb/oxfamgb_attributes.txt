@@ -1,4 +1,0 @@
-Element,Attribute
-transaction/transaction-type,code
-C,834
-E,1277

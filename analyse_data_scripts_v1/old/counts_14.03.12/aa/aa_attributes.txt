@@ -1,4 +1,0 @@
-Element,Attribute
-transaction/transaction-type,code
-C,37
-IF,1

@@ -1,7 +1,0 @@
-iati-activity/description
-<100,10
->100,799
-iati-activity/title
-<10,3
-<100,774
->100,10
