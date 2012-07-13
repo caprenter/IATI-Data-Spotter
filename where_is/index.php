@@ -101,8 +101,9 @@
       </div>
       
       <footer>
-      
-
+        <?php
+          require_once("footer.php");
+        ?>
       </footer>
     </div><!--page-->
     <script type="text/javascript" src="javascript/tinytable/script.js"></script>
