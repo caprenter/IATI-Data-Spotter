@@ -27,3 +27,13 @@ http://iatiregistry.org/
 in /themes/header.php we have the following:
 error_reporting(0); //Kills error reporting. Comment this line out to help you debug.
 ini_set("memory_limit","128M"); //Some of the processes are quite memory intensive, you may need to set this for your servers abilities.
+
+===Applications Within Applications===
+====Analyse Data Scripts====
+These are a set of scripts that run over the data in the /data duirectory and produce a bunch of stats
+
+====Where_is====
+This is a small app that can display a view on processed/aggregated data.
+Running where_can_i_find.php will generate files in the where_is/data/ directory.
+The rest of the app will use this data to display stuff!
+Point your browser at /where_is/ to see it in action.
