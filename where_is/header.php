@@ -9,5 +9,6 @@
   <div id="header">
 		<div class="header-wrapper">
       <a class="logo dc_title" href="index.php">IATI Data: Who's publishing...?</a>
+      <p>Find out who is reporting which IATI Activity Elements</p>
 		</div><!-- .header-wrapper -->
 	</div><!-- #header -->

@@ -49,10 +49,14 @@ background:#eee;
     width: 940px;
 }
 
+.header-wrapper p {
+    font-size: 0.8em;
+    margin: 0 0 5px;
+}
+
 a.dc_title {
 font-size:1.5em;
-height: 43px;
-margin: 14px 0 12px;
+margin: 14px 0 2px;
 display:block;
 color:#444;
 text-decoration:none;
