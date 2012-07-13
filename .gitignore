@@ -6,3 +6,5 @@ analyse_data_scripts/results
 analyse_data_scripts/old
 analyse_data_scripts/not_in_use
 analyse_data_scripts/results_to_spreadsheet/spreadsheets*
+where_is/data/
+!where_is/data/
