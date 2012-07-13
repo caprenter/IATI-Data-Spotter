@@ -76,6 +76,12 @@ text-align:left;
 color: #444;
 }
 
+
+ul.files {
+  padding-left: 260px;
+}
+
+
 .sidebar {
 float:left;
 width:220px;
