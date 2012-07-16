@@ -34,13 +34,13 @@
         //Validate the element
         if (isset($_GET['element'])) {
           //this is passed from the main set list page. We need to post it back
-          $element = filter_var($_GET['element'], FILTER_SANITIZE_STRING);
-          if (!in_array($element,$elements)) {
-            unset($element);
+          $supplied_element = filter_var($_GET['element'], FILTER_SANITIZE_STRING);
+          if (!in_array($$supplied_element,$elements)) {
+            unset($supplied_element);
           }
         }
         
-        if (!isset($element)) {
+        if (!isset($supplied_element)) {
           $element = "activity-date"; 
         }
         
