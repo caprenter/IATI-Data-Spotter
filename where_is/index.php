@@ -49,7 +49,7 @@
           //echo $filename; die;
           $output_file = "data/" . $filename . ".php";
 
-            if ($data = file_get_contents($output_file)) {;
+            if ($data = file_get_contents($output_file)) {
               $data = unserialize($data);
               //print_r($data);
             }

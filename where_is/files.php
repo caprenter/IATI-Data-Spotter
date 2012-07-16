@@ -60,6 +60,11 @@
 
           if ($data = file_get_contents($output_file)) {
             $data = unserialize($data);
+            //Also grab some additonal data to help us make links to those files
+            if ($file_metadata = file_get_contents("mapped_files_to_urls.php")) {
+              $file_metadata = unserialize($file_metadata);
+              //print_r($file_metadata);
+            }
             //print_r($data);
           }
           
@@ -70,7 +75,23 @@
               echo "<p>Files with this element:</p>";
               echo '<ul class="files">';
               foreach($files as $file) {
-                echo '<li>' . $file . '</li>';
+                //Grab some metadata
+                foreach ($file_metadata as $meta) {
+                  if ($meta["group"] == $provider) {
+                    //echo "provider_match";
+                    if ($meta["file"] == $file) {
+                      $url = $meta["url"]; 
+                       //echo "file_match";
+                      $ckan_name = $meta["name"];
+                    } //end if meta match
+                  }
+                } //end foreach meta file
+                if (isset($url)) {
+                    echo '<li>' . $file . ' [<a href="' . $url . '">xml</a>] [<a href="http://iatiregistry.org/dataset/' . $ckan_name . '">registry</a>] [<a href="http://tools.aidinfolabs.org/showmydata/index.php?url=' . $url . '">preview</a>]</li>';
+                    unset($url);
+                } else {
+                  echo '<li>' . $file . '</li>';
+                }
               }
               echo '</ul>';                  
             } 

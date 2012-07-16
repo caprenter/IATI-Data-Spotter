@@ -1,5 +1,11 @@
 <?php
-/* We wnt to find out which data providers report a specific element
+   $mtime = microtime();
+   $mtime = explode(" ",$mtime);
+   $mtime = $mtime[1] + $mtime[0];
+   $starttime = $mtime;
+?> 
+<?php
+/* We want to find out which data providers report a specific element
  * Further we want to know which files contain that element
  * (We may want to know how many times that element occurs in those files)
  * (We may want to worry about hierarchy)
@@ -32,11 +38,11 @@ foreach($files as $file) {
     } 
   }
 }
-print_r($directories); //die;
+//print_r($directories); //die;
 
 
 //$elements = array("result/indicator/period/period-start"); //Override the big  elementarray for testing
-//$directories = array("aa"); //Override the big directory array for testing
+$directories = array("dfid"); //Override the big directory array for testing
 foreach ($elements as $element) {
 
   $results = array();
@@ -90,6 +96,7 @@ function count_elements($dir, $element) {
                 if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation file
                     $activity_files++;
                     if (count($xml->xpath('//iati-activity/' . $element)) > 0) {
+                    //if ($xml->xpath('//iati-activity/' . $element)) {
                       $good_files++;
                       $files_with_element[] = $file;
                     }
@@ -114,4 +121,12 @@ function count_elements($dir, $element) {
                 );
 }
 
+?>
+<?php
+   $mtime = microtime();
+   $mtime = explode(" ",$mtime);
+   $mtime = $mtime[1] + $mtime[0];
+   $endtime = $mtime;
+   $totaltime = ($endtime - $starttime);
+   echo "This page was created in ".$totaltime." seconds";
 ?>
