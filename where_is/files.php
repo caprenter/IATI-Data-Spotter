@@ -72,7 +72,11 @@
             //Find the files data for this provider and this element
             if ($record["provider"] == $provider) {
               $files = $record["data"]["files_with_element"];
-              echo "<p>Files with this element:</p>";
+              echo "<p>" . count($files) . " file";
+                if (count($files) != 1) {
+                  echo "s";
+                }
+              echo " with this element:</p>";
               echo '<ul class="files">';
               foreach($files as $file) {
                 //Grab some metadata
