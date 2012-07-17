@@ -35,13 +35,15 @@
         if (isset($_GET['element'])) {
           //this is passed from the main set list page. We need to post it back
           $supplied_element = filter_var($_GET['element'], FILTER_SANITIZE_STRING);
-          if (!in_array($$supplied_element,$elements)) {
+          if (!in_array($supplied_element,$elements)) {
             unset($supplied_element);
           }
         }
         
         if (!isset($supplied_element)) {
           $element = "activity-date"; 
+        } else {
+          $element = $supplied_element;
         }
         
         echo "<h1>" . $element . "</h1>";

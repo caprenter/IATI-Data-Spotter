@@ -1,4 +1,7 @@
 <?php
+//This is a faster script to try to achieve the same thing as where_can_i_find.php
+//It seems to be much faster! (12x or so)
+
 //Thanks: http://www.developerfusion.com/code/2058/determine-execution-time-in-php/
 //This helps us monitor how long the script takes to run.
    $mtime = microtime();
