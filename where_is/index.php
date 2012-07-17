@@ -47,17 +47,29 @@
         }
         
         echo "<h1>" . $element . "</h1>";
-          $filename = preg_replace("/\//","_",$element);
-          //echo $filename; die;
-          $output_file = "data/" . $filename . ".php";
+        $filename = preg_replace("/\//","_",$element);
+        //echo $filename; die;
+        $output_file = "data/" . $filename . ".php";
 
-            if ($data = file_get_contents($output_file)) {
-              $data = unserialize($data);
-              //print_r($data);
-            }
+        if ($data = file_get_contents($output_file)) {
+            $data = unserialize($data);
+            //print_r($data);
+        }
+        
+        //Count providers reporting
+        $no_reporting = 0;
+        $no_providers = count($data);
+        foreach ($data as $record) {
+          if (intval($record["data"]["activity_files_with_element"]) > 0) {
+            $no_reporting++;
+          }
+        }
+        if ($no_reporting == 0) {
+          $no_reporting = "none";
+        }
         ?>
         <table id="table" class="sortable">
-          <caption>Table showing which providers report on: <?php echo $element; ?>
+          <caption>Table showing <?php echo $no_providers; ?> data providers of which <?php echo $no_reporting ;?> report<?php if($no_reporting == 1){ echo "s"; } ?> <strong><?php echo $element; ?></strong>
           </caption>
           <thead>
             <tr>
