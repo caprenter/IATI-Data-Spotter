@@ -62,6 +62,7 @@ foreach($files2 as $file2) {
 /*TESTING TESTING*/
 //$elements = array("result/indicator/period/period-start"); //Override the big  elementarray for testing
 //$directories = array("dfid","aa"); //Override the big directory array for testing
+//$directories = array("theglobalfund"); //Override the big directory array for testing
 /*END TESTING*/
 
 
@@ -139,7 +140,8 @@ foreach ($directories as $provider) {
 
 function count_elements($dir, $elements) {
   //Count number of files this provider has
-  $all_files = $activity_files = $org_files = $good_files = $failed_to_parse = 0;
+  $all_files = $activity_files = $org_files = $good_files = 0;
+  $failed_to_parse = array();
   $files_with_element = array();
   
   if ($handle = opendir($dir)) {
@@ -170,7 +172,7 @@ function count_elements($dir, $elements) {
                   $org_files++;
                 }
             } else {//end if xml is created
-              $failed_to_parse++;
+              $failed_to_parse[] = $file;
             }
         }// end if file is not a system file
     } //end while

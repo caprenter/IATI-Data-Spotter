@@ -1,15 +1,28 @@
 <?php
   require_once("settings.php");
+  //Sanitize GET variables
+  //If passed we want to serve only files that failed to parse
+  if (isset($_GET['fail'])) {
+    //this is passed from the main set list page. We need to post it back
+    $fail = filter_var($_GET['fail'], FILTER_SANITIZE_NUMBER_INT);
+    if (intval($fail) != 1) {
+      unset($fail);
+    }
+  }
+  //This is the element want information on
   if (isset($_GET['element'])) {
     //this is passed from the main set list page. We need to post it back
     $element = filter_var($_GET['element'], FILTER_SANITIZE_STRING);
+    //Check it is in the list of avaiable elements
     if (!in_array($element,$elements)) {
       unset($element);
     }
   }
+  //This is the provider
   if (isset($_GET['provider'])) {
     //this is passed from the main set list page. We need to post it back
     $provider = filter_var($_GET['provider'], FILTER_SANITIZE_STRING);
+    //Check it's on the list
     if (!in_array($provider,array_keys($providers))) {
       unset($provider);
     }
@@ -71,12 +84,20 @@
           foreach ($data as $record) {   
             //Find the files data for this provider and this element
             if ($record["provider"] == $provider) {
-              $files = $record["data"]["files_with_element"];
-              echo "<p>" . count($files) . " file";
+              if (isset($fail)) {
+                $files = $record["data"]["failed_to_parse"];
+                echo "Failed to parse: " . count($files) . " file";
                 if (count($files) != 1) {
-                  echo "s";
-                }
-              echo " with this element:</p>";
+                    echo "s";
+                }                
+              } else {
+                $files = $record["data"]["files_with_element"];
+                echo "<p>" . count($files) . " file";
+                  if (count($files) != 1) {
+                    echo "s";
+                  }
+                echo " with this element:</p>";
+              }
               echo '<ul class="files">';
               foreach($files as $file) {
                 //Grab some metadata
