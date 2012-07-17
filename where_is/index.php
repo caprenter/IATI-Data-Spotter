@@ -106,7 +106,11 @@
                   echo "<td>" . $record["data"]["all_files"] . "</td>";
                   echo "<td>" . $record["data"]["activity_files"] . "</td>";
                   echo "<td>" . $record["data"]["org_files"] . "</td>";
-                  echo '<td><a href="files.php?fail=1&amp;element=' . $element .'&amp;provider=' . $record["provider"] .'">' . count($record["data"]["failed_to_parse"]) . '</a></td>';
+                  if (intval(count($record["data"]["failed_to_parse"])) > 0 ) {
+                    echo '<td><a href="files.php?fail=1&amp;element=' . $element .'&amp;provider=' . $record["provider"] .'">' . count($record["data"]["failed_to_parse"]) . '</a></td>';
+                  } else {
+                    echo '<td>' . count($record["data"]["failed_to_parse"]) . '</td>';
+                  }
                 echo "</tr>";
               }
             ?>
