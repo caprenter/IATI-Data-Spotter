@@ -61,12 +61,20 @@
           </caption>
           <thead>
             <tr>
-              <th scope="col"><h3>Provider</h3></th>
+              <!--<th scope="col"><h3>Provider</h3></th>
               <th scope="col"><h3>No.Files Published</h3></th>
               <th scope="col"><h3>Org. Files</h3></th>
               <th scope="col"><h3>Activity Files</h3></th>
               <th scope="col"><h3>Activity Files with Element</h3></th>
+              <th scope="col"><h3>Failed to Parse</h3></th>-->
+              
+              <th scope="col"><h3>Provider</h3></th>
+              <th scope="col"><h3>Activity Files with Element</h3></th>
+              <th scope="col"><h3>No.Files Published</h3></th>
+              <th scope="col"><h3>Activity Files</h3></th>
+              <th scope="col"><h3>Org. Files</h3></th>
               <th scope="col"><h3>Failed to Parse</h3></th>
+              
             </tr>
           </thead>
           <tbody>
@@ -90,14 +98,14 @@
                 //Print the rows of the table
                 echo '<tr class="' . $class . '">';
                   echo "<td>" . $provider_name . "</td>";
-                  echo "<td>" . $record["data"]["all_files"] . "</td>";
-                  echo "<td>" . $record["data"]["org_files"] . "</td>";
-                  echo "<td>" . $record["data"]["activity_files"] . "</td>";
                   if (intval($record["data"]["activity_files_with_element"]) > 0 ) {
                     echo '<td><a href="files.php?element=' . $element .'&amp;provider=' . $record["provider"] .'">' . $record["data"]["activity_files_with_element"] . '</a></td>';
                   } else {
                     echo '<td>' . $record["data"]["activity_files_with_element"] . '</td>';
                   }
+                  echo "<td>" . $record["data"]["all_files"] . "</td>";
+                  echo "<td>" . $record["data"]["activity_files"] . "</td>";
+                  echo "<td>" . $record["data"]["org_files"] . "</td>";
                   echo "<td>" . $record["data"]["failed_to_parse"] . "</td>";
                 echo "</tr>";
               }
