@@ -1,4 +1,17 @@
 <?php
+//This is a faster script to try to achieve the same thing as the original where_can_i_find.php
+//It seems to be much faster! (12x or so)
+
+//This was designed to be run as php_cli script, but I guess you can run it in a browser
+//It relies on a data/ directory at ta level above this script containing IATI data in the form
+//provider1/iati_data_example.xml
+//provider1/iati_data_example2.xml
+//provider2/...
+//etc
+//This data can be created using the  IATI Registry Refresher app see caprenter on github
+
+//Thanks: http://www.developerfusion.com/code/2058/determine-execution-time-in-php/
+//This helps us monitor how long the script takes to run.
    $mtime = microtime();
    $mtime = explode(" ",$mtime);
    $mtime = $mtime[1] + $mtime[0];
@@ -8,10 +21,11 @@
 /* We want to find out which data providers report a specific element
  * Further we want to know which files contain that element
  * (We may want to know how many times that element occurs in those files)
- * (We may want to worry about hierarchy)
+ * (We may want to worry about hierarchy - we don't just yet)
  * We probably want to know which activities contain that element
  * i.e. we want a path to possible examples
  * 
+ * Thoughts:
  * Data providers reporting THIS ELEMENT:
  * Provider | Number of Files | Total Files
  * Provider view: DFID
@@ -20,11 +34,9 @@
  * 
 */
 include ('functions/xml_child_exists.php');
-include ('settings.php'); //sets all the elements we can loop over
-//$output_file = $output_dir . $corpus . '_elements.csv';
+include ('settings.php'); //sets all the elements we can loop over and also has an array of providers
 
-
-/* Get a list of data directories*/
+/* Get a list of data directories that contain the XML*/
 $dir    = '../data/';
 $files = scandir($dir);
 $banned_folders = array(); //Set up a list of directories to ignore here
@@ -40,45 +52,105 @@ foreach($files as $file) {
 }
 //print_r($directories); //die;
 
+//Now DELETE all existing files in our aggregated (processed) data directory
+$dir2    = 'data/';
+$files2 = scandir($dir2);
+$banned_folders2 = array(); //Set up a list of directories to ignore here
+//print_r($files); //die;
 
-//$elements = array("result/indicator/period/period-start"); //Override the big  elementarray for testing
-$directories = array("dfid"); //Override the big directory array for testing
-foreach ($elements as $element) {
-
-  $results = array();
-  
-  foreach ($directories as $provider) {
-   $data = count_elements($dir . $provider . "/", $element);
-   $results[] = array("provider"=>$provider,
-                    "data" => array("all_files" => $data[0],
-                                    "org_files" => $data[1],
-                                    "activity_files" => $data[2],
-                                    "activity_files_with_element" => $data[3],
-                                    "failed_to_parse" => $data[4],
-                                    "files_with_element" => $data[5],
-                                    )
-                    );
-   //echo $provider . "|" . $data[0] . "|" . $data[1] . "|" . $data[2] . "|" . $data[3] . "|" . $data[4] . PHP_EOL;
-   //die;
+foreach($files2 as $file2) {
+  //echo $file;
+  if ($file2 != "." && $file2 != "..") { //ignore system directories and files
+    if (is_file($dir2 . $file2)) {
+       unlink($dir2 . $file2); // delete file
+       //echo $dir2 . $file . PHP_EOL;
+    } 
   }
-  //print_r($results);
-  
-  //Save results to file with the name of the element in the file
-  $filename = preg_replace("/\//","_",$element);
-  //echo $filename; die;
-  $output_file = "data/" . $filename . ".php";
-  $fh = fopen($output_file, 'w') or die("can't open file");
-    fwrite($fh,serialize($results));
-  fclose($fh);
-  //$fh = file_get_contents($output_file);
-  //$fh = unserialize($fh);
-  //print_r($fh);
-  //echo $fh[0]["provider"];
 }
 
-function count_elements($dir, $element) {
+/*TESTING TESTING*/
+//$elements = array("result/indicator/period/period-start"); //Override the big  elementarray for testing
+//$directories = array("dfid","aa"); //Override the big directory array for testing
+//$directories = array("theglobalfund"); //Override the big directory array for testing
+/*END TESTING*/
+
+
+foreach ($directories as $provider) {
+   echo $provider . PHP_EOL;
+   $files = array(); //reset
+    
+   //This processes all XML files for a data provider and returns some aggregated data 
+   $data = count_elements($dir . $provider . "/", $elements);
+   
+   //We have looped through all the files and stored element=>file in a big array..
+   $files_with_elements = $data[5]; //This is an array of many elements and many files...
+  
+   //Loop through all elements and store data for each of them
+   //We store the count and file info for this element
+   //We also add provider meta data (no of files,no of activ ity files etc)
+   foreach ($elements as $element) {
+      //Reset a load of stuff used in this loop
+      unset($results); 
+      unset($new_data);
+      unset($old_data);
+      //echo $element;
+      
+      //Save results to file with the name of the element in the file
+      $filename = preg_replace("/\//","_",$element);
+      //echo $filename; die;
+      $output_file = "data/" . $filename . ".php";
+      
+      //We need to write to this file a lot, and we need to append data to a php serialised array
+      //So if it's there we need to extract the data into an array
+      if (file_exists($output_file)) {
+        if ($old_data = file_get_contents($output_file)) {
+               $old_data = unserialize($old_data);
+        }
+      }
+            
+      
+      //Create an array of files for this element for this data provider
+      $files = array();
+      foreach ($files_with_elements as $record) {
+        $key = key($record);
+        if (key($record) == $element) {
+          $files[] = $record[$key];
+        }
+      }
+   
+      //We end up with an array of this data for this element of this provider
+      //We save more than we really need, but that's useful
+      $results = array( "provider"=>$provider,
+                          "data" => array("all_files" => $data[0],
+                                    "org_files" => $data[1],
+                                    "activity_files" => $data[2],
+                                    "activity_files_with_element" => count($files),
+                                    "failed_to_parse" => $data[4],
+                                    "files_with_element" => $files,
+                                    )
+                      );
+      //Add our new data to the exisiting data....
+      if (isset($old_data)) {
+             $old_data[] = $results;
+             $new_data = $old_data;
+      }
+        
+      //...unless it's the first pass, in which case we just store our first result
+      if (!isset($new_data)) {
+          $new_data = array();
+          $new_data[] = $results;
+      }
+    
+      //Save results to file with the name of the element in the file
+      file_put_contents($output_file,serialize($new_data));
+    
+  } //end foreach element
+} //end foreach directory
+
+function count_elements($dir, $elements) {
   //Count number of files this provider has
-  $all_files = $activity_files = $org_files = $good_files = $failed_to_parse = 0;
+  $all_files = $activity_files = $org_files = $good_files = 0;
+  $failed_to_parse = array();
   $files_with_element = array();
   
   if ($handle = opendir($dir)) {
@@ -95,17 +167,21 @@ function count_elements($dir, $element) {
                 //print_r($xml);
                 if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation file
                     $activity_files++;
-                    if (count($xml->xpath('//iati-activity/' . $element)) > 0) {
-                    //if ($xml->xpath('//iati-activity/' . $element)) {
-                      $good_files++;
-                      $files_with_element[] = $file;
+                    
+                    foreach ($elements as $element) {
+                    
+                      if (count($xml->xpath('//iati-activity/' . $element)) > 0) {
+                      //if ($xml->xpath('//iati-activity/' . $element)) {
+                        $good_files++;
+                        $files_with_element[] = array($element => $file);
+                      }
                     }
                         
                 } else {//end if not organisation file
                   $org_files++;
                 }
             } else {//end if xml is created
-              $failed_to_parse++;
+              $failed_to_parse[] = $file;
             }
         }// end if file is not a system file
     } //end while
@@ -123,6 +199,7 @@ function count_elements($dir, $element) {
 
 ?>
 <?php
+//Thanks: http://www.developerfusion.com/code/2058/determine-execution-time-in-php/
    $mtime = microtime();
    $mtime = explode(" ",$mtime);
    $mtime = $mtime[1] + $mtime[0];

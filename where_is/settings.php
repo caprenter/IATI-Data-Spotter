@@ -45,8 +45,8 @@ $elements = array(// "iati-activity",
         "transaction/finance-type",
         "transaction/tied-status",
         "transaction/disbursement-channel",
-        "provider-org",
-        "receiver-org",
+        //"provider-org", //these don't exist as top level elements?
+        //"receiver-org", //these don't exist as top level elements?
         "document-link",
         "related-activity",
         "legacy-data",

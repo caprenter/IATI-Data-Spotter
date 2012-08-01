@@ -34,6 +34,17 @@ These are a set of scripts that run over the data in the /data duirectory and pr
 
 ====Where_is====
 This is a small app that can display a view on processed/aggregated data.
+The idea is to give an overview of which data providers are reporting which IATI elements
+
 Running where_can_i_find.php will generate files in the where_is/data/ directory.
+There needs to be data in the main /data directory for this script to generate it's own data.
+This allows you to set up a custom set of publishers files to iterate over. 
+
+Aggregated data is currently stored in the git repository, so by pulling this data regularly you can
+cut out the overhead of having to pull raw data and process it yourself. 
+The plan is to run the aggregation script daily.
+
 The rest of the app will use this data to display stuff!
 Point your browser at /where_is/ to see it in action.
+
+

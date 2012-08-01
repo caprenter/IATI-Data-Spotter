@@ -31,15 +31,15 @@
       <div class="main" role="main">
         <?php
         
-        //Validate the element
+        //Validate the element 
         if (isset($_GET['element'])) {
-          //this is passed from the main set list page. We need to post it back
           $supplied_element = filter_var($_GET['element'], FILTER_SANITIZE_STRING);
-          if (!in_array($supplied_element,$elements)) {
+          if (!in_array($supplied_element,$elements)) { //$elemnts comes from settings.php
             unset($supplied_element);
           }
         }
         
+        //Default to activity-date if no valid element supplied
         if (!isset($supplied_element)) {
           $element = "activity-date"; 
         } else {
@@ -47,10 +47,12 @@
         }
         
         echo "<h1>" . $element . "</h1>";
+        //Filenames are element XML paths replaced with underscores. e.g. budget/value becomes budget_value.php
         $filename = preg_replace("/\//","_",$element);
         //echo $filename; die;
         $output_file = "data/" . $filename . ".php";
-
+        
+        //Grab the data for this element
         if ($data = file_get_contents($output_file)) {
             $data = unserialize($data);
             //print_r($data);
@@ -69,24 +71,16 @@
         }
         ?>
         <table id="table" class="sortable">
-          <caption>Table showing <?php echo $no_providers; ?> data providers of which <?php echo $no_reporting ;?> report<?php if($no_reporting == 1){ echo "s"; } ?> <strong><?php echo $element; ?></strong>
+          <caption>Table showing <?php echo $no_providers; ?> data provider<?php if($no_providers != 1){ echo "s"; } ?> of which <?php echo $no_reporting ;?> report<?php if($no_reporting == 1){ echo "s"; } ?> <strong><?php echo $element; ?></strong>
           </caption>
           <thead>
-            <tr>
-              <!--<th scope="col"><h3>Provider</h3></th>
-              <th scope="col"><h3>No.Files Published</h3></th>
-              <th scope="col"><h3>Org. Files</h3></th>
-              <th scope="col"><h3>Activity Files</h3></th>
-              <th scope="col"><h3>Activity Files with Element</h3></th>
-              <th scope="col"><h3>Failed to Parse</h3></th>-->
-              
+            <tr>              
               <th scope="col"><h3>Provider</h3></th>
               <th scope="col"><h3>Activity Files with Element</h3></th>
               <th scope="col"><h3>No.Files Published</h3></th>
               <th scope="col"><h3>Activity Files</h3></th>
               <th scope="col"><h3>Org. Files</h3></th>
               <th scope="col"><h3>Failed to Parse</h3></th>
-              
             </tr>
           </thead>
           <tbody>

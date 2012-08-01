@@ -1,9 +1,11 @@
 <div id="footer">
   <h3>How it works</h3>
-  <p>We run a script that looks in every published IATI file for every IATI element once a day.<br/>
+  <p>We run a script that looks in every published IATI file for every IATI element.<br/>The ambition is to run this daily.<br/>
   We store that data and display it here.</p>
   <p>Script last ran:
     <?php
+      //This seems a little much to run each time we call a page!
+      //Run over the directory to find the last modified times of the files and display the most recent datetime. 
       $dir    = 'data/';
       $files = scandir($dir);
       $banned_folders = array(); //Set up a list of directories to ignore here
