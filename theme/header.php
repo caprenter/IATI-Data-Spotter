@@ -32,8 +32,10 @@ foreach ($menus as $menu) {
   }
 }
 ?>
+<!DOCTYPE HTML>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title><?php echo $title ?> <?php echo $breadcrumb ?></title>
     <link rel="stylesheet" href="theme/css/main.css" />
     <link rel="stylesheet" href="javascript/tinytable/style.css" />
