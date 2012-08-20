@@ -1,4 +1,11 @@
+/*
+ *      generate_variable_files.php
+ *      
+ *      This can be used to mass generate the variable files that need to sit in this directory
+ *      The URL line is a bit generic - there may be a better way to generate that.
+ */
 <?php
+
 include("available_groups.php");
 foreach($available_groups as $key=>$value) {
   $file = "./" . $key . ".php";
