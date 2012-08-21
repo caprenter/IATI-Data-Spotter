@@ -163,7 +163,7 @@ function count_elements($dir, $elements) {
             //echo $file . PHP_EOL;
             //load the xml
             $all_files++;
-             if ($xml = @simplexml_load_file($dir . $file)) {
+             if ($xml = @simplexml_load_file(rawurlencode($dir . $file))) {
                 //print_r($xml);
                 if(!xml_child_exists($xml, "//iati-organisation"))  { //exclude organisation file
                     $activity_files++;
