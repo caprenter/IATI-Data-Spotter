@@ -20,19 +20,26 @@ if ($handle = opendir($dir)) {
              
             $i++;
             if ($xml = simplexml_load_file($dir . $file)) {
-              foreach ($xml as $activity) {
-                $code = (string)$activity->{'recipient-country'}->attributes()->code;
-                $country = (string)$activity->{'recipient-country'};
-                $region = (string)$activity->{'recipient-region'};
-                $region_code = (string)$activity->{'recipient-region'}->attributes()->code;
-                //echo $code;
-
-                if (!empty($code)) { $code = ";" . $code; }
-                if (!empty($region_code)) { $region_code = ";" . $region_code; }
-                array_push($recipient_countries, $country . $code);  
-                //array_push($recipient_countries, $country);
-                array_push($recipient_regions, $region . $region_code);    
-              }          
+              //print_r($xml);
+              $activities = $xml->xpath("//iati-activity");
+              foreach ($activities as $activity) {
+                  $countries = $activity->xpath("./recipient-country");
+                  //print_r($countries);
+                  foreach ($countries as $country) {
+                    $code = (string)$country->attributes()->code;
+                    $country_name = (string)$country;
+                    //echo $country_name;
+                    if (!empty($code)) { $code = ";" . $code; }
+                    array_push($recipient_countries, $country_name . $code);  
+                  }
+                  $regions = $activity->xpath("./recipient-region");
+                  foreach ($regions as $region) {
+                    $region_code = (string)$region->attributes()->code;
+                    $region = (string)$region;
+                    if (!empty($region_code)) { $region_code = ";" . $region_code; }
+                    array_push($recipient_regions, $region . $region_code);  
+                  }
+               }          
             } else {
               array_push($bad_files,$file);
             }
@@ -42,8 +49,19 @@ if ($handle = opendir($dir)) {
 
 print('<div id="main-content">');
   print('<h4>No. of files: ' . $i . '</h4>');
-  theme_country_table ($recipient_regions,1,'Region');
-  theme_country_table ($recipient_countries,2,'Country');
+  if ($recipient_regions !=NULL) {
+    echo "<h3>recipient-region data</h3>";
+    theme_country_table ($recipient_regions,1,'Region');
+  } else {
+    echo "<p>No recipient-region elements found</p>";
+  }
+  if ($recipient_countries !=NULL) {
+     echo "<h3>recipient-country data</h3>";
+    theme_country_table ($recipient_countries,2,'Country');
+  } else {
+     echo "<p>No recipient-country elements found</p>";
+  }
+    
   //print_r(array_count_values ($recipient_countries));
   //echo count($recipient_countries);
 
@@ -73,7 +91,9 @@ print('</div>');
 function theme_country_table ($recipient,$id,$string) {
   //Get a count of all files
   //$total_countries = count($recipient_countries);
+ //print_r($recipient);
   $country_counts = array_count_values ($recipient);
+  //print_r($country_counts);
   
  
   //Print out a table of all the files that have a good file count
