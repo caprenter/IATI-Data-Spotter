@@ -43,6 +43,7 @@ foreach ($menus as $menu) {
 
 <body>
   <div id="header">
+    <div id="site-notice">This is a test environment. The data may not be current or live - please refer to <a href="http://iatiregistry.org/">http://iatiregistry.org/</a> for live data</div>
     <div id="nav"><a href="index.php">Home</a></div>
   </div>
   <div id="page-wrapper">

@@ -7,6 +7,8 @@ $output_file = $output_dir . $corpus . '_elements.csv';
 
 $tests = array(// "iati-activity",
         //"iati-activities",
+        "title",
+        "description",
         "reporting-org",
         "other-identifier",
         "activity-status",

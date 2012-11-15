@@ -8,7 +8,7 @@ color:#091f30;
 background: #537793;
 color:#fff;
 margin-bottom:5px;
-padding:5px 0;
+padding:0 0 5px 0;
 }
 
 #nav {
@@ -155,4 +155,11 @@ width:980px;
 
 .smaller {
 font-size:0.9em;
+}
+
+#site-notice {
+margin: 0 auto;
+background: yellow;
+text-align: center;
+color:#000;
 }
