@@ -17,7 +17,18 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
   foreach ($code_list as $code) {
     $codes[$code['code']] = $code['name'];
   }
-  //print_r($codes); die; 
+ // print_r($codes); die; 
+  
+  //Turn JSON file into an array we can use key = code, value = string
+  $code_list = file_get_contents('helpers/code_lists/OrganisationRole.json');
+  //echo $code_list;
+  $code_list = json_decode($code_list,TRUE);
+  $code_list = $code_list['codelist']['OrganisationRole'];
+  //print_r($code_list);
+  foreach ($code_list as $code) {
+    $codes_role[$code['code']] = $code['name'];
+  }
+  //print_r($codes_role); die; 
 
     
   print('<div id="main-content">');
@@ -66,6 +77,16 @@ if (in_array($myinputs['group'],array_keys($available_groups))) {
             </table>");
             //print_r($results["bad-codes"]);
             
+          }
+          
+           if(!empty($results["roles"])) {
+            //print_r($codes);
+            echo "<h4>By role</h4>";
+            sort($results["roles"]);
+            $roles = array_count_values($results["roles"]);
+            foreach ($roles as $role => $count) {
+              echo $role . " (" . $codes_role[$role] . "): " . $count .  "<br/>";
+            }
           }
           
           if (count($results["zeros"]) >0 ) {
@@ -147,6 +168,7 @@ function get_count ($dir) {
                       // $bad_codes[] = array($this_code, (string)$status, $codes[$this_code]);
                       //} else {
                         $codes[] = (string)$status->attributes()->type;
+                        $roles[] = (string)$status->attributes()->role;
                       //}
                     }
                       $results[$file] = count($result);
@@ -162,7 +184,9 @@ function get_count ($dir) {
   $return = array("results" => $results,
                   "codes" => $codes,
                   "bad-codes" => $bad_codes,
-                  "bad-files" => $bad_files);
+                  "bad-files" => $bad_files,
+                  "roles" => $roles
+                  );
   
   return $return;
 }
