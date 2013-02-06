@@ -62,7 +62,9 @@ function transactions_integer_check ($dir) {
                   $id = (string)$activity->{'iati-identifier'};
                   foreach ($activity->{'transaction'} as $transaction) {
                     $value = (string)$transaction->value;
+                    //echo $value . '<br/>';
                     $integer = (int)$value;
+                    //echo $integer.'<br/>';
                     if ((string)$value != (string)$integer) {
                       $result[] = array("id" => $id,
                                         "file" => $file,
